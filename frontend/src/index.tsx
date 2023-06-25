@@ -13,7 +13,7 @@ import Header from './pages/header';  //Component
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import axios from 'axios';
 
-axios.defaults.withCredentials = true;
+axios.defaults.withCredentials = true; //refreshToken cookie를 주고받을 수 있게 설정
 
 const theme = createTheme({
   palette: {

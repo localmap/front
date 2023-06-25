@@ -1,6 +1,6 @@
 // third party
-import * as Yup from 'yup';
-import { Formik } from 'formik';
+import * as Yup from 'yup'; // 유효성 검사
+import { Formik } from 'formik'; // 리액트에서 form을 다루는 코드들을 쉽게 작성할 수 있도록 도와주는 라이브러리
 
 // project import
 import FirebaseSocial from '../user/auth-forms/FirebaseSocial';
@@ -9,8 +9,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { BaseUrl } from '../../util/axiosApi';
 import axios from 'axios';
-import { set } from '../../reducers/userReducer';
-import { useSelector, useDispatch } from 'react-redux';
+
 
 // material-ui
 import {
@@ -29,7 +28,6 @@ import {
   Typography,
   Box
 } from '@mui/material';
-import { access } from 'fs';
 
 const Login: React.FC = () => {
 
