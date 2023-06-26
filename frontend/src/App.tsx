@@ -7,6 +7,7 @@ import Home from './pages/home';
 import Login from './pages/user/login';
 import Join from './pages/user/join';
 import Pwsearch from './pages/user/pwsearch';
+import Pw_reset from './pages/user/pw_reset';
 import Mypage from './pages/user/mypage';
 import Notice from './pages/board/notice_list';
 import axios from 'axios';
@@ -20,6 +21,7 @@ const App: React.FC = () => {
       <Route path='/login' element={<Login/>} />
       <Route path='/join' element={<Join/>} />
       <Route path='/pwsearch' element={<Pwsearch/>} />
+      <Route path='/pwreset' element={<Pw_reset/>}/>
       <Route path='/mypage' element={<Mypage/>} />
       <Route path='/notice' element={<Notice />} />
     </Routes>
