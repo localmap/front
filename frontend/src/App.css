@@ -1,7 +1,7 @@
 
 /* header start */
 .App-header {
-  background-color: rgb(240, 238, 193);
+  background-color: #f0eec1;
   position:fixed;
   height: 60px;
   width: 100%;
@@ -52,3 +52,13 @@
   position:fixed;
 }
 /*login end*/
+
+/*pwsearch start*/
+.pwsearch {
+  background-color: #ffffff;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+}
+/*pwsearch end*/

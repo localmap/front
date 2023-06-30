@@ -10,7 +10,6 @@ import { useNavigate } from 'react-router-dom';
 import { BaseUrl } from '../../util/axiosApi';
 import axios from 'axios';
 
-
 // material-ui
 import {
   Button,
@@ -54,7 +53,6 @@ const Login: React.FC = () => {
       navigate('/pwsearch')
     };
 
-
    return (
         <div className='login'>
           <Box sx={{marginLeft: 5}}>
@@ -68,7 +66,7 @@ const Login: React.FC = () => {
            </Stack>
           </Grid>
           <Grid item xs={12}>
-            <Formik
+           <Formik
               initialValues={{
               email: '',
               password: '',
@@ -80,8 +78,8 @@ const Login: React.FC = () => {
         })}
         onSubmit={async (values, { setSubmitting }) => {
           try {
-            setSubmitting(true);
-            axios.post(BaseUrl + "/user/login/normal/", 
+          setSubmitting(true);
+           await axios.post(BaseUrl + "/user/login/normal/", 
                 {
                   headers: {
                     'Content-Type': 'application/json;charset=UTF-8'
@@ -108,7 +106,7 @@ const Login: React.FC = () => {
                   <InputLabel htmlFor="email-login">Email Address</InputLabel>
                   <OutlinedInput
                     id="email-login"
-                    type="email"
+                    type="email" 
                     value={values.email}
                     name="email"
                     onBlur={handleBlur}
