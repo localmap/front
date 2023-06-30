@@ -10,6 +10,10 @@ import Pwsearch from './pages/user/pwsearch';
 import Pw_reset from './pages/user/pw_reset';
 import Mypage from './pages/user/mypage';
 import Notice from './pages/board/notice_list';
+import EmailCheck from './pages/user/email_check';
+import NickNameCheck from './pages/user/nickname_check';
+import Location from './pages/user/location';
+import Location_search from './pages/user/location_search';
 import axios from 'axios';
 
 axios.defaults.withCredentials = true;
@@ -24,6 +28,10 @@ const App: React.FC = () => {
       <Route path='/pwreset' element={<Pw_reset/>}/>
       <Route path='/mypage' element={<Mypage/>} />
       <Route path='/notice' element={<Notice />} />
+      <Route path='/emailcheck' element={<EmailCheck />} />
+      <Route path='/nicknamecheck' element={<NickNameCheck/>} />
+      <Route path='/location' element={<Location/>} />
+      <Route path='/location_search' element={<Location_search/>} />
     </Routes>
   );
 }

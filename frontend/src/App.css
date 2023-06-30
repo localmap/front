@@ -47,11 +47,64 @@
 
 /*home end*/
 
+/*join start*/
+.join {
+  position:fixed;
+  width:100%;
+}
+/*join end*/
+
+/*email_check start*/
+  .emailcheck{
+    width:100%;
+  }
+/*email_check end*/
+
+/*location start*/
+.location{
+  width:100%;
+}
+/*location end*/
+
+/*nicknamecheck start*/
+.nicknamecheck{
+  width: 100%;
+}
+/*nicknamecheck end*/
+
+/*location_search start*/
+.location_search {
+  width: 100%;
+}
+/*location_search end*/
+
 /*login start*/
 .login {
   position:fixed;
 }
 /*login end*/
+
+/*valide formbox start*/
+.formbox{
+  position: relative;
+    margin-bottom: 20px;
+    .message {
+      font-weight: 500;
+      font-size: 1.6rem;
+      line-height: 24px;
+      letter-spacing: -1px;
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+       &.success {
+        color: #8f8c8b;
+      }
+       &.error {
+        color: #ff2727;
+      }
+    }
+}
+/*valide formbox end*/
 
 /*pw_reset start*/
 @media all and (min-width: 1024px) {
