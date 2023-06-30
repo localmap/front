@@ -30,14 +30,11 @@ const Mypage: React.FC = () => {
              <Box sx={{ width: '100%' }}>
              <Box >
              <Tabs
-
-
                value={value}
                onChange={handleChange}
                textColor="secondary"
                indicatorColor="secondary"
                aria-label="secondary tabs example"
-               
                sx={{ borderRight: 1, borderColor: 'divider' }}>
                 <Tab label="북마크" value={0}  {...a11yProps(0)} onClick={() => { goBookmark(); }} />
                 <Tab label="내가 쓴 리뷰 " value={1}  {...a11yProps(1)} onClick={() => { goManage(1);}} />

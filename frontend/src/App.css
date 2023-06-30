@@ -1,7 +1,7 @@
 
 /* header start */
 .App-header {
-  background-color: #f0eec1;
+  background-color: rgb(240, 238, 193);
   position:fixed;
   height: 60px;
   width: 100%;
@@ -31,6 +31,7 @@
 .App-header-profile-icons{
   margin-top: 10px;
   
+
   max-width: 600px;
 }
 
@@ -83,16 +84,6 @@
   position:fixed;
 }
 /*login end*/
-
-/*pwsearch start*/
-.pwsearch {
-  background-color: #ffffff;
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  overflow: scroll;
-}
-/*pwsearch end*/
 
 /*valide formbox start*/
 .formbox{
@@ -172,3 +163,67 @@
   }
 }
 /*pw_reset end*/
+/* header start */
+.App-header {
+  background-color: #f0eec1;
+  position:fixed;
+  height: 60px;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  border-bottom:  rgb(186, 183, 183);
+}
+
+.App-header-logo {
+  display: flex;
+  width: 96%;
+  max-width: 600px;
+  height: 100%;
+  margin-top: 10px;
+  margin-left: 30px;
+
+}
+.App-header-search {
+  margin-top: 10px;
+  max-width: 600px;
+}
+.search{
+  padding:5px 10px;
+  margin-top: 10px;
+}
+.App-header-profile-icons{
+  margin-top: 10px;
+  
+
+  max-width: 600px;
+}
+
+/* header end */
+
+/*home start*/
+.home {
+  background-color: #ffffff;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+}
+
+/*home end*/
+
+/*login start*/
+.login {
+  position:fixed;
+}
+/*login end*/
+
+/*pwsearch start*/
+.pwsearch {
+  background-color: #ffffff;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+}
+/*pwsearch end*/
