@@ -14,7 +14,7 @@ const Home: React.FC = () => {
     return (
         <div className="home">
             <Box sx={{ flexGrow: 1, maxWidth: 1500, margin: 'auto' , mx:15, mb:15 }}>
-            <Typography sx={{fontSize:20, my:5}} textAlign='center'>지도 ..</Typography>
+                <Typography sx={{fontSize:20, my:5}} textAlign='center'>지도 ..</Typography>
             </Box>
             <Box sx={{ flexGrow: 1, maxWidth: 1500, margin: 'auto' , mx:15, mb:15 }}>
                 <Typography sx={{fontSize:20, my:5}} textAlign='center'>주변 인기 맛집</Typography>
