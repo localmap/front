@@ -1,7 +1,7 @@
 
 /* header start */
 .App-header {
-  background-color: #f0eec1;
+  background-color: rgb(240, 238, 193);
   position:fixed;
   height: 60px;
   width: 100%;
@@ -32,6 +32,7 @@
 .App-header-profile-icons{
   margin-top: 10px;
   
+
   max-width: 600px;
 }
 
@@ -110,7 +111,6 @@
   overflow: scroll;
 }
 /*pwsearch end*/
-
 
 
 /*valide formbox start*/
@@ -195,9 +195,11 @@
 /*pw_reset end*/
 
 
+
 /*event_detail start */
 .event_detail {
   width: 100%;
   text-align: center;
 }
 /*event_detail end */
+
