@@ -9,6 +9,7 @@
   left: 0px;
   overflow: hidden;
   border-bottom:  rgb(186, 183, 183);
+  z-index: 100;
 }
 
 .App-header-logo {
@@ -36,6 +37,8 @@
 
 /* header end */
 
+
+
 /*home start*/
 .home {
   background-color: #ffffff;
@@ -47,6 +50,8 @@
 
 /*home end*/
 
+
+
 /*join start*/
 .join {
   position:fixed;
@@ -54,11 +59,15 @@
 }
 /*join end*/
 
+
+
 /*email_check start*/
   .emailcheck{
     width:100%;
   }
 /*email_check end*/
+
+
 
 /*location start*/
 .location{
@@ -66,11 +75,15 @@
 }
 /*location end*/
 
+
+
 /*nicknamecheck start*/
 .nicknamecheck{
   width: 100%;
 }
 /*nicknamecheck end*/
+
+
 
 /*location_search start*/
 .location_search {
@@ -78,11 +91,15 @@
 }
 /*location_search end*/
 
+
+
 /*login start*/
 .login {
   position:fixed;
 }
 /*login end*/
+
+
 
 /*pwsearch start*/
 .pwsearch {
@@ -93,6 +110,8 @@
   overflow: scroll;
 }
 /*pwsearch end*/
+
+
 
 /*valide formbox start*/
 .formbox{
@@ -115,6 +134,8 @@
     }
 }
 /*valide formbox end*/
+
+
 
 /*pw_reset start*/
 @media all and (min-width: 1024px) {
@@ -172,3 +193,11 @@
   }
 }
 /*pw_reset end*/
+
+
+/*event_detail start */
+.event_detail {
+  width: 100%;
+  text-align: center;
+}
+/*event_detail end */
