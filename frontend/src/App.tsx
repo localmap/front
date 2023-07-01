@@ -8,7 +8,6 @@ import Login from './pages/user/login';
 import Join from './pages/user/join';
 import Pw_reset from './pages/user/pw_reset';
 import Pwsearch from './pages/user/pwsearch';
-import Pw_reset from './pages/user/pw_reset';
 import Mypage from './pages/user/mypage';
 import User_update from './pages/user/user_update';
 import User_review from './pages/user/user_review';
@@ -17,6 +16,8 @@ import EmailCheck from './pages/user/email_check';
 import NickNameCheck from './pages/user/nickname_check';
 import Location from './pages/user/location';
 import Location_search from './pages/user/location_search';
+import Header2 from './pages/header2';
+import Event_detail from './pages/board/event_detail';
 import axios from 'axios';
 
 
@@ -39,6 +40,8 @@ const App: React.FC = () => {
       <Route path='/nicknamecheck' element={<NickNameCheck/>} />
       <Route path='/location' element={<Location/>} />
       <Route path='/location_search' element={<Location_search/>} />
+      <Route path='/Header2' element={<Header2/>} />
+      <Route path='/event_detail' element={<Event_detail/>} />
     </Routes>
   );
 }

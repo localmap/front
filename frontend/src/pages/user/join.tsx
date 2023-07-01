@@ -73,32 +73,39 @@ const Join : React.FC = () => {
 
     const handleEmailChange = (event:React.ChangeEvent<HTMLInputElement>) => {
       const inputEmail = event.target.value;
-
-      if(!validateEmail(inputEmail)){
+      if(!inputEmail){
+        setEmailError("");
+      }
+      else if(!validateEmail(inputEmail)){
         setEmailError("이메일 형식이 올바르지 않습니다.");
       }else{
-        setEmailError("");
+        setEmailError(" ");
       }
       setEmail(inputEmail);
     };
 
     const handlePasswordChange = (event:React.ChangeEvent<HTMLInputElement>) => {
       const inputPassword = event.target.value;
-      
-      if(!validatePassword(inputPassword)){
+      if(!inputPassword){
+        setPasswordError("");
+      }
+      else if(!validatePassword(inputPassword)){
         setPasswordError("비밀번호 형식이 올바르지 않습니다.");
       }else{
-        setPasswordError("");
+        setPasswordError(" ");
       }
       setPassword(inputPassword);
     }
 
     const handlePasswordConfirm = (event:React.ChangeEvent<HTMLInputElement>) => {
       const inputPasswordConfirm = event.target.value;
-      if(inputPasswordConfirm!==password){
+      if(!inputPasswordConfirm){
+        setPasswordConfirmError(" ");
+      }
+      else if(inputPasswordConfirm!==password){
         setPasswordConfirmError("비밀번호가 같지 않습니다");
       }else{
-        setPasswordConfirmError("");
+        setPasswordConfirmError(" ");
       }
       setPasswordconfirm(inputPasswordConfirm);
     }
@@ -107,14 +114,19 @@ const Join : React.FC = () => {
   return(
     <div className="join">
       <Box sx={{display:"flex" , justifyContent:"center", alignItems:"center"}}> 
-      <form>
+      <form onSubmit={(e)=>{
+        e.preventDefault();
+        Join();
+      }}>
         <Grid>
           <Grid item xs={12}>
             <Typography sx={{fontSize:32 , pb:3,textAlign:'center'}}>회원가입</Typography>
-            <Stack direction="row">
-              <TextField name="email" type="email" placeholder="이메일" value={email} onChange={handleEmailChange} sx={{ backgroundColor:"#F5F5F5", width:500}}></TextField>
-              {emailError &&(<Typography color='error' variant='caption'>{emailError}</Typography>)}
-              <Button onClick={()=>{goEmailCheck()}}sx={{color:'white', backgroundColor:'#FF7474', width:100}}>인증</Button>
+            <Stack direction="column" spacing={1}>
+              <Stack direction="row">
+                <TextField name="email" type="email" placeholder="이메일" value={email} onChange={handleEmailChange} sx={{ backgroundColor:"#F5F5F5", width:500}}></TextField>
+                <Button onClick={()=>{goEmailCheck()}}sx={{color:'white', backgroundColor:'#FF7474', width:100}}>인증</Button>
+              </Stack>
+              <Typography color={emailError ? "error" : "transparent"} variant="caption">{emailError || " "}</Typography>
             </Stack>
             <Stack>
               <TextField name="password" type="password" placeholder="비밀번호" value={password} onChange={handlePasswordChange} sx={{mt:2, backgroundColor:"#F5F5F5"}}></TextField>
@@ -132,7 +144,7 @@ const Join : React.FC = () => {
               <Button onClick={()=>{goLocation()}}sx={{mt:2, color:'white', backgroundColor:'#FF7474', width:100}}>위치확인</Button>
             </Stack>
             <Stack>
-              <Button onClick={()=>{Join()}}type="submit" sx={{color:'white', backgroundColor:'#FF7474' , mt:2 , width:600}}>회원가입</Button>
+              <Button  sx={{color:'white', backgroundColor:'#FF7474' , mt:2 , width:600}}>회원가입</Button>
             </Stack>
           </Grid>
         </Grid>
