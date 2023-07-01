@@ -6,7 +6,6 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './pages/home';
 import Login from './pages/user/login';
 import Join from './pages/user/join';
-import Pw_reset from './pages/user/pw_reset';
 import Pwsearch from './pages/user/pwsearch';
 import Mypage from './pages/user/mypage';
 import User_update from './pages/user/user_update';
