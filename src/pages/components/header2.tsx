@@ -1,40 +1,12 @@
 import React from 'react'
-import '../App.css'
+import '../../App.css'
 import { styled, alpha } from '@mui/material/styles'
 import { Box, Button, Stack, InputBase, IconButton } from '@mui/material'
 import { useNavigate } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
-import { RootState } from '../reducers/index'
-import { set } from '../reducers/userReducer'
-import PersonAddIcon from '@mui/icons-material/PersonAdd'
-import SearchIcon from '@mui/icons-material/Search'
-import logo from '../pages/img/logo.png'
-
-const Search = styled('div')(({ theme }) => ({
-  position: 'relative',
-  borderRadius: theme.shape.borderRadius,
-  backgroundColor: alpha(theme.palette.common.white, 0.15),
-  '&:hover': {
-    backgroundColor: alpha(theme.palette.common.white, 0.25)
-  },
-  marginRight: theme.spacing(2),
-  marginLeft: 0,
-  width: '100%',
-  [theme.breakpoints.up('sm')]: {
-    marginLeft: theme.spacing(3),
-    width: 'auto'
-  }
-}))
-
-const SearchIconWrapper = styled('div')(({ theme }) => ({
-  padding: theme.spacing(0, 2),
-  height: '100%',
-  position: 'absolute',
-  pointerEvents: 'none',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center'
-}))
+import { RootState } from '../../reducers/index'
+import { set } from '../../reducers/userReducer'
+import logo from '../../pages/img/logo.png'
 
 const StyledInputBase = styled(InputBase)(({ theme }) => ({
   color: 'inherit',
@@ -50,7 +22,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   }
 }))
 
-const Header: React.FC = () => {
+const Header2: React.FC = () => {
   const navigate = useNavigate()
 
   const goHome = () => {
@@ -67,10 +39,6 @@ const Header: React.FC = () => {
   const doLogOut = () => {
     dispatch(set({ type: '', email: '' }))
     goHome()
-  }
-
-  const goMypage = () => {
-    navigate('mypage')
   }
 
   const LoginButton = () => {
@@ -100,8 +68,15 @@ const Header: React.FC = () => {
   }
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <header className="App-header">
+    <Box sx={{ flexGrow: 1, width: '100%' }}>
+      <header
+        className="App-header"
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center'
+        }}
+      >
         <Stack
           direction={{ xs: 'column', sm: 'row' }}
           spacing={{ xs: 2, sm: 4, md: 6 }}
@@ -116,27 +91,9 @@ const Header: React.FC = () => {
               }}
             />
           </div>
-          <Search>
-            <SearchIconWrapper>
-              <SearchIcon />
-            </SearchIconWrapper>
-            <StyledInputBase
-              sx={{ paddingTop: 1 }}
-              placeholder="Search…"
-              inputProps={{ 'aria-label': 'search' }}
-            />
-          </Search>
           <div className="App-header-profile-icons">
             <Box sx={{ flexGrow: 1 }} />
             <Box sx={{ paddingLeft: 60 }}>
-              <IconButton
-                size="large"
-                onClick={() => {
-                  goMypage()
-                }}
-              >
-                <PersonAddIcon fontSize="inherit" />
-              </IconButton>
               <LoginButton />
             </Box>
           </div>
@@ -146,4 +103,4 @@ const Header: React.FC = () => {
   )
 }
 
-export default Header
+export default Header2
