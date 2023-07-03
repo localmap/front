@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import '../../style/css/join.css'
+import '../../assets/styles/css/join.css'
 import * as axiosApi from '../../util/axiosApi'
 
 const Join : React.FC = () => {
