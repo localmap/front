@@ -1,19 +1,14 @@
 import * as React from "react";
-import axios from "axios";
-import { BaseUrl } from "../../util/axiosApi";
-//material ui
-import {Stack,Typography,Box,Grid, TextField,Button} from "@mui/material";
-import { WidthFull } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import '../../style/css/join.css'
+import * as axiosApi from '../../util/axiosApi'
+
 const Join : React.FC = () => {
 
   //navigate
   const navigate = useNavigate();
 
-  const goEmailCheck = ()=>{
-    navigate('/emailcheck')
-  };
 
   const goNicknameCheck = () => {
     navigate('/nicknamecheck')
@@ -38,20 +33,9 @@ const Join : React.FC = () => {
   const [nickname , setNickname] = useState('');
   
   //통신
-  const Join = () => {
-    const url = BaseUrl + "/user/signup"
-      axios.post(url, {
-        headers: { "Content-Type" : "application/json"},
-        body: {email:email, password:password, nickname:nickname }
-      })
-      .then(function(response) {
-        alert('가입이 완료되었습니다.')
-        goLogin()
-      })
-      .catch(function(error){
-        alert('회원정보를 확인해주세요')
-        goJoin()
-      })
+  const handleSubmit = (event:React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    axiosApi.join(email,password,nickname,goLogin,goJoin);
   };
 
   //유효성 검사
@@ -61,22 +45,14 @@ const Join : React.FC = () => {
     const[passwordError , setPasswordError] = useState("");
     const[passwordconfirmError , setPasswordConfirmError] = useState("");
 
-  //유효성 검사 함수
-    const validateEmail = (email: string):boolean => {
-      const regex = /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/;
-      return regex.test(email);
-    }
-  
-    const validatePassword = (password: string):boolean => {
-      return password.length >=5;
-    }
-
+  //유효성 검사 함수  
     const handleEmailChange = (event:React.ChangeEvent<HTMLInputElement>) => {
+      const regex = /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/;
       const inputEmail = event.target.value;
       if(!inputEmail){
         setEmailError("");
       }
-      else if(!validateEmail(inputEmail)){
+      else if(!regex.test(inputEmail)){
         setEmailError("이메일 형식이 올바르지 않습니다.");
       }else{
         setEmailError(" ");
@@ -86,11 +62,13 @@ const Join : React.FC = () => {
 
     const handlePasswordChange = (event:React.ChangeEvent<HTMLInputElement>) => {
       const inputPassword = event.target.value;
+      const passwordregx = /^(?=.*[a-zA-Z])(?=.*[0-9]).{8,25}$/;
+
       if(!inputPassword){
         setPasswordError("");
       }
-      else if(!validatePassword(inputPassword)){
-        setPasswordError("비밀번호 형식이 올바르지 않습니다.");
+      else if(!passwordregx.test(inputPassword)){
+        setPasswordError("숫자+영문자 조합 8자리이상 입력하세요.");
       }else{
         setPasswordError(" ");
       }
@@ -113,43 +91,31 @@ const Join : React.FC = () => {
 
   return(
     <div className="join">
-      <Box sx={{display:"flex" , justifyContent:"center", alignItems:"center"}}> 
-      <form onSubmit={(e)=>{
-        e.preventDefault();
-        Join();
-      }}>
-        <Grid>
-          <Grid item xs={12}>
-            <Typography sx={{fontSize:32 , pb:3,textAlign:'center'}}>회원가입</Typography>
-            <Stack direction="column" spacing={1}>
-              <Stack direction="row">
-                <TextField name="email" type="email" placeholder="이메일" value={email} onChange={handleEmailChange} sx={{ backgroundColor:"#F5F5F5", width:500}}></TextField>
-                <Button onClick={()=>{goEmailCheck()}}sx={{color:'white', backgroundColor:'#FF7474', width:100}}>인증</Button>
-              </Stack>
-              <Typography color={emailError ? "error" : "transparent"} variant="caption">{emailError || " "}</Typography>
-            </Stack>
-            <Stack>
-              <TextField name="password" type="password" placeholder="비밀번호" value={password} onChange={handlePasswordChange} sx={{mt:2, backgroundColor:"#F5F5F5"}}></TextField>
-              {passwordError &&(<Typography color='error' variant='caption'>{passwordError}</Typography>)}
-            </Stack>
-            <Stack>
-              <TextField name="passwordconfirm" type="password" placeholder="비밀번호 재확인" value={passwordconfirm} onChange={handlePasswordConfirm} sx={{mt:2, backgroundColor:"#F5F5F5"}}></TextField>
-              {passwordconfirmError &&(<Typography color='error' variant='caption'>{passwordconfirmError}</Typography>)}
-            </Stack>
-            <Stack direction='row'>
-              <TextField type="text" placeholder="닉네임" sx={{ mt:2, backgroundColor:"#F5F5F5", width:500}}></TextField><Button onClick={()=>{goNicknameCheck()}}sx={{mt:2, color:'white', backgroundColor:'#FF7474', width:100}}>중복확인</Button>
-            </Stack>
-            <Stack direction='row'>
-              <TextField type="text" placeholder="현재위치" sx={{mt:2 , backgroundColor:"#F5F5F5", width:500}}></TextField>
-              <Button onClick={()=>{goLocation()}}sx={{mt:2, color:'white', backgroundColor:'#FF7474', width:100}}>위치확인</Button>
-            </Stack>
-            <Stack>
-              <Button  sx={{color:'white', backgroundColor:'#FF7474' , mt:2 , width:600}}>회원가입</Button>
-            </Stack>
-          </Grid>
-        </Grid>
+      <form id="joinform" onSubmit={handleSubmit}>
+        <div className="join_title">
+          <h1>회원가입</h1>
+          <hr></hr>
+        </div>
+        <div className="input_email">
+          <input onChange={handleEmailChange} type="email" placeholder="이메일"></input>
+          <span className="email_error">{emailError}</span>
+        </div>
+        <div className="input_pw">
+          <input onChange={handlePasswordChange} type="password" placeholder="비밀번호"></input>
+          <span className="pw_error">{passwordError}</span>
+          <input onChange={handlePasswordConfirm} type="password" placeholder="비밀번호 재확인"></input>
+          <span className="pwconfirm_error">{passwordconfirmError}</span>
+        </div>
+        <div className="input_nickname">
+          <input type="text" placeholder="닉네임"></input><button onClick={goNicknameCheck}>중복확인</button>
+        </div>
+        <div className="input_local">
+          <input type="text" placeholder="현재위치"></input><button onClick={goLocation}>위치확인</button>
+        </div>
+        <div className="join_btn">
+          <button type="submit">회원가입</button>
+        </div>
       </form>
-    </Box>
     </div>
   );
 }
