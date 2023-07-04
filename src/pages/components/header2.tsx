@@ -29,7 +29,9 @@ const Header2: React.FC = () => {
     navigate('/')
   }
 
-  const currentUser = useSelector((state: RootState) => state.userReducer.type)
+  const currentUser = useSelector(
+    (state: RootState) => state.userReducer.accessToken
+  )
   const dispatch = useDispatch()
 
   const goLogin = () => {
@@ -37,7 +39,7 @@ const Header2: React.FC = () => {
   }
 
   const doLogOut = () => {
-    dispatch(set({ type: '', email: '' }))
+    dispatch(set({ accessToken: '', refreshToken: '' }))
     goHome()
   }
 
