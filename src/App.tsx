@@ -19,7 +19,7 @@ import Header2 from './pages/components/header2'
 import Event_detail from './pages/board/event_detail'
 import axios from 'axios'
 import Pw_reset from './pages/user/pw_reset'
-
+import Restaurant_write from './pages/admin/restaurant_write'
 axios.defaults.withCredentials = true
 
 const App: React.FC = () => {
@@ -40,6 +40,7 @@ const App: React.FC = () => {
       <Route path="/location_search" element={<Location_search />} />
       <Route path="/Header2" element={<Header2 />} />
       <Route path="/event_detail" element={<Event_detail />} />
+      <Route path="/restaurant_write" element={<Restaurant_write/>} />
     </Routes>
   )
 }
