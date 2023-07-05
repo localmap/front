@@ -72,7 +72,7 @@ const Header: React.FC = () => {
   }
 
   const goMypage = () => {
-    navigate('mypage')
+    navigate('mypage_bookmark')
   }
 
   const LoginButton = () => {

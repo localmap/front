@@ -1,15 +1,6 @@
 import * as React from 'react';
-import { Settings } from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';
-import { Avatar, 
-         Box, 
-         Divider, 
-         ListItem, 
-         ListItemButton, 
-         ListItemIcon, 
-         ListItemText, 
-         Stack, 
-         Typography,} from '@mui/material';
+import '../../assets/styles/css/userprofile.css';
 
 
 function User(): React.ReactElement {
@@ -19,31 +10,27 @@ function User(): React.ReactElement {
     };
     
     return(
-        <div className='user'>
-            <Box sx={{ width: '100%' }}>
-            <Stack direction={'row'} spacing={2} alignItems="center" >
-                    <Box sx={{ margin:3 }}>
-                        <Stack  direction="row" spacing={10} alignItems="center" >
-                            <Avatar sx={{ bgcolor:'green', width:100, height:100 }}>닉네임</Avatar>
-                        </Stack>
-                        </Box>
-                    <Divider/>
-                    <Typography sx={{ fontSize:15 }}>북마크</Typography>
-                    <Typography sx={{ fontSize:15 }}>리뷰</Typography>
-                    <Divider/>
-                    <Box sx={{ height:50, width:200 }} onClick={() => { goUserUpdate(); }} >
-                        <ListItem disablePadding>
-                            <ListItemButton>
-                                <ListItemIcon>
-                                    <Settings/>
-                                </ListItemIcon>
-                                <ListItemText primary="정보 수정" />
-                            </ListItemButton>
-                        </ListItem>
-                    </Box>
-                </Stack>
-            </Box>
-        </div>
+        <div className="UserProfile_Container">
+           <div className="user">
+           <img className="Avatar" src={"http://placehold.it/50x50"} alt={'user_Profile'} />
+           <p className="user_name">유저 닉네임</p>
+           </div>
+          <div className="user">
+            <p>리뷰</p>
+          <p className="number">0</p>
+          </div> 
+          <div className="user">
+            <p>북마크</p>
+          <p className="number">0</p>
+          </div>
+          <div className="user">
+            <p>사진</p>
+          <p className="number">0</p>
+          </div>
+          <div className='user_update'>
+            <button className='update' onClick={() => goUserUpdate()}>더보기&gt;</button>
+          </div>
+        </div>  
       );
     }
 

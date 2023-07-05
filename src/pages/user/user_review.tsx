@@ -1,107 +1,63 @@
 import * as React from 'react';
 import User from "../components/user";
-import { Box, Stack, Tabs, Tab, Typography, styled,  Paper,TableCell,  TableContainer, tableCellClasses,  Table, IconButton, TableBody, TableHead, TableRow,  } from '@mui/material';
-import DeleteIcon from '@mui/icons-material/Delete';
-import { useNavigate} from 'react-router-dom';
-
-const StyledTableCell = styled(TableCell)(({ theme }) => ({
-    [`&.${tableCellClasses.head}`]: {
-      backgroundColor: theme.palette.common.black,
-      color: theme.palette.common.white,
-      },
-      [`&.${tableCellClasses.body}`]: {
-        fontSize: 14,
-      },
-      }));
-            
-const StyledTableRow = styled(TableRow)(({ theme }) => ({
-      '&:nth-of-type(odd)': {
-        backgroundColor: theme.palette.action.hover,
-      },
-      // hide last border
-         '&:last-child td, &:last-child th': {
-        border: 0,
-            },
-              }));
+import { NavLink, useNavigate } from 'react-router-dom';
+import '../../assets/styles/css/mypage.css';
+import '../../assets/styles/css/user_review.css';
 
 const User_review: React.FC = () => {
-    const navigate = useNavigate();
-    const [value, setValue] = React.useState(1);
-    const goBookmark = () => {
-        navigate('/mypage')
-    };
-    const goManage = (state: number) => {
-        navigate('/review',  { state: state })
-    };
-    function a11yProps(index: number) {
-        return {
-            id: `simple-tab-${index}`,
-            'aria-controls': `simple-tabpanel-${index}`,
-        };
-    }
-    const handleChange = (event: React.SyntheticEvent, newValue: number) => {
-          setValue(newValue);
-      };
+  const navigate = useNavigate();
 
-    return (
-        <div className="user_review">
-          <Stack direction={'row'} spacing={2} className='mypagecontents'>
-             <User/>
-             </Stack>
-             <Box sx={{ width: '100%' }}>
-             <Box >
-             <Tabs
-               value={value}
-               onChange={handleChange}
-               textColor="secondary"
-               indicatorColor="secondary"
-               aria-label="secondary tabs example"
-               sx={{ borderRight: 1, borderColor: 'divider' }}>
-                <Tab label="북마크" value={0}  {...a11yProps(0)} onClick={() => { goBookmark(); }} />
-                <Tab label="내가 쓴 리뷰 " value={1}  {...a11yProps(1)} onClick={() => { goManage(1);}} />
-            </Tabs>
-            </Box>
-             </Box>
-           <Box sx={{ width: '100%' }} >
-             <Stack direction="row" alignItems="center" justifyContent="space-between" mb={5}>
-              <Typography variant="h5" marginTop={3} marginLeft={3} gutterBottom>
-              내가 쓴 리뷰
-              </Typography>
-            </Stack>
-            <Box>
-            <Paper sx={{ width: '100%', mb: 2 }} >
-              <TableContainer component={Paper}>
-               <Table sx={{ minWidth: 700 }} aria-label="customized table">
-                <TableHead>
-                 <TableRow>
-                  <StyledTableCell>음식점이름</StyledTableCell>
-                  <StyledTableCell align="right">음식종류</StyledTableCell>
-                  <StyledTableCell align="right">위치</StyledTableCell>
-                  <StyledTableCell align="right">리뷰 작성시간</StyledTableCell>
-                  <StyledTableCell align="right"> </StyledTableCell>
-                </TableRow>
-              </TableHead>
-              <TableBody>
-               <StyledTableRow >
-                 <StyledTableCell component="th" scope="row">음식점 이름</StyledTableCell>
-                <StyledTableCell component="th" scope="row">음식 종류(한식)</StyledTableCell>
-                <StyledTableCell align="right">서울</StyledTableCell>
-                <StyledTableCell align="right">23.06.30 11:00</StyledTableCell>
-                <StyledTableCell align="right">
-                <IconButton>
-                  <DeleteIcon fontSize="small"/>
-                </IconButton>
-              </StyledTableCell>
-              <StyledTableCell align="right">
-              </StyledTableCell>
-            </StyledTableRow>
-            </TableBody>
-           </Table>
-         </TableContainer>
-        </Paper>
-       </Box>
-      </Box>
-    </div>
-    );
+  const activeStyle = {
+    color: '#79c859ec',
+    fontWeight: 500,
+};
+
+  return (
+      <div>
+        <User/>
+        <nav id='pagelist'>
+            <ul>
+                <li><NavLink className='link' style={({isActive}) => (isActive ? activeStyle: {})} to='/mypage_bookmark'>북마크</NavLink></li>
+                <li><NavLink className='link' style={({isActive}) => (isActive ? activeStyle: {})} to='/mypage_review'>내가 쓴 리뷰</NavLink></li>
+            </ul>
+          </nav>
+        <div id='name'>
+          <p>내가 쓴 리뷰</p>
+          </div>
+          <table>
+           <thead>
+             <tr>
+              <th>음식점 이름</th>
+              <th>음식정보</th>
+              <th>위치</th>
+              <th>내용</th>
+              <th>작성시간</th>
+              <th>위치 인증</th>
+              <th></th>
+            </tr>
+           </thead>
+          <tbody>
+           <tr>
+            <td>음식점 이름</td>
+            <td>음식 정보(한식,중식,일식...)</td>
+            <td>위치(서울 등)</td>
+            <td>음식이 맛있었고...</td>
+            <td>2023/07/05</td>
+            <td><button className="loca">state</button></td>
+            <td><button className="delete">Delete</button></td>
+          </tr>
+          <tr>
+          <td>음식점 이름</td>
+            <td>음식 정보(한식,중식,일식...)</td>
+            <td>위치(서울 등)</td>
+            <td>음식이 맛있었고...</td>
+            <td>2023/07/05</td>
+            <td><button className="loca">state</button></td>
+            <td><button className="delete">Delete</button></td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+  );
 }
 export default User_review;
