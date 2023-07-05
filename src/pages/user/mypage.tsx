@@ -1,136 +1,44 @@
 import * as React from 'react';
-import { useNavigate} from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import User from "../components/user";
-import { 
-  Box, 
-  Stack, 
-  Tabs, 
-  Tab, 
-  Typography, 
-  Divider, 
-  Card,
-  CardActionArea,
-  CardContent,
-  CardMedia, 
-  Checkbox, 
-  Grid  } from '@mui/material';
-import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';
-import BookmarkIcon from '@mui/icons-material/Bookmark';
-
-
+import '../../assets/styles/css/mypage.css';
+import '../../assets/styles/css/user_bookmark.css';
+import { FaStar } from 'react-icons/fa';
 
 const Mypage: React.FC = () => {
     const navigate = useNavigate();
-    const [value, setValue] = React.useState(0);
 
-    const [isBookmarkSelected, setisBookmarkSelectedValue] = React.useState(false);
-    const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
-
-    const goBookmark = () => {
-        navigate('/mypage')
+    const activeStyle = {
+        color: '#79c859ec',
+        fontWeight: 500,
     };
-    const goManage = (state: number) => {
-        navigate('/review',  { state: state })
-    };
-    function a11yProps(index: number) {
-        return {
-            id: `simple-tab-${index}`,
-            'aria-controls': `simple-tabpanel-${index}`,
-        };
-    }
-    const handleChange = (event: React.SyntheticEvent, newValue: number) => {
-          setValue(newValue);
-      };
 
     return (
         <div>
-          <Stack direction={'row'} spacing={2} className='mypagecontents'>
-             <User/>
-             </Stack>
-             <Box sx={{ width: '100%' }}>
-             <Box >
-             <Tabs
-               value={value}
-               onChange={handleChange}
-               textColor="secondary"
-               indicatorColor="secondary"
-               aria-label="secondary tabs example"
-               sx={{ borderRight: 1, borderColor: 'divider' }}>
-                <Tab label="북마크" value={0}  {...a11yProps(0)} onClick={() => { goBookmark(); }} />
-                <Tab label="내가 쓴 리뷰 " value={1}  {...a11yProps(1)} onClick={() => { goManage(1);}} />
-            </Tabs>
-            </Box>
-             </Box>
-           <Box sx={{ width: '100%' }} >
-             <Stack direction="row" alignItems="center" justifyContent="space-between" mb={5}>
-              <Typography variant="h5" marginTop={3} marginLeft={3} gutterBottom>
-                북마크 
-              </Typography>
-            </Stack>
-            <Grid container spacing={{ xs: 3, md: 3 }} columns={{ xs: 10, md: 10 }}>
-                 {Array.from(Array(5)).map((_, index) => (
-                   <Grid item xs={2} sm={2} md={2} key={index}>
-                     <Card>
-                       <CardActionArea>
-                        <CardContent>
-                         <CardMedia
-                            component="img"
-                            sx={{ width: 200, align: 'center' }}
-                            image="http://placehold.it/150x150"
-                            alt="Paella dish"
-                          />
-                        </CardContent>
-                        <Checkbox 
-                             sx={{ float: 'right'}} {...label}
-                             icon={<BookmarkBorderIcon />} 
-                             checkedIcon={<BookmarkIcon />}
-                             checked={isBookmarkSelected}
-                         />  
-                       <CardContent>
-                     <Typography
-                         gutterBottom
-                         variant="h5"
-                         component="div"
-                         align="center"
-                      >
-                      음식점 이름
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      별표
-                    </Typography>
-                    <Divider />
-                    <Box sx={{ m: 2 }}>
-                      <Stack direction="row" spacing={3}>
-                        <Box
-                          borderRadius={1}
-                          sx={{
-                            width: 50,
-                            height: 30,
-                            backgroundColor: 'grey.300'
-                          }}
-                        >
-                          위치
-                        </Box>
-                        <Box
-                          borderRadius={1}
-                          sx={{
-                            width: 50,
-                            height: 30,
-                            backgroundColor: 'grey.300'
-                          }}
-                        >
-                          음식 정보
-                        </Box>
-                      </Stack>
-                    </Box>
-                    <Divider />
-                  </CardContent>
-                </CardActionArea>
-               </Card>
-             </Grid>
-             ))}
-          </Grid>
-          </Box>
+          <User/>
+          <nav id='pagelist'>
+            <ul>
+                <li><NavLink className='link' style={({isActive}) => (isActive ? activeStyle: {})} to='/mypage_bookmark'>북마크</NavLink></li>
+                <li><NavLink className='link' style={({isActive}) => (isActive ? activeStyle: {})} to='/mypage_review'>내가 쓴 리뷰</NavLink></li>
+            </ul>
+          </nav>
+          <div id='name'>
+          <p >북마크</p>
+          </div>
+          <div className='bookmark_table'>
+           <div className="row">
+             <div className="col-xl-3 col-lg-3 col-md-6">
+            <div className="card">
+             <img src={"http://placehold.it/180x200"} className="card-img-top" alt="..." />
+             <div className="card-body">
+              <p className="card-title">음식점 이름
+              <FaStar className='star'>별점 표시</FaStar></p>
+              <p className="card-text">위치 -음식 종류</p>
+            </div>
+        </div>
+      </div>
+      </div>
+        </div>
         </div>
     );
 }

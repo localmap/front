@@ -33,9 +33,9 @@ const App: React.FC = () => {
       <Route path="/join" element={<Join />} />
       <Route path="/pwsearch" element={<Pwsearch />} />
       <Route path="/pwreset" element={<Pw_reset />} />
-      <Route path="/mypage" element={<Mypage />} />
+      <Route path="/mypage_bookmark" element={<Mypage />} />
       <Route path="/userupdate" element={<User_update />} />
-      <Route path="/review" element={<User_review />} />
+      <Route path="/mypage_review" element={<User_review />} />
       <Route path="/notice" element={<Notice />} />
       <Route path="/emailcheck" element={<EmailCheck />} />
       <Route path="/nicknamecheck" element={<NickNameCheck />} />

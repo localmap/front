@@ -3,9 +3,7 @@ import FirebaseSocial from '../user/auth-forms/FirebaseSocial'
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
-import { BaseUrl } from '../../util/axiosApi'
-import axios from 'axios'
-import { set } from '../../reducers/user/userReducer'
+import { login } from '../../reducers/user/userReducer'
 
 // material-ui
 import {
@@ -48,25 +46,6 @@ const Login: React.FC = () => {
   }
   const dispatch = useDispatch()
   const [checked, setChecked] = React.useState(false)
-
-  const login = () => {
-    const url = BaseUrl + '/user/login/normal/'
-    axios
-      .post(url, {
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: { id: email, pw: pw }
-      })
-      .then(function (response) {
-        const { accessToken } = response.data.access_token
-        axios.defaults.headers.common['Authorization'] = `Bearer ${accessToken}`
-        goHome()
-      })
-      .catch(function (error) {
-        alert('로그인정보를 확인해 주세요')
-      })
-  }
 
   const [showPassword, setShowPassword] = React.useState(false)
   const handleClickShowPassword = () => {
@@ -170,7 +149,7 @@ const Login: React.FC = () => {
               </Grid>
               <Grid item xs={12}>
                 <Button
-                  onClick={(event) => login()}
+                  onClick={(event) => login(email, pw)}
                   disableElevation
                   fullWidth
                   size="large"

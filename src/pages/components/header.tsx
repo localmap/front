@@ -57,7 +57,9 @@ const Header: React.FC = () => {
     navigate('/')
   }
 
-  const currentUser = useSelector((state: RootState) => state.userReducer.type)
+  const currentUser = useSelector(
+    (state: RootState) => state.userReducer.accessToken
+  )
   const dispatch = useDispatch()
 
   const goLogin = () => {
@@ -65,12 +67,12 @@ const Header: React.FC = () => {
   }
 
   const doLogOut = () => {
-    dispatch(set({ type: '', email: '' }))
+    dispatch(set({ accessToken: '', refreshToken: '' }))
     goHome()
   }
 
   const goMypage = () => {
-    navigate('mypage')
+    navigate('mypage_bookmark')
   }
 
   const LoginButton = () => {
