@@ -1,5 +1,8 @@
+const SET_USER_TYPE= 'user/SET' as const;
+
 import { BaseUrl } from '../../util/axiosApi'
 import axios from 'axios'
+
 
 const SET_USER_TOKEN = 'user/SET' as const
 
@@ -10,6 +13,7 @@ type UserState = {
   refreshToken: string
 }
 
+//액션생성함수
 export const set = (user: UserState) => ({
   type: SET_USER_TOKEN,
   payload: user

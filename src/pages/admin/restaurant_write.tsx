@@ -1,6 +1,8 @@
 import '../../assets/styles/css/restaurant_write.css'
 import { useState } from 'react';
 import Location_search from '../user/location_search';
+import Choose_food from '../components/choose_food';
+import Choose_price from '../components/choose_price';
 
 const Restaurant_write:React.FC = () => {
     const [visible, setVisible] = useState(false);
@@ -27,38 +29,9 @@ const Restaurant_write:React.FC = () => {
             <div className='food_type'>
                 음식종류
             </div>
-            <div className='food'>
-                <div className='food_list'>
-                        <div className='food1'></div>
-                        <div className='food2'></div>
-                        <div className='food3'></div>
-                        <div className='food4'></div>
-                </div>
-                <div className='food_list2'>
-                        <div className='food5'></div>
-                        <div className='food6'></div>
-                        <div className='food7'></div>
-                        <div className='food8'></div>
-                </div>
+            <Choose_food/>
                 <hr/>
-            </div>
-            <div className='price'>
-                <div className='price_check_title'>
-                    가격1인당
-                </div>
-                <div className='price_check'>
-                    <div className='price1'></div>
-                    <div className='price2'></div>
-                    <div className='price3'></div>
-                    <div className='price4'></div>
-                </div>
-                <div className='price_list'>
-                    <div className='price_list1'>만원미만</div>
-                    <div className='price_list2'>일만원대</div>
-                    <div className='price_list3'>이만원대</div>
-                    <div className='price_list4'>삼만원이상</div>
-                </div>
-            </div>
+            <Choose_price/>
             <hr/>
             <div className='menu'>
                 <div className='menu_title'>
@@ -78,6 +51,9 @@ const Restaurant_write:React.FC = () => {
                 영업시간
             </div>
             <input placeholder='영업 시간을 입력해 주세요'></input>
+            <div className='button_wrap'>
+                <button className='cancel_btn'>취소</button><button className='check_btn'>확인</button>
+            </div>
         </div>
     );
 }

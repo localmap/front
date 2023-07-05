@@ -69,93 +69,6 @@ hr {
     margin-top: 60px;
 }
 
-.food {
-    width: 50%;
-    text-align: center;
-    margin-top: 30px;
-}
-.food_list{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
-    margin-bottom: 60px;
-}
-.food_list2{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
-}
-.food1{
-    width: 80px;
-    height: 80px;
-    background-image: url('https://cdn-icons-png.flaticon.com/128/3075/3075935.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-right: 60px;
-}
-
-.food2{
-    width: 80px;
-    height: 80px;
-    background-image: url('https://cdn-icons-png.flaticon.com/128/1046/1046893.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-right: 60px;
-}
-
-.food3{
-    width: 80px;
-    height: 80px;
-    background-image: url('https://cdn-icons-png.flaticon.com/128/701/701974.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-right: 60px;
-}
-
-.food4{
-    width: 80px;
-    height: 80px;
-    background-image: url('https://cdn-icons-png.flaticon.com/128/701/701980.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.food5{
-    width: 80px;
-    height: 80px;
-    background-image: url('https://cdn-icons-png.flaticon.com/128/541/541839.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-right: 60px;
-}
-
-.food6{
-    width: 80px;
-    height: 80px;
-    background-image: url('https://cdn-icons-png.flaticon.com/128/3280/3280002.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-right: 60px;
-}
-
-.food7{
-    width: 80px;
-    height: 80px;
-    background-image: url('https://cdn-icons-png.flaticon.com/128/782/782828.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-right: 60px;
-}
-
-.food8{
-    width: 80px;
-    height: 80px;
-    background-image: url('https://cdn-icons-png.flaticon.com/128/3071/3071050.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 /*음식종류*/
 
 /*가격체크*/
@@ -259,6 +172,7 @@ hr {
 .menu_title button {
     border: none;
     background-color: white;
+    font-size: 32px;
     width: 50px;
 }
 .menu_list{
@@ -290,4 +204,16 @@ hr {
     margin-right: 28%;
     margin-top: 50px;
     font-size: 20px;
+}
+
+.cancel_btn {
+    background-color: gray;
+    height: 200px;
+    width: 500px;
+}
+
+.check_btn {
+    background-color: #fcc31a;
+    height: 200px;
+    width: 500px;
 }
