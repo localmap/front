@@ -20,6 +20,14 @@
     margin-top: 15px;
     font-size: 20px;
   }
+  .event_title{
+    text-align: left;
+    width: 45%;
+    margin-top: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 40px;
+  }
   .subtitle {
     text-align: left;
     width: 45%;
@@ -37,11 +45,12 @@
     border: none;
     border-radius: 5px;
     color: gray;
-    width: 120px;
+    width: 150px;
     height: 22px;
     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBbNICVMbLZjsTW5i3uwA8Bhj8hAAUM2zr2w&usqp=CAU');
     background-repeat: no-repeat;
     background-size: 20px 20px;
+    font-size: 20px;
   }
 
   .event_content{

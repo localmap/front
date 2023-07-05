@@ -1,0 +1,77 @@
+.price {
+    width: 50%;
+    text-align: center;
+    margin-top: 30px;
+}
+.price_check_title {
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+.price_check {
+    display: flex;
+    flex-direction: row;
+    width: 68%;
+    justify-content: space-between;
+    margin-top: 60px;
+    margin-left: 120px;
+}
+
+.price1_button{
+    width: 80px;
+    height: 80px;
+    background-image: url('https://cdn-icons-png.flaticon.com/128/1077/1077976.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 60px;
+}
+
+.price2_button{
+    width: 80px;
+    height: 80px;
+    background-image: url('https://cdn-icons-png.flaticon.com/128/3141/3141818.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 60px;
+}
+
+.price3_button{
+    width: 80px;
+    height: 80px;
+    background-image: url('https://cdn-icons-png.flaticon.com/128/10716/10716530.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 60px;
+}
+
+.price4_button{
+    width: 80px;
+    height: 80px;
+    background-image: url('https://cdn-icons-png.flaticon.com/128/10013/10013277.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.price_list{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.price_list1{
+   margin-left: 120px;
+}
+.price_list2{
+    margin-left: 80px;
+ }
+ .price_list3{
+    margin-left: 65px;
+ }
+ .price_list4{
+    margin-left: 70px;
+ }
