@@ -1,0 +1,94 @@
+
+.choose_food{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.food {
+    width: 50%;
+    text-align: center;
+    margin-top: 30px;
+}
+.food_list{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+.food_list2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+.food1_button{
+    width: 80px;
+    height: 80px;
+    background-image: url('https://cdn-icons-png.flaticon.com/128/3075/3075935.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 60px;
+}
+
+.food2_button{
+    width: 80px;
+    height: 80px;
+    background-image: url('https://cdn-icons-png.flaticon.com/128/1623/1623712.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 60px;
+}
+
+.food3_button{
+    width: 80px;
+    height: 80px;
+    background-image: url('https://cdn-icons-png.flaticon.com/128/2515/2515150.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 60px;
+}
+
+.food4_button{
+    width: 80px;
+    height: 80px;
+    background-image: url('https://cdn-icons-png.flaticon.com/128/3823/3823071.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.food5_button{
+    width: 80px;
+    height: 80px;
+    background-image: url('https://cdn-icons-png.flaticon.com/128/541/541839.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 60px;
+}
+
+.food6_button{
+    width: 80px;
+    height: 80px;
+    background-image: url('https://cdn-icons-png.flaticon.com/128/3280/3280002.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 60px;
+}
+
+.food7_button{
+    width: 80px;
+    height: 80px;
+    background-image: url('https://cdn-icons-png.flaticon.com/128/782/782828.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 60px;
+}
+
+.food8_button{
+    width: 80px;
+    height: 80px;
+    background-image: url('https://cdn-icons-png.flaticon.com/128/3071/3071050.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}

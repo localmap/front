@@ -20,7 +20,7 @@ const Event_detail:React.FC = () => {
             <div className='info_btn'>
                 <button type='button' onClick={goStore_Info}>식당 정보보기</button>
             </div>
-            <div className='title'>
+            <div className='event_title'>
                 이벤트 내용
             </div>
             <div className='event_content'>

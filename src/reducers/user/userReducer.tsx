@@ -1,3 +1,4 @@
+//액션타입지정
 const SET_USER_TYPE= 'user/SET' as const;
 
 type UserAction = 
@@ -8,6 +9,7 @@ type UserState = {
     email : String
 }
 
+//액션생성함수
 export const set = (user: UserState) => ({
     type : SET_USER_TYPE,
     payload : user
