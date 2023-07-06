@@ -14,7 +14,7 @@ const Event_detail:React.FC = () => {
             <div className='img'>
                 <img src="https://mimg.segye.com/content/image/2021/01/07/20210107516500.jpg"></img>
             </div>
-            <div className='title'>
+            <div className='event_detail_title'>
                 [강남역]음식점이름
             </div>
             <div className='info_btn'>
@@ -30,8 +30,7 @@ const Event_detail:React.FC = () => {
             <div className='sale_wrap'>
                 <div className='percent'><strong>15%</strong> ₩36,465</div>
             </div>
-            <hr/>
-            <div className='title'>방문 포장 가능한 EAT딜입니다.</div>
+            <div className='middle_title'>방문 포장 가능한 EAT딜입니다.</div>
             <div className='subtitle'>식당소개</div>
             <ul className='content'>
                 <li>2016년에 이태원에 처음 오픈한 모터시티는 사각모양의 두꺼운 도우가 시그니쳐인 디트로이트 스타일 피자 레스토랑

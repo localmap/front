@@ -10,7 +10,7 @@ import {
   Grid
 } from '@mui/material'
 import Typography from '@mui/material/Typography'
-import Footer from './components/footer'
+import Footer from '../components/footer'
 
 const Home: React.FC = () => {
   return (

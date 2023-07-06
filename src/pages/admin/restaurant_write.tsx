@@ -1,8 +1,8 @@
 import '../../assets/styles/css/restaurant_write.css'
 import { useState } from 'react';
 import Location_search from '../user/location_search';
-import Choose_food from '../components/choose_food';
-import Choose_price from '../components/choose_price';
+import Choose_food from '../../components/choose_food';
+import Choose_price from '../../components/choose_price';
 
 const Restaurant_write:React.FC = () => {
     const [visible, setVisible] = useState(false);

@@ -15,13 +15,10 @@ import EmailCheck from './pages/user/email_check'
 import NickNameCheck from './pages/user/nickname_check'
 import Location from './pages/user/location'
 import Location_search from './pages/user/location_search'
-import Header2 from './pages/components/header2'
 import Event_detail from './pages/board/event_detail'
 import axios from 'axios'
 import Pw_reset from './pages/user/pw_reset'
 import Restaurant_write from './pages/admin/restaurant_write'
-import Choose_food from './pages/components/choose_food'
-import Choose_price from './pages/components/choose_price'
 import Editor_write from './pages/admin/editor_write'
 axios.defaults.withCredentials = true
 
@@ -41,11 +38,8 @@ const App: React.FC = () => {
       <Route path="/nicknamecheck" element={<NickNameCheck />} />
       <Route path="/location" element={<Location />} />
       <Route path="/location_search" element={<Location_search />} />
-      <Route path="/Header2" element={<Header2 />} />
       <Route path="/event_detail" element={<Event_detail />} />
       <Route path="/restaurant_write" element={<Restaurant_write/>} />
-      <Route path="/choose_food" element={<Choose_food/>}/>
-      <Route path="/choose_price" element={<Choose_price/>} />
       <Route path='/editor_write' element={<Editor_write/>} />
     </Routes>
   )

@@ -94,20 +94,25 @@ const Join : React.FC = () => {
       <form id="joinform" onSubmit={handleSubmit}>
         <div className="join_title">
           <h1>회원가입</h1>
-          <hr></hr>
         </div>
         <div className="input_email">
-          <input onChange={handleEmailChange} type="email" placeholder="이메일"></input>
-          <span className="email_error">{emailError}</span>
+          <div>
+            <input onChange={handleEmailChange} type="email" placeholder="이메일"></input>
+            <span className="email_error">{emailError}</span>
+          </div>
         </div>
         <div className="input_pw">
-          <input onChange={handlePasswordChange} type="password" placeholder="비밀번호"></input>
-          <span className="pw_error">{passwordError}</span>
-          <input onChange={handlePasswordConfirm} type="password" placeholder="비밀번호 재확인"></input>
-          <span className="pwconfirm_error">{passwordconfirmError}</span>
+          <div>
+            <input onChange={handlePasswordChange} type="password" placeholder="비밀번호"></input>
+            <span className="pw_error">{passwordError}</span>
+          </div>
+          <div>
+            <input onChange={handlePasswordConfirm} type="password" placeholder="비밀번호 재확인"></input>
+            <span className="pwconfirm_error">{passwordconfirmError}</span>
+          </div>
         </div>
         <div className="input_nickname">
-          <input type="text" placeholder="닉네임"></input><button onClick={goNicknameCheck}>중복확인</button>
+          <input type="text" placeholder="닉네임"></input><button className='nick_btn' onClick={goNicknameCheck}>중복확인</button>
         </div>
         <div className="input_local">
           <input type="text" placeholder="현재위치"></input><button onClick={goLocation}>위치확인</button>

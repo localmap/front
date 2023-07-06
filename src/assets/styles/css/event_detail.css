@@ -1,6 +1,7 @@
 .event_detail {
     display: flex;
     text-align: center;
+    justify-content: center;
     flex-direction: column;
     width: 100%;
     align-items: center;
@@ -13,13 +14,20 @@
     width: 50%;
   }
 
-  .title {
-    margin-top: 10px;
-    text-align: left;
+  .event_detail_title {
+    margin-right: 460px;
     width: 45%;
     margin-top: 15px;
-    font-size: 20px;
+    font-size: 30px;
+    font-weight: bold;
   }
+  .middle_title{
+    margin-right: 400px;
+    width: 45%;
+    margin-top: 15px;
+    font-size: 23px;
+  }
+
   .event_title{
     text-align: left;
     width: 45%;
@@ -27,11 +35,14 @@
     font-size: 30px;
     font-weight: bold;
     margin-top: 40px;
+    margin-left: 580px;
   }
   .subtitle {
+    margin-left: 580px;
     text-align: left;
     width: 45%;
     margin-top: 40px;
+    font-size: 20px;
     font-weight: bold;
   }
 
@@ -39,6 +50,7 @@
     text-align: left;
     width: 45%;
     margin-top: 15px;
+    margin-left: 580px;
   }
 
   .info_btn button {
@@ -57,18 +69,19 @@
     text-align: left;
     width: 45%;
     margin-top: 15px;
+    margin-left: 580px;
   }
 
   .origin_price {
     text-align: right;
-    width: 45%;
+    margin-left: 600px;
     text-decoration: line-through;
     color: gray;
   }
 
   .sale_wrap{
     text-align: right;
-    width: 45%;
+    margin-left: 550px;
     flex-direction: row;
   }
   .percent{
@@ -81,19 +94,15 @@
     font-size: 23px;
   }
 
-  hr {
-    width: 47%;
-    margin-top: 35px;
-    color: rgb(179, 175, 175);
-  }
-
   .content {
-    width: 44%;
+    width: 400px;
     margin-top: 12px;
     color: rgb(179, 175, 175);
     font-size: 14px;
+    margin-right: 270px;
   }
 
   .content li {
     text-align: left;
   }
+

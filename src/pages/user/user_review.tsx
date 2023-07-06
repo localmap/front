@@ -1,5 +1,5 @@
 import * as React from 'react';
-import User from "../components/user";
+import User from "../../components/user";
 import { NavLink, useNavigate } from 'react-router-dom';
 import '../../assets/styles/css/mypage.css';
 import '../../assets/styles/css/user_review.css';

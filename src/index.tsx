@@ -9,7 +9,7 @@ import rootReducer from './reducers'
 import { composeWithDevTools } from '@redux-devtools/extension'
 import { QueryClient, QueryClientProvider } from 'react-query'
 import React from 'react'
-import Header from './pages/components/header' //Component
+import Header from './components/header' //Component
 import { createTheme, ThemeProvider } from '@mui/material/styles'
 import axios from 'axios'
 
