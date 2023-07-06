@@ -1,8 +1,7 @@
-const SET_USER_TYPE= 'user/SET' as const;
-
 import { BaseUrl } from '../../util/axiosApi'
 import axios from 'axios'
 
+const SET_USER_TYPE= 'user/SET' as const;
 
 const SET_USER_TOKEN = 'user/SET' as const
 
@@ -13,8 +12,14 @@ type UserState = {
   refreshToken: string
 }
 
+const initialState: UserState = {
+  accessToken: '',
+  refreshToken: ''
+}
+
 //액션생성함수
 export const set = (user: UserState) => ({
+  
   type: SET_USER_TOKEN,
   payload: user
 })
@@ -31,7 +36,6 @@ export const login = (email: string, pw: string) => {
     .then(function (response) {
       const { accessToken } = response.data.access_token
       axios.defaults.headers.common['Authorization'] = `Bearer ${accessToken}`
-      console.log(response.data.access_token)
       initialState.accessToken = response.data.access_token
       initialState.refreshToken = response.data.refresh_token
     })
@@ -40,10 +44,7 @@ export const login = (email: string, pw: string) => {
     })
 }
 
-const initialState: UserState = {
-  accessToken: '',
-  refreshToken: ''
-}
+
 
 export default function userReducer(
   state: UserState = initialState,
@@ -51,7 +52,6 @@ export default function userReducer(
 ) {
   switch (action.type) {
     case SET_USER_TOKEN:
-      console.log('ohb')
       return (state = action.payload)
     default:
       return state

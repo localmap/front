@@ -2,15 +2,32 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+.location_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     width: 100%;
 }
 
-.title {
+.location_title > h1 {
+    width: 100%;
+    text-align: center;
+}
+.location hr {
+    margin-right: 1100px;
+    margin-top: 50px;
     width: 600px;
 }
-
-.title h1 {
-    text-align: center;
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 270px;
 }
 
 .search input {
@@ -23,11 +40,12 @@
     border: none;
     background-image: url("../../../pages/img/location.png");
     background-repeat: no-repeat;
+    padding-left: 40px;
 }
 
 /*placeholder 띄어쓰기*/
-input::placeholder{
-    padding-left: 40px;
+.search input::placeholder{
+    padding-left: 80px;
     font-size: 20px;
 }
 
@@ -36,7 +54,7 @@ input::placeholder{
     color: white;
     border: none;
     border-radius: 5px;
-    width: 500px;
+    width: 540px;
     height: 40px;
     margin-top: 10px;
 }

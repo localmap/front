@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
-import User from "../components/user";
+import User from "../../components/user";
 import '../../assets/styles/css/mypage.css';
 import '../../assets/styles/css/user_bookmark.css';
 import { FaStar } from 'react-icons/fa';

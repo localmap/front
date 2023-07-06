@@ -1,6 +1,4 @@
 import '../../assets/styles/css/location.css'
-import GpsFixedIcon from '@mui/icons-material/GpsFixed';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import Location_search from './location_search';
@@ -13,10 +11,10 @@ const Location:React.FC = () => {
 
     return (
         <div className="location">
-            <div className="title">
+            <div className="location_title">
                 <h1>회원가입</h1>
-                <hr></hr>
             </div>
+            <hr/>
             <div className='search'>
                 <label>
                     <input type='text' placeholder='동명(읍,면)으로 검색 (ex.서초동)'></input>

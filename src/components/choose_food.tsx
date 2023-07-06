@@ -1,5 +1,7 @@
-import '../../assets/styles/css/choose_food.css'
+import '../assets/styles/css/choose_food.css'
 import {useState } from 'react';
+
+
 const Choose_food:React.FC = () => {
     const [food1, setFood1] = useState(false);
     const [food2, setFood2] = useState(false);
