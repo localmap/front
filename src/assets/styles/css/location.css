@@ -33,6 +33,7 @@
 .search input {
     display: flex;
     flex-direction: column;
+    margin-left: 270px;
     width: 500px;
     height: 40px;
     border-radius: 5px;

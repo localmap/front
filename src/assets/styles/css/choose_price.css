@@ -4,11 +4,9 @@
     margin-top: 30px;
 }
 .price_check_title {
-    text-align: left;
     font-size: 25px;
     font-weight: bold;
     margin-top: 30px;
-    margin-left: 210px;
 }
 .price_check {
     display: flex;
@@ -60,19 +58,19 @@
     flex-direction: row;
     justify-content: left;
     margin-top: 20px;
-    margin-left: 100px;
+    margin-left: 120px;
     font-size: 20px;
     font-weight: bold;
 }
 .price_list1{
-   margin-left: 120px;
+   margin-left: 140px;
 }
 .price_list2{
     margin-left: 100px;
  }
  .price_list3{
-    margin-left: 90px;
+    margin-left: 120px;
  }
  .price_list4{
-    margin-left: 100px;
+    margin-right: 10px;
  }
