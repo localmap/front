@@ -1,151 +1,72 @@
-import * as React from 'react'
-import Box from '@mui/material/Box'
-import {
-  Card,
-  CardActionArea,
-  CardContent,
-  CardMedia,
-  Divider,
-  Stack,
-  Grid
-} from '@mui/material'
-import Typography from '@mui/material/Typography'
-import Footer from '../components/footer'
+import * as React from 'react';
+import {Grid} from "../elements";
+import { Button } from '../elements';
+import styled from "styled-components";
+import Restaurant from '../components/restaurant';
+import { useDispatch, useSelector } from "react-redux";
 
 const Home: React.FC = () => {
+
+  const GridBox = styled.div`
+   justify-content: center;
+   align-items: center;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+    max-width: 1050px;
+  `;
+  const SubTitle = styled.div`
+   margin-top: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 1.8em;
+   font-weight: bold;
+   padding: 79px 0 35px;
+  `;
+
   return (
     <div className="home">
-      <Box sx={{ flexGrow: 1, maxWidth: 1500, margin: 'auto', mx: 15, mb: 15 }}>
-        <Typography sx={{ fontSize: 20, my: 5 }} textAlign="center">
-          지도 ..
-        </Typography>
-      </Box>
-      <Box sx={{ flexGrow: 1, maxWidth: 1500, margin: 'auto', mx: 15, mb: 15 }}>
-        <Typography sx={{ fontSize: 20, my: 5 }} textAlign="center">
-          주변 인기 맛집
-        </Typography>
-        <Grid container spacing={{ xs: 3, md: 3 }} columns={{ xs: 10, md: 10 }}>
-          {Array.from(Array(5)).map((_, index) => (
-            <Grid item xs={2} sm={2} md={2} key={index}>
-              <Card>
-                <CardActionArea>
-                  <CardContent>
-                    <CardMedia
-                      component="img"
-                      sx={{ width: 200, align: 'center' }}
-                      image="http://placehold.it/150x150"
-                      alt="Paella dish"
-                    />
-                  </CardContent>
-                  <CardContent>
-                    <Typography
-                      gutterBottom
-                      variant="h5"
-                      component="div"
-                      align="center"
-                    >
-                      음식점 이름
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      별표
-                    </Typography>
-                    <Divider />
-                    <Box sx={{ m: 2 }}>
-                      <Stack direction="row" spacing={3}>
-                        <Box
-                          borderRadius={1}
-                          sx={{
-                            width: 50,
-                            height: 30,
-                            backgroundColor: 'grey.300'
-                          }}
-                        >
-                          위치
-                        </Box>
-                        <Box
-                          borderRadius={1}
-                          sx={{
-                            width: 50,
-                            height: 30,
-                            backgroundColor: 'grey.300'
-                          }}
-                        >
-                          음식 정보
-                        </Box>
-                      </Stack>
-                    </Box>
-                    <Divider />
-                  </CardContent>
-                </CardActionArea>
-              </Card>
-            </Grid>
-          ))}
+      <div className='Home_maps'>
+        <p>지도 자리</p>
+      </div>
+      <Grid bgcolor=" rgb(247, 247, 247)">
+        <SubTitle>주변 인기 맛집</SubTitle>
+        <GridBox>
+              {.map((p) => {
+                return (
+                  <Restaurant key={p.productId} {...p}>
+                  </Restaurant>
+                );
+              })}
+            </GridBox>
+            <Button> 더보기 </Button>
         </Grid>
-        <Footer />
-      </Box>
-      <Box sx={{ flexGrow: 1, maxWidth: 1500, margin: 'auto', mx: 15, mb: 15 }}>
-        <Typography sx={{ fontSize: 20, my: 5 }} textAlign="center">
-          이벤트 중인 맛집
-        </Typography>
-        <Grid container spacing={{ xs: 3, md: 3 }} columns={{ xs: 10, md: 10 }}>
-          {Array.from(Array(5)).map((_, index) => (
-            <Grid item xs={2} sm={2} md={2} key={index}>
-              <Card>
-                <CardActionArea>
-                  <CardContent>
-                    <CardMedia
-                      component="img"
-                      sx={{ width: 200, align: 'center' }}
-                      image="http://placehold.it/150x150"
-                      alt="Paella dish"
-                    />
-                  </CardContent>
-                  <CardContent>
-                    <Typography
-                      gutterBottom
-                      variant="h5"
-                      component="div"
-                      align="center"
-                    >
-                      음식점 이름
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      별표
-                    </Typography>
-                    <Divider />
-                    <Box sx={{ m: 2 }}>
-                      <Stack direction="row" spacing={3}>
-                        <Box
-                          borderRadius={1}
-                          sx={{
-                            width: 50,
-                            height: 30,
-                            backgroundColor: 'grey.300'
-                          }}
-                        >
-                          위치
-                        </Box>
-                        <Box
-                          borderRadius={1}
-                          sx={{
-                            width: 50,
-                            height: 30,
-                            backgroundColor: 'grey.300'
-                          }}
-                        >
-                          음식 정보
-                        </Box>
-                      </Stack>
-                    </Box>
-                    <Divider />
-                  </CardContent>
-                </CardActionArea>
-              </Card>
-            </Grid>
-          ))}
+        <Grid bgcolor=" rgb(247, 247, 247)">
+        <SubTitle>이벤트 중인 맛집</SubTitle>
+        <GridBox>
+              {.map((p) => {
+                return (
+                  <Restaurant key={p.productId} {...p}>
+                  </Restaurant>
+                );
+              })}
+            </GridBox>
+            <Button> 더보기 </Button>
         </Grid>
-      </Box>
-    </div>
+        <Grid bgcolor=" rgb(247, 247, 247)">
+        <SubTitle>에디터 특집</SubTitle>
+        <GridBox>
+              {.map((p) => {
+                return (
+                  <Restaurant key={p.productId} {...p}>
+                  </Restaurant>
+                );
+              })}
+            </GridBox>
+            <Button> 더보기 </Button>
+        </Grid>
+      </div>
   )
 }
 
