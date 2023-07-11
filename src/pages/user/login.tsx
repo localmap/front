@@ -24,9 +24,6 @@ import {
 const Login: React.FC = () => {
   const navigate = useNavigate()
 
-  const goHome = () => {
-    navigate('/')
-  }
   const goJoin = () => {
     navigate('/join')
   }
@@ -44,7 +41,7 @@ const Login: React.FC = () => {
   const pwChange = (newValue: string) => {
     setPwValue(newValue)
   }
-  const dispatch = useDispatch()
+  
   const [checked, setChecked] = React.useState(false)
 
   const [showPassword, setShowPassword] = React.useState(false)

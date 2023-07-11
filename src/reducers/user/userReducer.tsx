@@ -2,8 +2,7 @@ import { BaseUrl } from '../../util/axiosApi'
 import axios from 'axios'
 
 const SET_USER_TYPE= 'user/SET' as const;
-
-const SET_USER_TOKEN = 'user/SET' as const
+const SET_USER_TOKEN = 'user/SET' as const;
 
 type UserAction = ReturnType<typeof set>
 
