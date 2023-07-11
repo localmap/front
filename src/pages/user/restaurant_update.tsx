@@ -1,10 +1,10 @@
-import '../../assets/styles/css/restaurant_write.css'
+import '../../assets/styles/css/restaurant_update.css'
 import { useState } from 'react';
 import Location_search from '../user/location_search';
 import Choose_food from '../../components/choose_food';
 import Choose_price from '../../components/choose_price';
 
-const Restaurant_write:React.FC = () => {
+const Restaurant_update:React.FC = () => {
     const [visible, setVisible] = useState(false);
 
     return(
@@ -25,7 +25,11 @@ const Restaurant_write:React.FC = () => {
                     )}
                 </div>
             </div>
-            <hr/>
+            <div className='picture_choose'>
+                <div>대표 사진 선택</div>
+                <button>+</button>
+            </div>
+            <input className='picture_input' placeholder='식당을 대표할 사진을 골라주세요'></input>
             <div className='food_type'>
                 음식종류
             </div>
@@ -47,15 +51,25 @@ const Restaurant_write:React.FC = () => {
                 </div>
             </div>
             <hr/>
-            <div className='hours_title'>
+            <div className='opening_hours'>
                 영업시간
             </div>
-            <input className='hours_input' placeholder='영업 시간을 입력해 주세요'></input>
+            <input className='restaurant_name' placeholder='영업시간을 입력해 주세요'></input>
+            <div className='event'>
+                <div>이벤트</div>
+                <button>+</button>
+            </div>
+            <input className='event_input' placeholder='식당을 대표할 사진을 골라주세요'></input>
+            <div className='ceo'>
+                <div>사장님 인사말</div>
+                <button>+</button>
+            </div>
+            <input className='ceo_input' placeholder='인사말을 입력해 주세요'></input>
             <div className='button_wrap'>
-                <button className='cancel_btn'>취소</button><button className='check_btn'>확인</button>
+                <button className='cancel_btn'>취소</button><button className='check_btn'>수정</button>
             </div>
         </div>
     );
 }
 
-export default Restaurant_write;
+export default Restaurant_update;

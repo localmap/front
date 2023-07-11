@@ -17,7 +17,7 @@ const Location:React.FC = () => {
             <hr/>
             <div className='search'>
                 <label>
-                    <input type='text' placeholder='동명(읍,면)으로 검색 (ex.서초동)'></input>
+                    <input className='location_input' type='text' placeholder='동명(읍,면)으로 검색 (ex.서초동)'></input>
                 </label>
             </div>
             <div className='search_btn'>

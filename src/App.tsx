@@ -20,6 +20,11 @@ import axios from 'axios'
 import Pw_reset from './pages/user/pw_reset'
 import Restaurant_write from './pages/admin/restaurant_write'
 import Editor_write from './pages/admin/editor_write'
+import Search_result from './pages/board/search_result'
+import Restaurant_update from './pages/user/restaurant_update'
+import Rec_store from './pages/user/rec_store'
+import Review_write from './pages/user/review_write'
+import Store_info from './pages/board/store_info'
 axios.defaults.withCredentials = true
 
 const App: React.FC = () => {
@@ -41,8 +46,12 @@ const App: React.FC = () => {
       <Route path="/event_detail" element={<Event_detail />} />
       <Route path="/restaurant_write" element={<Restaurant_write/>} />
       <Route path='/editor_write' element={<Editor_write/>} />
+      <Route path='/search_result' element={<Search_result/>} />
+      <Route path='/restaurant_update' element={<Restaurant_update/>} />
+      <Route path='/rec_store' element={<Rec_store/>} />
+      <Route path='/review_write' element={<Review_write/>} />
+      <Route path='/store_info' element={<Store_info/>} />
     </Routes>
   )
 }
-
 export default App

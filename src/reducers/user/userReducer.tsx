@@ -18,7 +18,6 @@ const initialState: UserState = {
 
 //액션생성함수
 export const set = (user: UserState) => ({
-  
   type: SET_USER_TOKEN,
   payload: user
 })
@@ -42,8 +41,6 @@ export const login = (email: string, pw: string) => {
       alert('로그인정보를 확인해 주세요')
     })
 }
-
-
 
 export default function userReducer(
   state: UserState = initialState,
