@@ -29,7 +29,6 @@ const Store_info: React.FC = () => {
                 </div>
             </div>
             <div className='main_content'>
-                asasdasdasddddasdasdsa
             </div>
         </div>
     );
