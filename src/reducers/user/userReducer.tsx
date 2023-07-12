@@ -2,16 +2,21 @@ import { BaseUrl } from '../../util/axiosApi'
 import axios from 'axios'
 
 
+
 //액션타입 생성
 const SET_USER_TYPE = 'user/SET' ;
 const SET_USER_TOKEN = 'user/SET' ;
-const REGISTER_USER = "user/REGISTER_USER";
+
 
 //액션생성함수
 export const set = (user: UserState) => ({
   type: SET_USER_TOKEN,
   payload: user
 })
+
+const SET_USER_TYPE= 'user/SET' as const;
+const SET_USER_TOKEN = 'user/SET' as const;
+
 
 type UserAction = ReturnType<typeof set>
 

@@ -12,7 +12,6 @@ const Mypage: React.FC = () => {
         color: '#79c859ec',
         fontWeight: 500,
     };
-
     return (
         <div>
           <User/>
