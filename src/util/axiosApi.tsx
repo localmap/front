@@ -18,7 +18,7 @@ export const join = (email:string,password:string,nickname:string,goLogin:()=>vo
     const url = BaseUrl + "/user/signup"
       axios.post(url, {
         headers: { "Content-Type" : "application/json"},
-        body: {email:email, password:password, nickname:nickname},
+        body: {email:email, password:password, name:nickname},
       })
       .then(function(response) {
         alert('가입이 완료되었습니다.')

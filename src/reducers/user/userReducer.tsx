@@ -1,12 +1,21 @@
 import { BaseUrl } from '../../util/axiosApi'
 import axios from 'axios'
 
-const SET_USER_TYPE = 'user/SET' as const
 
-const SET_USER_TOKEN = 'user/SET' as const
+//액션타입 생성
+const SET_USER_TYPE = 'user/SET' ;
+const SET_USER_TOKEN = 'user/SET' ;
+const REGISTER_USER = "user/REGISTER_USER";
+
+//액션생성함수
+export const set = (user: UserState) => ({
+  type: SET_USER_TOKEN,
+  payload: user
+})
 
 type UserAction = ReturnType<typeof set>
 
+//상태(state) 타입정의
 type UserState = {
   accessToken: string
   refreshToken: string
@@ -16,12 +25,6 @@ const initialState: UserState = {
   accessToken: '',
   refreshToken: ''
 }
-
-//액션생성함수
-export const set = (user: UserState) => ({
-  type: SET_USER_TOKEN,
-  payload: user
-})
 
 export const login = (email: string, pw: string) => {
   const url = BaseUrl + '/user/login/normal/'
