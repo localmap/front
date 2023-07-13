@@ -1,9 +1,9 @@
 import * as React from 'react';
-import {Grid} from "../elements";
 import { Button } from '../elements';
 import styled from "styled-components";
-import Restaurant from '../components/restaurant';
-import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from 'react-router-dom';
+import { Grid, Image , Text} from "../elements";
+
 
 const Home: React.FC = () => {
 
@@ -24,7 +24,12 @@ const Home: React.FC = () => {
    font-weight: bold;
    padding: 79px 0 35px;
   `;
+const navigate = useNavigate();
 
+const goStoreInfo = () => {
+    navigate('/info')
+  };
+  
   return (
     <div className="home">
       <div className='Home_maps'>
@@ -32,38 +37,35 @@ const Home: React.FC = () => {
       </div>
       <Grid bgcolor=" rgb(247, 247, 247)">
         <SubTitle>주변 인기 맛집</SubTitle>
-        <GridBox>
-              {.map((p) => {
-                return (
-                  <Restaurant key={p.productId} {...p}>
-                  </Restaurant>
-                );
-              })}
-            </GridBox>
+        <Grid 
+          _onClick={() => goStoreInfo()}
+            margin="10px" height="506px">
+          <Image width="249px" height="320px" src={"http://placehold.it/50x50"}></Image>
+          <Text margin="12px 0px 0px 0px"size="16px">음식점 이름</Text>
+          <Text padding="9px 0px 0px 0px" size="16px" weight="800">위치 - 음식종류</Text>
+                </Grid>
             <Button> 더보기 </Button>
         </Grid>
         <Grid bgcolor=" rgb(247, 247, 247)">
         <SubTitle>이벤트 중인 맛집</SubTitle>
-        <GridBox>
-              {.map((p) => {
-                return (
-                  <Restaurant key={p.productId} {...p}>
-                  </Restaurant>
-                );
-              })}
-            </GridBox>
+        <Grid 
+          _onClick={() => goStoreInfo()}
+            margin="10px" height="506px">
+          <Image width="249px" height="320px" src={"http://placehold.it/50x50"}></Image>
+          <Text margin="12px 0px 0px 0px"size="16px">음식점 이름</Text>
+          <Text padding="9px 0px 0px 0px" size="16px" weight="800">위치 - 음식종류</Text>
+                </Grid>
             <Button> 더보기 </Button>
         </Grid>
         <Grid bgcolor=" rgb(247, 247, 247)">
         <SubTitle>에디터 특집</SubTitle>
-        <GridBox>
-              {.map((p) => {
-                return (
-                  <Restaurant key={p.productId} {...p}>
-                  </Restaurant>
-                );
-              })}
-            </GridBox>
+        <Grid 
+          _onClick={() => goStoreInfo()}
+            margin="10px" height="506px">
+          <Image width="249px" height="320px" src={"http://placehold.it/50x50"}></Image>
+          <Text margin="12px 0px 0px 0px"size="16px">음식점 이름</Text>
+          <Text padding="9px 0px 0px 0px" size="16px" weight="800">위치 - 음식종류</Text>
+        </Grid>
             <Button> 더보기 </Button>
         </Grid>
       </div>
