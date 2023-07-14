@@ -74,20 +74,71 @@ const Store_info: React.FC = () => {
                             <div className='review_title'>
                                 <div>리뷰작성시간</div><div>위치인증 O 리뷰</div>
                             </div>
-                            <div className='review_wrap'>
-                                <button>
-                                    <img className='user_logo'src='https://cdn-icons-png.flaticon.com/128/3177/3177440.png'></img>
-                                </button>
-                                <div>리뷰개수평균별점</div>
+                            <div className='person_review'>
+                                <div className='user_logo'>
+                                    <img src='https://cdn-icons-png.flaticon.com/128/3177/3177440.png'></img>
+                                </div>
+                                <div className='user_text'>
+                                    <div>
+                                        리뷰갯수
+                                    </div>
+                                    <div>
+                                        평균별점
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='user_nick_review'>
+                                <div className='user_nick'>
+                                    유저닉네임
+                                </div>
+                                <div className='user_nick_date'>
+                                    2023/07/05 정말맛있습니다 꼭 가보세요 후회안함!
+                                </div>
+                            </div>
+                            <div className='person_review'>
+                                <div className='user_logo'>
+                                    <img src='https://cdn-icons-png.flaticon.com/128/3177/3177440.png'></img>
+                                </div>
+                                <div className='user_text'>
+                                    <div>
+                                        리뷰갯수
+                                    </div>
+                                    <div>
+                                        평균별점
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='user_nick_review'>
+                                <div className='user_nick'>
+                                    유저닉네임
+                                </div>
+                                <div className='user_nick_date'>
+                                    2023/07/05 정말맛있습니다 꼭 가보세요 후회안함!
+                                </div>
+                            </div>
+                            <div className='person_review'>
+                                <div className='user_logo'>
+                                    <img src='https://cdn-icons-png.flaticon.com/128/3177/3177440.png'></img>
+                                </div>
+                                <div className='user_text'>
+                                    <div>
+                                        리뷰갯수
+                                    </div>
+                                    <div>
+                                        평균별점
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='user_nick_review'>
+                                <div className='user_nick'>
+                                    유저닉네임
+                                </div>
+                                <div className='user_nick_date'>
+                                    2023/07/05 정말맛있습니다 꼭 가보세요 후회안함!
+                                </div>
                             </div>
                         </div>
                     </div>
-                    adsasd
-                    adsasd
-                    <div>asdad</div>
-                    <div>asdad</div>
-                    <div>asdad</div>
-                    <div>asdad</div>
                 </div>
             </div>
         </div>

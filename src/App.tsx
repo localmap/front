@@ -28,6 +28,7 @@ import Store_info from './pages/board/store_info'
 import Store_list from './pages/board/store_list'
 import Editor_info from './pages/board/editor_info'
 import Notice_info from './pages/board/notice_info'
+import Notice_write from './pages/admin/notice_write'
 axios.defaults.withCredentials = true
 
 const App: React.FC = () => {
@@ -57,6 +58,7 @@ const App: React.FC = () => {
       <Route path='/store_list' element={<Store_list/>} />
       <Route path='/editor_info' element={<Editor_info/>} />
       <Route path='/notice_info' element={<Notice_info/>}/>
+      <Route path='/notice_write' element={<Notice_write/>} />
     </Routes>
   )
 }

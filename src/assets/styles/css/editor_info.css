@@ -119,8 +119,55 @@
         }
     }
     .column_footer{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
         width: 100%;
-        height: 300px;
-        background-color: gray;
+        height: 2000px;
+        background-color: #f2f2f2;
+       
+        .footer_title{
+            margin-left: 200px;
+            .strong_text{
+                color: red;
+            }
+        }
+        .th_column{
+            border-bottom: 1px solid;
+            text-align: center;
+            margin-top: 50px;
+            margin-left: 200px;
+            width: 50%;
+            .th_title{
+                display: flex;
+                flex-direction: row;
+
+                >strong{
+                    font-size: 25px;
+                }
+                > span{
+                    color: gray;
+                    font-size: 25px;
+                    margin-left: 40px;
+                }
+            }
+            .th_content{
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                margin-top: 30px;
+                width: 100%;
+                .th_text{
+                    font-size: 30px;
+                    color: black;
+                }
+                >em{
+                    margin-top: 20px;
+                    font-size: 22px;
+                    color: gray;
+                    margin-bottom: 50px;
+                }
+            }
+        }
     }
 }

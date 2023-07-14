@@ -41,8 +41,8 @@ const Editor_info: React.FC = () => {
                     <div className='food_img'>
                         <img src='https://images.unsplash.com/photo-1562749606-0a9eb5a8a0f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8JUVDJTgyJUJDJUVBJUIzJTg0JUVEJTgzJTk1fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60'></img>
                         <img src='https://media.istockphoto.com/id/973984194/ko/%EC%82%AC%EC%A7%84/%ED%95%9C%EA%B5%AD-%ED%98%88%EC%95%A1-%EC%86%8C%EC%8B%9C%EC%A7%80-%EC%88%98%ED%94%84.webp?b=1&s=170667a&w=0&k=20&c=9iNCUs0BiuCFYe-CSq1yTBJKYI3TOIKkA1zVrkKkgMk='></img>
-                        <img src='https://media.istockphoto.com/id/1407967618/ko/%EC%82%AC%EC%A7%84/%ED%95%9C%EA%B5%AD-%EC%A0%84%ED%86%B5-%EC%9D%8C%EC%8B%9D-%EC%87%A0%EA%B3%A0%EA%B8%B0-%EA%B0%88%EB%B9%84%ED%83%95-%EC%87%A0%EA%B3%A0%EA%B8%B0-%EC%A7%A7%EC%9D%80-%EA%B0%88%EB%B9%84-%EC%88%98%ED%94%84.webp?b=1&s=170667a&w=0&k=20&c=faHIHm_bLMY1X_hK0hRnmn9VAkvJlUH-132nzgPMFRU='/>
-                        <img src='https://media.istockphoto.com/id/668866758/ko/%EC%82%AC%EC%A7%84/%EB%A7%A4%EC%9A%B4-%EB%91%90-%EB%B6%80-%EC%88%98%ED%94%84.webp?b=1&s=170667a&w=0&k=20&c=Kidxe-M4MXCcKirvYjUyiMITQfopE0w8DPSb8zOaLhs='/>
+                        <img src='https://media.istockphoto.com/id/1407967618/ko/%EC%82%AC%EC%A7%84/%ED%95%9C%EA%B5%AD-%EC%A0%84%ED%86%B5-%EC%9D%8C%EC%8B%9D-%EC%87%A0%EA%B3%A0%EA%B8%B0-%EA%B0%88%EB%B9%84%ED%83%95-%EC%87%A0%EA%B3%A0%EA%B8%B0-%EC%A7%A7%EC%9D%80-%EA%B0%88%EB%B9%84-%EC%88%98%ED%94%84.webp?b=1&s=170667a&w=0&k=20&c=faHIHm_bLMY1X_hK0hRnmn9VAkvJlUH-132nzgPMFRU=' />
+                        <img src='https://media.istockphoto.com/id/668866758/ko/%EC%82%AC%EC%A7%84/%EB%A7%A4%EC%9A%B4-%EB%91%90-%EB%B6%80-%EC%88%98%ED%94%84.webp?b=1&s=170667a&w=0&k=20&c=Kidxe-M4MXCcKirvYjUyiMITQfopE0w8DPSb8zOaLhs=' />
                     </div>
                 </div>
                 <div className='food_info'>
@@ -69,7 +69,33 @@ const Editor_info: React.FC = () => {
                     </div>
                 </div>
                 <div className='column_footer'>
-                    
+                    <div className='footer_title'>
+                        <h1><span className='strong_text'>추천 </span> 콘텐츠</h1>
+                    </div>
+                    <div className='th_column'>
+                        <div className='th_title'>
+                            <strong>트렌드 칼럼</strong>
+                            <span>2023/07/09</span>
+                        </div>   
+                        <div className='th_content'>
+                            <a>
+                                <span className='th_text'>[박병훈 기자의 맛집이야기] 강남엔 생각보다 맛집이없습니다</span>
+                            </a>
+                            <em>학원을 다니며 강남 주변 맛집을 돌아다녀 본 결과 생각보다 맛집은 없...</em>
+                        </div>    
+                    </div>
+                    <div className='th_column'>
+                        <div className='th_title'>
+                            <strong>트렌드 칼럼</strong>
+                            <span>2023/07/11</span>
+                        </div>   
+                        <div className='th_content'>
+                            <a>
+                                <span className='th_text'>[김세훈 기자의 반박] 박병훈 기자는 틀렸다</span>
+                            </a>
+                            <em>학원을 다니며 강남 주변에는 생각보다 숨겨진 맛집이 많다!</em>
+                        </div>    
+                    </div>
                 </div>
 
             </div>
