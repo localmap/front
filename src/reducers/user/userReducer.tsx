@@ -14,8 +14,6 @@ export const set = (user: UserState) => ({
   payload: user
 })
 
-const SET_USER_TYPE= 'user/SET' as const;
-const SET_USER_TOKEN = 'user/SET' as const;
 
 
 type UserAction = ReturnType<typeof set>
