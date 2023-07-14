@@ -6,7 +6,7 @@ const Editor_write: React.FC = () => {
             <div className='editor_write_title'>칼럼이름</div>
             <input type='text' className='column_title' placeholder='제목을 입력해 주세요'></input>
             <div className='editor_write_title'>칼럼부제</div>
-            <input type='text' className='column_content' placeholder='내용을 입력해 주세요'></input>
+            <input type='text' className='column_subject_input' placeholder='내용을 입력해 주세요'></input>
             <div className='add'>
                 <div>식당추가</div><button>+</button>
             </div>
