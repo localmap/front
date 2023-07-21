@@ -241,9 +241,8 @@ input::placeholder{
     width: 500px;
 }
 
-@media only screen and (max-width: 768px) {
-  .menu_list {
-    width: 100%;
-    flex-wrap: wrap;
-  }
+@media only screen and (min-width: 769px){
+    .restaurant_write {
+        padding: 38px 0 36px 0;
+    }
 }
