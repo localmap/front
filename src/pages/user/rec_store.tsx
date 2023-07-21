@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Location_search from "./location_search";
 import Choose_food from "../../components/choose_food";
-import '../../assets/styles/css/rec_store.css'
+import '../../assets/styles/css/user/rec_store.css'
 
 const Rec_store: React.FC = () => {
     const [visible, setVisible] = useState(false);

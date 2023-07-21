@@ -25,6 +25,10 @@ import Restaurant_update from './pages/user/restaurant_update'
 import Rec_store from './pages/user/rec_store'
 import Review_write from './pages/user/review_write'
 import Store_info from './pages/board/store_info'
+import Store_list from './pages/board/store_list'
+import Editor_info from './pages/board/editor_info'
+import Notice_info from './pages/board/notice_info'
+import Notice_write from './pages/admin/notice_write'
 import Reg_manage from './pages/admin/reg_manage';
 import Editor_Manage from './pages/admin/editor_manage'
 import Notice_Manage from './pages/admin/notice_manage'
@@ -60,6 +64,10 @@ const App: React.FC = () => {
       <Route path='/review_write' element={<Review_write/>} />
       <Route path='/store_info' element={<Store_info/>} />
       <Route path='/notice_write' element={<Notice_Write/>}/>
+      <Route path='/store_list' element={<Store_list/>} />
+      <Route path='/editor_info' element={<Editor_info/>} />
+      <Route path='/notice_info' element={<Notice_info/>}/>
+      <Route path='/notice_write' element={<Notice_write/>} />
     </Routes>
   )
 }

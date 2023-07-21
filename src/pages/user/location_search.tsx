@@ -1,4 +1,4 @@
-import '../../assets/styles/css/location_search.css'
+import '../../assets/styles/css/component/location_search.css'
 
 const Location_search:React.FC = () => {
     return(

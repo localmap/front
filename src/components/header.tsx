@@ -32,9 +32,10 @@ const Header: React.FC = () => {
     navigate('mypage_bookmark')
   }
 
-  const goResultpage = () => {
-    navigate('search_result')
+  const goResultepage = () => {
+    navigate('/search_result')
   }
+
 
   //로그아웃
   const doLogOut = () => {
@@ -69,16 +70,19 @@ const Header: React.FC = () => {
     }
   }
 
-  //사용자입력값
-  const [inputcontent, setInputContent] = useState('')
-  const getValue = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setInputContent(e.target.value);
+  //검색기능
+
+  //사용자 입력값
+  const [inputdata, setInputdata] = useState('');
+  const getValue = (e:React.ChangeEvent<HTMLInputElement>) => {
+    setInputdata(e.target.value);
   }
 
-  const goSearch = (searchData: string) => {
-    console.log(dispatch(setSearchResults(searchData)))
-    goResultpage()
-  }
+  const goSearch = (searchData:string) => {
+    dispatch(setSearchResults(searchData))
+    goResultepage();
+  } 
+
 
   return (
     <div>
@@ -96,13 +100,13 @@ const Header: React.FC = () => {
             className="search_input"
             type="text"
             placeholder="검색어를 입력하세요"
-            onChange={getValue}
+         onChange={getValue}
           ></input>
           <button
             className="search_button"
-            onClick={() => {
-              goSearch(inputcontent)
-            }}
+          onClick={() => {
+            goSearch(inputdata)
+          }}
           >
             검색
           </button>

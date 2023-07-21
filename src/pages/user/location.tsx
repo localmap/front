@@ -1,4 +1,4 @@
-import '../../assets/styles/css/location.css'
+import '../../assets/styles/css/user/location.css'
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import Location_search from './location_search';

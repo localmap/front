@@ -1,4 +1,4 @@
-import '../assets/styles/css/choose_food.css'
+import '../assets/styles/css/component/choose_food.css'
 import {useState } from 'react';
 
 

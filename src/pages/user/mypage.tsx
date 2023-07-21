@@ -1,9 +1,15 @@
 import * as React from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import User from "../../components/user";
+<<<<<<< HEAD
 import '../../assets/styles/css/mypage.css';
 import '../../assets/styles/css/user_bookmark.css';
 import { Grid, Image , Text} from "../../elements";
+=======
+import '../../assets/styles/css/user/mypage.css';
+import '../../assets/styles/css/user/user_bookmark.css';
+import { FaStar } from 'react-icons/fa';
+>>>>>>> main
 
 const Mypage: React.FC = () => {
   const navigate = useNavigate();

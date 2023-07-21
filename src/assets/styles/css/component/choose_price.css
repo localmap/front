@@ -1,5 +1,5 @@
 .price {
-    width: 50%;
+    min-width: 1340px;
     text-align: center;
     margin-top: 30px;
 }
@@ -7,13 +7,14 @@
     font-size: 25px;
     font-weight: bold;
     margin-top: 30px;
+    margin-left: 220px;
 }
 .price_check {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 60px;
-    margin-left: 120px;
+    margin-left: 170px;
 }
 
 .price1_button{
@@ -22,7 +23,7 @@
     background-image: url('https://cdn-icons-png.flaticon.com/128/1077/1077976.png');
     background-size: cover;
     background-repeat: no-repeat;
-    margin-left: 100px;
+    margin-left: 90px;
 }
 
 .price2_button{
@@ -40,7 +41,7 @@
     background-image: url('https://cdn-icons-png.flaticon.com/128/10716/10716530.png');
     background-size: cover;
     background-repeat: no-repeat;
-    margin-left: 0px;
+    margin-left: 40px;
 }
 
 .price4_button{
@@ -61,6 +62,7 @@
     margin-left: 120px;
     font-size: 20px;
     font-weight: bold;
+    width: 800px;
 }
 .price_list1{
    margin-left: 140px;

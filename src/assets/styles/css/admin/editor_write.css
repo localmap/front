@@ -4,32 +4,32 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-    width: 100%;
+    min-width: 1340px;
 }
 
 .editor_write_title {
     font-size: 32px;
     font-weight: bold;
     margin-top: 80px;
-    margin-right: 800px;
+    margin-right: 1000px;
 }
 
 .column_title {
     width: 800px;
     height: 40px;
     margin-top: 30px;
-    margin-right: 100px;
+    margin-right: 300px;
     border-top: 1px;
     border-left: 1px;
     border-right: 1px;
     font-size: 25px;
 }
 
-.column_content{
+.column_subject_input{
     width: 800px;
     height: 40px;
     margin-top: 30px;
-    margin-right: 100px;
+    margin-right: 300px;
     border-top: 1px;
     border-left: 1px;
     border-right: 1px;
@@ -46,7 +46,7 @@ input::placeholder {
     justify-content: space-between;
     font-size: 32px;
     width: 800px;
-    margin-right: 100px;
+    margin-right: 300px;
 }
 
 button {
@@ -56,9 +56,15 @@ button {
 }
 
 .restaurant_name{
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
     margin-top: 120px;
     font-size: 32px;
-    margin-right: 780px;
+    margin-right: 1200px;
+    text-align: left;
 }
 
 .editor_write_title hr{
@@ -69,7 +75,7 @@ button {
 
 .button_wrap{
     margin-top: 120px;
-    margin-left: 600px;
+    margin-left: 380px;
     display: flex;
     flex-direction: row;
     height: 200px;
@@ -88,3 +94,12 @@ button {
     height: 200px;
     width: 500px;
 }
+
+@media only screen and (min-width: 769px){
+    .editor_write {
+        padding: 38px 0 36px 0;
+    }
+}
+
+
+

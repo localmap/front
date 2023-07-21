@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useNavigate } from 'react-router-dom';
-import '../../assets/styles/css/event_detail.css'
+import '../../assets/styles/css/board/event_detail.css'
 
 
 const Event_detail:React.FC = () => {
@@ -30,6 +30,7 @@ const Event_detail:React.FC = () => {
             <div className='sale_wrap'>
                 <div className='percent'><strong>15%</strong> ₩36,465</div>
             </div>
+            <hr className="middle_line"/>
             <div className='middle_title'>방문 포장 가능한 EAT딜입니다.</div>
             <div className='subtitle'>식당소개</div>
             <ul className='content'>
