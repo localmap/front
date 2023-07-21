@@ -1,4 +1,4 @@
-import '../../assets/styles/css/notice_write.css'
+import '../../assets/styles/css/admin/notice_write.css'
 
 const Notice_write: React.FC = () => {
     return (

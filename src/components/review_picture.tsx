@@ -1,4 +1,4 @@
-import '../assets/styles/css/review_picture.css'
+import '../assets/styles/css/component/review_picture.css'
 
 const Review_picture:React.FC = () => {
     return (

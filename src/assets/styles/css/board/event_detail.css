@@ -3,39 +3,39 @@
     text-align: center;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
+    min-width: 1340px;
     align-items: center;
   }
 
   .list-items{
-    text-align: left;
+    text-align: center;
   }
 
   .event_detail_title {
-    margin-right: 460px;
-    width: 45%;
-    margin-top: 15px;
+    width: 40%;
+    margin-top: 35px;
+    margin-right: 400px;
     font-size: 30px;
     font-weight: bold;
   }
   .middle_title{
-    margin-right: 400px;
     width: 45%;
     margin-top: 15px;
     font-size: 23px;
+    margin-right: 320px;
   }
 
   .event_title{
     text-align: left;
     width: 45%;
-    margin-top: 15px;
+    margin-top: 35px;
     font-size: 30px;
     font-weight: bold;
     margin-top: 40px;
-    margin-left: 580px;
+    
   }
   .subtitle {
-    margin-left: 580px;
+    
     text-align: left;
     width: 45%;
     margin-top: 40px;
@@ -46,8 +46,7 @@
   .info_btn{
     text-align: left;
     width: 45%;
-    margin-top: 15px;
-    margin-left: 580px;
+    margin-top: 35px;
   }
 
   .info_btn button {
@@ -66,7 +65,6 @@
     text-align: left;
     width: 45%;
     margin-top: 15px;
-    margin-left: 580px;
   }
 
   .origin_price {
@@ -96,10 +94,24 @@
     margin-top: 12px;
     color: rgb(179, 175, 175);
     font-size: 14px;
-    margin-right: 270px;
+    margin-right: 200px;
   }
 
   .content li {
     text-align: left;
   }
 
+  .middle_line{
+    width: 700px;
+    border: 1px dashed gray;
+    margin-left: 350px;
+    margin-top: 20px;
+  }
+
+  @media (max-width: 768px) {
+
+  }
+  
+  @media (max-width: 992px) {
+  
+  }

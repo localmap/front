@@ -1,4 +1,4 @@
-import '../../assets/styles/css/notice_info.css'
+import '../../assets/styles/css/board/notice_info.css'
 
 const Notice_info: React.FC = () => {
     return (

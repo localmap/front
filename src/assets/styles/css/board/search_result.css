@@ -1,0 +1,10 @@
+.serarch_result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.zz_date{
+    text-align: center;
+}
