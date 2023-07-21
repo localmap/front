@@ -1,8 +1,8 @@
 import * as React from 'react';
 import User from "../../components/user";
 import { NavLink, useNavigate } from 'react-router-dom';
-import '../../assets/styles/css/mypage.css';
-import '../../assets/styles/css/user_review.css';
+import '../../assets/styles/css/user/mypage.css';
+import '../../assets/styles/css/user/user_review.css';
 
 const User_review: React.FC = () => {
   const navigate = useNavigate();

@@ -1,4 +1,4 @@
-import '../../assets/styles/css/review_write.css'
+import '../../assets/styles/css/user/review_write.css'
 import { useState } from 'react';
 import Choose_star from '../../components/choose_star';
 const review_write: React.FC = () => {

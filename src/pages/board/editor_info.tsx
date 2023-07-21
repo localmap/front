@@ -1,4 +1,4 @@
-import '../../assets/styles/css/editor_info.css'
+import '../../assets/styles/css/board/editor_info.css'
 
 const Editor_info: React.FC = () => {
     return (

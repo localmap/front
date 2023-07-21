@@ -1,4 +1,4 @@
-import '../assets/styles/css/choose_star.css'
+import '../assets/styles/css/component/choose_star.css'
 import { useState } from 'react'
 
 const Choose_star:React.FC = () => {

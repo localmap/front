@@ -1,4 +1,4 @@
-import '../../assets/styles/css/restaurant_update.css'
+import '../../assets/styles/css/admin/restaurant_update.css'
 import { useState } from 'react';
 import Location_search from '../user/location_search';
 import Choose_food from '../../components/choose_food';
