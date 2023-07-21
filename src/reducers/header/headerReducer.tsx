@@ -46,7 +46,7 @@ export default async function headerReducer(
           }
         })
         .then(function (response) {
-          return console.log(state.searchResults = response.data)
+          return response.data = state.searchResults
         })
         .catch(function (error) {
           alert('검색 오류')

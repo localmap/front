@@ -25,6 +25,11 @@ import Restaurant_update from './pages/user/restaurant_update'
 import Rec_store from './pages/user/rec_store'
 import Review_write from './pages/user/review_write'
 import Store_info from './pages/board/store_info'
+import Reg_manage from './pages/admin/reg_manage';
+import Editor_Manage from './pages/admin/editor_manage'
+import Notice_Manage from './pages/admin/notice_manage'
+import Notice_Write from './pages/admin/notice_write'
+
 axios.defaults.withCredentials = true
 
 const App: React.FC = () => {
@@ -38,6 +43,9 @@ const App: React.FC = () => {
       <Route path="/mypage_bookmark" element={<Mypage />} />
       <Route path="/userupdate" element={<User_update />} />
       <Route path="/mypage_review" element={<User_review />} />
+      <Route path='/mypage_reg_manage' element={<Reg_manage/>}/>
+      <Route path='/mypage_editor_manage' element={<Editor_Manage/>}/>
+      <Route path='/mypage_notice_manage' element={<Notice_Manage/>}/>
       <Route path="/notice" element={<Notice />} />
       <Route path="/emailcheck" element={<EmailCheck />} />
       <Route path="/nicknamecheck" element={<NickNameCheck />} />
@@ -51,6 +59,7 @@ const App: React.FC = () => {
       <Route path='/rec_store' element={<Rec_store/>} />
       <Route path='/review_write' element={<Review_write/>} />
       <Route path='/store_info' element={<Store_info/>} />
+      <Route path='/notice_write' element={<Notice_Write/>}/>
     </Routes>
   )
 }

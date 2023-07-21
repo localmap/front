@@ -3,11 +3,14 @@ import { NavLink, useNavigate } from 'react-router-dom';
 import User from "../../components/user";
 import '../../assets/styles/css/mypage.css';
 import '../../assets/styles/css/user_bookmark.css';
-import { FaStar } from 'react-icons/fa';
+import { Grid, Image , Text} from "../../elements";
 
 const Mypage: React.FC = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
+  const goStoreInfo = () => {
+      navigate('/info')
+    };
     const activeStyle = {
         color: '#79c859ec',
         fontWeight: 500,
@@ -25,18 +28,13 @@ const Mypage: React.FC = () => {
           <p >북마크</p>
           </div>
           <div className='bookmark_table'>
-           <div className="row">
-             <div className="col-xl-3 col-lg-3 col-md-6">
-            <div className="card">
-             <img src={"http://placehold.it/180x200"} className="card-img-top" alt="..." />
-             <div className="card-body">
-              <p className="card-title">음식점 이름
-              <FaStar className='star'>별점 표시</FaStar></p>
-              <p className="card-text">위치 -음식 종류</p>
-            </div>
-        </div>
-      </div>
-      </div>
+          <Grid 
+          _onClick={() => goStoreInfo()}
+            margin="10px" height="506px">
+          <Image width="249px" height="320px" src={"http://placehold.it/50x50"}></Image>
+          <Text margin="12px 0px 0px 0px"size="16px">음식점 이름</Text>
+          <Text padding="9px 0px 0px 0px" size="16px" weight="800">위치 - 음식종류</Text>
+          </Grid>
         </div>
         </div>
     );
