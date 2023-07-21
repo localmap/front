@@ -3,7 +3,7 @@ import axios from 'axios'
 
 // actions
 const GET_STORE = "GET_STORE";
-const GET_ONE_Store = "GET_ONE_STORE"
+const GET_ONE_Store = "GET_ONE_STORE";
 
 // action types
 type GetStoresAction = ReturnType<typeof getStore>;
@@ -32,21 +32,11 @@ export const goStoreInfo = (rest_id: string) => {
 }
 
 
-type UserState = {
-    accessToken: string
-    refreshToken: string
-  }
-  
-  const initialState: UserState = {
-    accessToken: '',
-    refreshToken: ''
-  }
-
 export default function restaurantReducer (
-    state: UserState = initialState,
     action: GetOneStoresAction | GetStoresAction
  ) {
     switch (action) {
+
     }
  }
 
