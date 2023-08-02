@@ -5,10 +5,10 @@
     min-width: 1340px;
     height: 100%;
     
-    >hr {
+    .start_hr , .end_hr{
         margin-top: 30px;
-        margin-right: 800px;
-        width: 50%;
+        margin-right: 500px;
+        width: 1000px;
         height: 10px;
         background-color: black;
     }
@@ -17,14 +17,14 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin-left: 600px;
+        margin-left: 250px;
         width: 50%;
-
         .return_list{
             padding: 0px;
             display: flex;
             border: 1px solid;
             flex-direction: row;
+            margin-left: 200px;
 
             >a {
                 background-color: #B3DEE5;
@@ -53,16 +53,15 @@
             font-size: 40px;
         }
     }
-    .sub_title{
+    .notice_sub_title{
         border-bottom: 1px solid;
-        width: 50%;
+        width: 1000px;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        text-align: center;
+        text-align: left;
         margin-top: 30px;
-        margin-left: 600px;
         .th_type{
             font-size: 30px;
             font-weight: bold;
@@ -71,13 +70,12 @@
         }
         .th_subject{
             font-size: 30px;
-            margin-right: 300px;
             margin-bottom: 30px;
+            margin-right: 30px;
         }
         .th_who{
             font-size: 20px;
             color: gray;
-            margin-right: 100px;
             margin-bottom: 30px;
         }
         .th_date{
@@ -96,7 +94,7 @@
         width: 50%;
         display: flex;
         margin-top: 50px;
-        margin-left: 600px;
+
         flex-direction: column;
         justify-content: center;
         .error_content{
@@ -108,23 +106,23 @@
         }
     }
     .list_nav{
-        border-bottom: 1px dashed gray;
-        margin-left: 600px;
+        margin-left: 0px;
         margin-top: 50px;
-        width: 50%;
+        width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
         text-align: center;
         justify-content: center;
-        align-items: center;
+
 
         .before_board{
             display: flex;
             flex-direction: row;
-            margin-right: 1010px;
+            margin-right: 910px;
             >em {
                 font-size: 23px;
+                margin-left: 10px;
             }
             .before_text{
                 font-size: 25px;
@@ -134,6 +132,7 @@
                 background-image: url('https://cdn-icons-png.flaticon.com/128/271/271239.png');
                 width: 30px;
                 height: 30px;
+                margin-left: 30px;
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;

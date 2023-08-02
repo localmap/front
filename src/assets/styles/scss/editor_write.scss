@@ -1,0 +1,80 @@
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin button-size {
+  height: 200px;
+  width: 500px;
+}
+
+.editor_write {
+  @include flex-center;
+  flex-direction: column;
+  text-align: center;
+  min-width: 1340px;
+
+  .editor_write_title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 80px;
+    margin-right: 1000px;
+
+    > input {
+      width: 800px;
+      height: 40px;
+      margin-top: 30px;
+      margin-left: 690px;
+      border: 1px 1px 0px 1px;
+      font-size: 35px;
+    }
+  }
+
+  .add {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 32px;
+    width: 800px;
+    margin-right: 300px;
+  }
+  .restaurant_name {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    margin-top: 120px;
+    font-size: 32px;
+    margin-right: 1200px;
+    text-align: left;
+  }
+  .button_wrap {
+    @include flex-center;
+    margin-top: 120px;
+    margin-left: 380px;
+    flex-direction: row;
+    height: 200px;
+    .cancel_btn {
+      background-color: rgb(182, 173, 173);
+      @include button-size;
+    }
+    .check_btn {
+      background-color: rgb(31, 162, 255);
+      @include button-size;
+    }
+  }
+}
+
+input::placeholder {
+  font-size: 30px;
+}
+
+button {
+  border: none;
+  background-color: white;
+  font-size: 32px;
+}
+
+/*브라우저 크기에 따른 컨텐츠 크기조정*/

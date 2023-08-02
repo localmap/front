@@ -28,7 +28,7 @@ const Store_list: React.FC = () => {
                         <a onClick={() => {
                             goStore_info()
                         }}>
-                            음식점 이름
+                            음식점
                         </a>
                     </span>
                     <strong>4.3</strong>
@@ -62,7 +62,7 @@ const Store_list: React.FC = () => {
                         <a onClick={() => {
                             goStore_info()
                         }}>
-                            음식점 이름
+                            음식점
                         </a>
                     </span>
                     <strong>4.3</strong>
