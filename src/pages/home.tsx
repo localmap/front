@@ -4,7 +4,6 @@ import styled from "styled-components";
 import { useNavigate } from 'react-router-dom';
 import { Grid, Image , Text} from "../elements";
 
-
 const Home: React.FC = () => {
 
   const GridBox = styled.div`
@@ -33,7 +32,7 @@ const goStoreInfo = () => {
   return (
     <div className="home">
       <div className='Home_maps'>
-        <p>지도 자리</p>
+        <p>지도</p>
       </div>
       <Grid bgcolor=" rgb(247, 247, 247)">
         <SubTitle>주변 인기 맛집</SubTitle>
