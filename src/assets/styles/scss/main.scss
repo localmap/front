@@ -1,0 +1,14 @@
+$color: blue;
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.editor_list {
+  @include flex-center;
+  p {
+    color: $color;
+  }
+}

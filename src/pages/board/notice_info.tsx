@@ -13,8 +13,8 @@ const Notice_info: React.FC = () => {
                     </a>
                 </div>
             </div>
-            <hr/>
-            <div className='sub_title'>
+            <hr className='start_hr'/>
+            <div className='notice_sub_title'>
                 <span className='th_type'>공지</span>
                 <span className='th_subject'>7/14(금) 현재 발생중인 오류 안내</span>
                 <span className='th_who'>운영자</span>

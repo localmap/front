@@ -1,25 +1,31 @@
-import '../../assets/styles/css/admin/editor_write.css'
+import "../../assets/styles/css/admin/editor_write.css";
 
 const Editor_write: React.FC = () => {
-    return (
-        <div className="editor_write">
-            <div className='editor_write_title'>칼럼이름</div>
-            <input type='text' className='column_title' placeholder='제목을 입력해 주세요'></input>
-            <div className='editor_write_title'>칼럼부제</div>
-            <input type='text' className='column_subject_input' placeholder='내용을 입력해 주세요'></input>
-            <div className='add'>
-                <div>식당추가</div><button>+</button>
-            </div>
-            <div className='restaurant_name'>
-                <div>식당이름1</div>
-                <div>식당이름2</div>
-            </div>
-            <hr/>
-            <div className='button_wrap'>
-                <button className='cancel_btn'>취소</button><button className='check_btn'>확인</button>
-            </div>
-        </div>
-    );
-}
+  return (
+    <div className="editor_write">
+      <article className="editor_write_title">
+        <span>칼럼이름</span>
+        <input type="text" placeholder="제목을 입력해 주세요"></input>
+      </article>
+      <article className="editor_write_title">
+        <span>칼럼부제</span>
+        <input type="text" placeholder="내용을 입력해 주세요"></input>
+      </article>
+      <section className="add">
+        <span>식당추가</span>
+        <button>+</button>
+      </section>
+      <section className="restaurant_name">
+        <span>식당이름1</span>
+        <span>식당이름2</span>
+      </section>
+      <hr />
+      <section className="button_wrap">
+        <button className="cancel_btn">취소</button>
+        <button className="check_btn">확인</button>
+      </section>
+    </div>
+  );
+};
 
 export default Editor_write;
