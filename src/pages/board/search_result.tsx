@@ -5,8 +5,12 @@ import Search_type from '../../types/types'
 
 
 const Search_result: React.FC = () => {
+<<<<<<< HEAD
+  const search_data = useSelector<RootState, Search_type[]>((state) => state.headerReducer);
+=======
   const search_data = useSelector<RootState, Search_type[]>(state => state.headerReducer);
   console.log(search_data)
+>>>>>>> main
   return (
     <div> 
       <h1>검색결과:</h1>

@@ -1,5 +1,6 @@
 // ./ 의 위치: frontend/src/
 // ../의 위치: frontend/
+
 import React from "react";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
@@ -43,6 +44,9 @@ const App: React.FC = () => {
       <Route path="/mypage_bookmark" element={<Mypage />} />
       <Route path="/userupdate" element={<User_update />} />
       <Route path="/mypage_review" element={<User_review />} />
+      <Route path='/mypage_reg_manage' element={<Reg_manage/>}/>
+      <Route path='/mypage_editor_manage' element={<Editor_Manage/>}/>
+      <Route path='/mypage_notice_manage' element={<Notice_Manage/>}/>
       <Route path="/notice" element={<Notice />} />
       <Route path="/emailcheck" element={<EmailCheck />} />
       <Route path="/nicknamecheck" element={<NickNameCheck />} />
