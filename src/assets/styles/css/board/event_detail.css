@@ -1,117 +1,203 @@
 .event_detail {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    min-width: 1340px;
-    align-items: center;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  min-width: 1340px;
+  align-items: center;
+  .img {
   }
-
-  .list-items{
-    text-align: center;
-  }
-
-  .event_detail_title {
-    width: 40%;
+  .main_title {
     margin-top: 35px;
     margin-right: 400px;
     font-size: 30px;
     font-weight: bold;
-  }
-  .middle_title{
-    width: 45%;
-    margin-top: 15px;
-    font-size: 23px;
-    margin-right: 320px;
-  }
+    .res_info {
+      > p {
+        margin-right: 50px;
+      }
+      > button {
+        border: none;
+        border-radius: 5px;
+        color: gray;
+        width: 150px;
+        height: 22px;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBbNICVMbLZjsTW5i3uwA8Bhj8hAAUM2zr2w&usqp=CAU");
+        background-repeat: no-repeat;
+        background-color: rgb(241, 237, 237);
+        background-size: 20px 20px;
+        font-size: 20px;
+        margin-right: 130px;
+      }
+      .event_title {
+        font-size: 28px;
+        margin-right: 150px;
+      }
+      .event_info {
+        font-size: 15px;
+        margin-left: 18px;
+        > strong {
+          margin-left: 20px;
+        }
+      }
+    }
+    .sale_wrap {
+      text-align: center;
+      margin-left: 550px;
+      flex-direction: row;
 
-  .event_title{
-    text-align: left;
-    width: 45%;
-    margin-top: 35px;
-    font-size: 30px;
-    font-weight: bold;
-    margin-top: 40px;
-    
+      > p {
+        font-size: 20px;
+        text-align: center;
+        margin-left: 470px;
+        text-decoration: line-through;
+        color: #cbcbcb;
+      }
+      .percent {
+        font-size: 32px;
+        margin-top: 10px;
+        margin-left: 180px;
+        > strong {
+          color: #1fceb6;
+          font-size: 32px;
+        }
+      }
+    }
   }
-  .subtitle {
-    
-    text-align: left;
-    width: 45%;
-    margin-top: 40px;
-    font-size: 20px;
-    font-weight: bold;
-  }
+  .event_main_content {
+    > p {
+      margin-top: 50px;
+      font-size: 23px;
+      margin-right: 400px;
+    }
+    .event_content_info {
+      > p {
+        font-size: 20px;
+        margin-right: 620px;
+        margin-top: 35px;
+      }
+      > strong {
+        font-size: 20px;
+        margin-right: 475px;
+        margin-top: 50px;
+      }
+      .content {
+        width: 400px;
+        margin-top: 12px;
+        color: rgb(179, 175, 175);
+        font-size: 14px;
+        margin-right: 300px;
+        margin-bottom: 50px;
 
-  .info_btn{
-    text-align: left;
-    width: 45%;
-    margin-top: 35px;
+        > li {
+          text-align: left;
+        }
+      }
+      .notice_chk {
+        text-align: center;
+        margin-right: 490px;
+        margin-top: 40px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
   }
-
-  .info_btn button {
-    border: none;
-    border-radius: 5px;
-    color: gray;
-    width: 150px;
-    height: 22px;
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBbNICVMbLZjsTW5i3uwA8Bhj8hAAUM2zr2w&usqp=CAU');
-    background-repeat: no-repeat;
-    background-size: 20px 20px;
-    font-size: 20px;
-  }
-
-  .event_content{
-    text-align: left;
-    width: 45%;
-    margin-top: 15px;
-  }
-
-  .origin_price {
-    text-align: right;
-    margin-left: 600px;
-    text-decoration: line-through;
-    color: gray;
-  }
-
-  .sale_wrap{
-    text-align: right;
-    margin-left: 550px;
-    flex-direction: row;
-  }
-  .percent{
-    font-size: 23px;
-    margin-top: 10px;
-  }
-
-  .percent strong {
-    color: #1FCEB6;
-    font-size: 23px;
-  }
-
-  .content {
-    width: 400px;
-    margin-top: 12px;
-    color: rgb(179, 175, 175);
-    font-size: 14px;
-    margin-right: 200px;
-  }
-
-  .content li {
-    text-align: left;
-  }
-
-  .middle_line{
+  .middle_line {
+    text-align: center;
     width: 700px;
     border: 1px dashed gray;
-    margin-left: 350px;
     margin-top: 20px;
   }
+}
 
-  @media (max-width: 768px) {
+/*모바일 설정*/
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .event_detail {
+    min-width: auto;
+    .main_title {
+      margin-top: 5%;
+      margin-right: 10%;
+      font-size: 24px;
+      width: 100%;
+      .res_info {
+        > p {
+          margin-right: 55%;
+        }
+        > button {
+          width: 15%;
+          height: 22px;
+          font-size: 14px;
+          margin-right: 65%;
+        }
+        .event_title {
+          font-size: 24px;
+          margin-right: 64%;
+          margin-top: 6%;
+        }
+        .event_info {
+          font-size: 15px;
+          margin-right: 50%;
+          > span {
+            margin-right: 42%;
+          }
+        }
+      }
+      .sale_wrap {
+        margin-left: 5%;
+        > p {
+          font-size: 14px;
+          margin-left: 90%;
+        }
+        .percent {
+          font-size: 24px;
+          margin-top: 5%;
+          margin-left: 40%;
+          > strong {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+    .event_main_content {
+      > p {
+        margin-top: 5%;
+        font-size: 20px;
+        margin-right: 60%;
+      }
+      .event_content_info {
+        > p {
+          font-size: 18px;
+          margin-right: 85%;
+          margin-top: 5%;
+        }
+        > strong {
+          font-size: 18px;
+          margin-right: 65%;
+          margin-top: 5%;
+        }
+        .content {
+          width: 90%;
+          margin-top: 5%;
+          color: rgb(179, 175, 175);
+          font-size: 14px;
+          margin-right: 5%;
+          margin-bottom: 5%;
 
+          > li {
+            text-align: left;
+          }
+        }
+        .notice_chk {
+          margin-right: 10%;
+          margin-top: 5%;
+          font-size: 18px;
+          font-weight: bold;
+        }
+      }
+    }
+    .middle_line {
+      width: 90%;
+      margin-top: 5%;
+    }
   }
-  
-  @media (max-width: 992px) {
-  
-  }
+}

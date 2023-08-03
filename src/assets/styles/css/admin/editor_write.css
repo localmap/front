@@ -173,14 +173,14 @@ button {
       margin-right: 850px;
 
       > span {
-        margin-left: 320px;
+        margin-left: 510px;
         margin-right: 0px;
       }
       > input {
         width: 400px;
         height: 40px;
         margin-top: 15px;
-        margin-left: 530px;
+        margin-left: 620px;
         border-top: 1px;
         border-left: 1px;
         border-right: 1px;
@@ -189,7 +189,6 @@ button {
     }
     .add {
       margin-top: 120px;
-      margin-right: 140px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -197,33 +196,32 @@ button {
       width: 440px;
     }
     .restaurant_name {
-      width: 200px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: left;
       margin-top: 120px;
       font-size: 20px;
-      margin-right: 820px;
+      margin-right: 680px;
       text-align: left;
     }
     .button_wrap {
       margin-top: 120px;
       margin-left: 650px;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       height: 200px;
       align-items: center;
       justify-content: center;
       .cancel_btn {
         background-color: rgb(182, 173, 173);
         height: 200px;
-        width: 360px;
+        width: 500px;
       }
       .check_btn {
         background-color: rgb(31, 162, 255);
         height: 200px;
-        width: 360px;
+        width: 500px;
       }
     }
   }
