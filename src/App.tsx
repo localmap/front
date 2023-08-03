@@ -30,10 +30,11 @@ import Store_list from "./pages/board/store_list";
 import Editor_info from "./pages/board/editor_info";
 import Editor_list from "./pages/board/editor_list";
 import Editor_Manage from "./pages/admin/editor_manage";
-import Reg_manage from "./pages/admin/reg_manage";
-import Notice_Manage from "./pages/admin/notice_manage";
 import Notice_info from "./pages/board/notice_info";
 import Notice_write from "./pages/admin/notice_write";
+import Notice_Manage from "./pages/admin/notice_manage";
+import Reg_manage from "./pages/admin/reg_manage";
+
 axios.defaults.withCredentials = true;
 
 const App: React.FC = () => {
