@@ -1,78 +1,64 @@
 .price {
-    min-width: 1340px;
-    text-align: center;
-    margin-top: 30px;
-}
-.price_check_title {
+  min-width: 1340px;
+  text-align: center;
+  margin-top: 30px;
+  > p {
     font-size: 25px;
     font-weight: bold;
-    margin-top: 30px;
-    margin-left: 220px;
-}
-.price_check {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     margin-top: 60px;
-    margin-left: 170px;
+    margin-right: 700px;
+  }
 }
 
-.price1_button{
-    width: 80px;
-    height: 80px;
-    background-image: url('https://cdn-icons-png.flaticon.com/128/1077/1077976.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-left: 90px;
+.price_check {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 60px;
+  margin-left: 170px;
 }
 
-.price2_button{
-    width: 80px;
-    height: 80px;
-    background-image: url('https://cdn-icons-png.flaticon.com/128/3141/3141818.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-left: 5px;
+.price1_button {
+  width: 80px;
+  height: 80px;
+  background-image: url("https://cdn-icons-png.flaticon.com/128/1077/1077976.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 70px;
 }
 
-.price3_button{
-    width: 80px;
-    height: 80px;
-    background-image: url('https://cdn-icons-png.flaticon.com/128/10716/10716530.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-left: 40px;
+.price2_button {
+  width: 80px;
+  height: 80px;
+  background-image: url("https://cdn-icons-png.flaticon.com/128/3141/3141818.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.price4_button{
-    width: 80px;
-    height: 80px;
-    background-image: url('https://cdn-icons-png.flaticon.com/128/10013/10013277.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-right: 280px;
-
+.price3_button {
+  width: 80px;
+  height: 80px;
+  background-image: url("https://cdn-icons-png.flaticon.com/128/10716/10716530.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.price_list{
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    margin-top: 20px;
-    margin-left: 120px;
-    font-size: 20px;
-    font-weight: bold;
-    width: 800px;
+.price4_button {
+  width: 80px;
+  height: 80px;
+  background-image: url("https://cdn-icons-png.flaticon.com/128/10013/10013277.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 340px;
 }
-.price_list1{
-   margin-left: 140px;
+
+.price_list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-left: 170px;
+  font-size: 20px;
+  font-weight: bold;
+  width: 900px;
 }
-.price_list2{
-    margin-left: 100px;
- }
- .price_list3{
-    margin-left: 120px;
- }
- .price_list4{
-    margin-right: 10px;
- }
