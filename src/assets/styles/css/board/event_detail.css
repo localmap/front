@@ -114,6 +114,12 @@
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .event_detail {
     min-width: auto;
+    .restaurant_img {
+      > img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
     .main_title {
       margin-top: 5%;
       margin-right: 10%;
@@ -121,38 +127,41 @@
       width: 100%;
       .res_info {
         > p {
-          margin-right: 55%;
+          margin-left: 15%;
         }
         > button {
           width: 15%;
           height: 22px;
-          font-size: 14px;
-          margin-right: 65%;
+          font-size: 12px;
+          margin-left: 10%;
+          margin-right: auto;
+          background-size: 18px 18px;
         }
         .event_title {
           font-size: 24px;
-          margin-right: 64%;
+          margin-left: 8%;
+          margin-right: auto;
           margin-top: 6%;
         }
         .event_info {
           font-size: 15px;
-          margin-right: 50%;
           > span {
-            margin-right: 42%;
           }
         }
       }
       .sale_wrap {
-        margin-left: 5%;
+        margin-left: auto;
+        margin-top: 5%;
         > p {
           font-size: 14px;
-          margin-left: 90%;
+          margin-left: 10%;
         }
         .percent {
           font-size: 24px;
           margin-top: 5%;
-          margin-left: 40%;
+          margin-left: 5%;
           > strong {
+            margin-right: 1%;
             font-size: 24px;
           }
         }
@@ -162,17 +171,17 @@
       > p {
         margin-top: 5%;
         font-size: 20px;
-        margin-right: 60%;
+        margin-right: auto;
       }
       .event_content_info {
         > p {
           font-size: 18px;
-          margin-right: 85%;
+          margin-right: auto;
           margin-top: 5%;
         }
         > strong {
           font-size: 18px;
-          margin-right: 65%;
+          margin-right: auto;
           margin-top: 5%;
         }
         .content {
@@ -184,7 +193,7 @@
           margin-bottom: 5%;
 
           > li {
-            text-align: left;
+            text-align: center;
           }
         }
         .notice_chk {
