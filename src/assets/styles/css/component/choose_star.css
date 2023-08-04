@@ -1,58 +1,57 @@
-.choose_star{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    margin-top: 70px;
+.choose_star {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 70px;
+  margin-left: 60px;
 }
 
-.star_btn1{
-    width: 80px;
-    height: 80px;
-    background-image: url('https://cdn-icons-png.flaticon.com/128/1828/1828970.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-left: 100px;
-    background-size: 50px 50px;
+.star_btn1 {
+  width: 80px;
+  height: 80px;
+  background-image: url("https://cdn-icons-png.flaticon.com/128/1828/1828970.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 60px;
+  background-size: 50px 50px;
 }
 
-.star_btn2{
-    width: 80px;
-    height: 80px;
-    background-image: url('https://cdn-icons-png.flaticon.com/128/1828/1828970.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-left: 5px;
-    background-size: 50px 50px;
+.star_btn2 {
+  width: 80px;
+  height: 80px;
+  background-image: url("https://cdn-icons-png.flaticon.com/128/1828/1828970.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 5px;
+  background-size: 50px 50px;
 }
 
-.star_btn3{
-    width: 80px;
-    height: 80px;
-    background-image: url('https://cdn-icons-png.flaticon.com/128/1828/1828970.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-left: 0px;
-    background-size: 50px 50px;
+.star_btn3 {
+  width: 80px;
+  height: 80px;
+  background-image: url("https://cdn-icons-png.flaticon.com/128/1828/1828970.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 0px;
+  background-size: 50px 50px;
 }
 
-.star_btn4{
-    width: 80px;
-    height: 80px;
-    background-image: url('https://cdn-icons-png.flaticon.com/128/1828/1828970.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-size: 50px 50px;
-
+.star_btn4 {
+  width: 80px;
+  height: 80px;
+  background-image: url("https://cdn-icons-png.flaticon.com/128/1828/1828970.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
 }
 
-.star_btn5{
-    width: 80px;
-    height: 80px;
-    background-image: url('https://cdn-icons-png.flaticon.com/128/1828/1828970.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-right: 500px;
-    background-size: 50px 50px;
-
+.star_btn5 {
+  width: 80px;
+  height: 80px;
+  background-image: url("https://cdn-icons-png.flaticon.com/128/1828/1828970.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 500px;
+  background-size: 50px 50px;
 }
