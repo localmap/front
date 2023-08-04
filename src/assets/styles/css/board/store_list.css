@@ -1,81 +1,162 @@
 .store_list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-width: 1340px;
-    height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-width: 1340px;
+  height: 100%;
 
-    .list_subject {
-        width: 2500px;
-        height: 300px;
-        text-align: center;
-        padding-top: 80px;
-        background-color: rgb(228, 225, 225);
-
-        >p {
-            font-size: 30px;
-            color: gray;
-        }
-
-        >strong {
-            font-size: 40px;
-        }
+  .list_subject {
+    height: 300px;
+    text-align: center;
+    padding-top: 80px;
+    background-color: rgb(228, 225, 225);
+    > p {
+      font-size: 30px;
+      color: gray;
     }
-
+    > strong {
+      font-size: 40px;
+    }
+  }
+  .review_list {
     .review {
-        margin-top: 100px;
-        margin-left: 400px;
-        width: 1400px;
-       .food_img{
+      margin-top: 100px;
+      margin-left: 500px;
+      width: 100%;
+      .food_img {
         border-radius: 10px;
         float: left;
-        width: 250px;
-        height: 170px;
-        >img {
-            width: 400px;
-            height: 220px;
+        width: 200px;
+        > img {
+          width: 400px;
+          height: 220px;
         }
-       }
+      }
 
-       .info{
-        width: 800px;
+      .list_info {
+        width: 1100px;
         display: flex;
         flex-direction: row;
-        .title > a{
-            color: black;
-            font-size: 40px;
-            margin-left: 200px;
+        align-items: center;
+        > span {
+          color: black;
+          width: 300px;
+          font-size: 35px;
+          margin-left: 250px;
         }
-
         > strong {
-            margin-left: 20px;
-            font-size: 40px;
-            color: #FFA101;
+          font-size: 35px;
+          color: #ffa101;
         }
-       }
-       .store_location{
-            font-size: 30px;
-            color: gray;
-            margin-left: 460px;
-            margin-top: 50px;
-       }
-
-       .choose{
-        > span > a {
-            margin-top: 200px;
-            margin-left: 580px;
+        .star_wrap {
+          margin-top: 20px;
+          > button {
+          }
         }
-       }
+      }
+      > p {
+        font-size: 30px;
+        color: gray;
+        margin-left: 500px;
+        margin-top: 50px;
+      }
     }
-    .more_btn{
-        margin-top: 200px;
-        width: 190px;
-        height: 64px;
-        border: 1px solid #FFA101;
+    .more_btn {
+      text-align: center;
+      > button {
+        margin-right: 1100px;
+        margin-top: 60px;
+        width: 200px;
+        border: 1px solid #ffa101;
+        background-color: #ffa101;
         border-radius: 10px;
-        background-color: #FFA101;
-        color: black
+        color: white;
+        font-weight: bold;
+      }
     }
+  }
+}
 
+/*모바일 설정*/
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .store_list {
+    min-width: auto;
+    height: 100%;
+    .list_subject {
+      height: 300px;
+      text-align: center;
+      padding-top: 80px;
+      background-color: rgb(228, 225, 225);
+      > p {
+        font-size: 30px;
+        color: gray;
+      }
+      > strong {
+        font-size: 40px;
+      }
+    }
+    .review_list {
+      .review {
+        margin-top: 100px;
+        margin-left: 500px;
+        width: 100%;
+        .food_img {
+          border-radius: 10px;
+          margin-left: 10%;
+          float: none;
+          width: 250px;
+          height: 170px;
+          > img {
+            width: 400px;
+            height: 220px;
+          }
+        }
+
+        .list_info {
+          width: auto;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin-top: 5%;
+          margin-right: 40%;
+          > span {
+            color: black;
+            width: 300px;
+            font-size: 35px;
+            margin-left: 200px;
+          }
+          > strong {
+            font-size: 35px;
+            color: #ffa101;
+          }
+          .star_wrap {
+            margin-top: 20px;
+            > button {
+            }
+          }
+        }
+        > p {
+          font-size: 30px;
+          color: gray;
+          margin-left: 14%;
+          margin-top: 50px;
+        }
+      }
+      .more_btn {
+        text-align: center;
+        margin-left: 5%;
+        > button {
+          margin-right: 1100px;
+          margin-top: 60px;
+          width: 200px;
+          border: 1px solid #ffa101;
+          background-color: #ffa101;
+          border-radius: 10px;
+          color: white;
+          font-weight: bold;
+        }
+      }
+    }
+  }
 }
