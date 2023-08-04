@@ -135,12 +135,12 @@ button {
       .cancel_btn {
         background-color: rgb(182, 173, 173);
         height: 200px;
-        width: 500px;
+        width: 500%;
       }
       .check_btn {
         background-color: rgb(31, 162, 255);
         height: 200px;
-        width: 500px;
+        width: 500%;
       }
     }
   }

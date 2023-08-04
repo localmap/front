@@ -10,7 +10,7 @@ const Event_detail: React.FC = () => {
   };
   return (
     <div className="event_detail">
-      <figure className="img">
+      <figure className="restaurant_img">
         <img src="https://mimg.segye.com/content/image/2021/01/07/20210107516500.jpg"></img>
       </figure>
       <section className="main_title">
