@@ -1,91 +1,208 @@
 .notice_write {
+  min-width: auto;
+  > header {
+    width: 100%;
+    > strong {
+      width: 10%;
+      margin-left: 100px;
+      font-size: 50px;
+      border-bottom: 10px solid;
+    }
+
+    .notice_write_title {
+      margin-top: 100px;
+      width: 100%;
+      height: 200px;
+
+      .write_tit {
+        width: 80%;
+        border-bottom: 10px solid;
+        margin-left: 110px;
+
+        > span {
+          font-size: 50px;
+        }
+      }
+
+      .tit {
+        margin-left: 170px;
+        margin-top: 30px;
+        width: 100%;
+        height: 100%;
+
+        > strong {
+          font-size: 30px;
+        }
+
+        > input {
+          font-size: 30px;
+          margin-left: 100px;
+          width: 500px;
+          height: 50px;
+          border: none;
+        }
+      }
+    }
+  }
+
+  .body_text_area {
+    > textarea {
+      width: 1500px;
+      height: 500px;
+      margin-left: 120px;
+      font-size: 30px;
+    }
+  }
+
+  .write_btn {
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 200px;
+    margin-left: 19%;
+    justify-content: center;
+
+    .ok_btn {
+      width: 300px;
+      height: 100px;
+
+      > button {
+        width: 300px;
+        height: 100px;
+        background-color: #b3dee5;
+        font-weight: bold;
+      }
+    }
+
+    .no_btn {
+      margin-left: 50px;
+      width: 300px;
+      height: 100px;
+
+      > button {
+        width: 300px;
+        height: 100px;
+        background-color: #31525b;
+        color: white;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+/*모바일환경 설정*/
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .App {
+    padding: 0px;
+  }
+  .notice_write {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-width: 1340px;
+    min-width: auto;
     height: 100%;
-
-    >strong {
-        margin-right: 1700px;
-        font-size: 50px;
+    > header {
+      height: 20%;
+      text-align: center;
+      width: 100%;
+      > strong {
+        width: 10%;
+        font-size: 2rem;
+        margin-left: auto;
         border-bottom: 10px solid;
-    }
+      }
 
-    .notice_write_title {
-        margin-top: 100px;
-        margin-left: 100px;
-        width: 2000px;
-        height: 200px;
-
+      .notice_write_title {
+        margin-top: 5%;
+        margin-left: 18%;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
 
         .write_tit {
-            width: 1590px;
-            border-bottom: 10px solid;
+          margin-left: auto;
+          margin-right: 0%;
+          width: 30%;
+          border: none;
+          margin-top: 1%;
 
-            >span {
-                font-size: 50px;
-            }
+          > span {
+            font-size: 1.7rem;
+          }
         }
 
         .tit {
-            margin-left: 50px;
-            margin-top: 30px;
-            width: 100%;
-            height: 100%;
+          display: flex;
+          flex-direction: row;
+          margin-left: 0%;
+          margin-top: 0px;
+          width: 100%;
+          height: 100px;
 
-            >strong {
-                font-size: 30px;
-            }
+          > strong {
+            width: 20%;
+            font-size: 1.5rem;
+            margin-top: 2%;
+          }
 
-            >input {
-                font-size: 30px;
-                margin-left: 100px;
-                width: 1000px;
-                height: 50px;
-                border: none;
-            }
+          > input {
+            font-size: 30px;
+            margin-left: 5%;
+            width: 30%;
+            height: 50px;
+            border: 0px 0px 1px 0px solid black;
+          }
         }
+      }
     }
 
     .body_text_area {
-        >textarea {
-            width: 1600px;
-            height: 500px;
-            margin-right: 310px;
-            font-size: 30px;
-        }
+      height: 80%;
+      > textarea {
+        width: 100%;
+        height: 200px;
+        margin-left: auto;
+        margin-right: 90%;
+        font-size: 30px;
+      }
     }
 
     .write_btn {
-        display: flex;
-        flex-direction: row;
-        margin-top: 150px;
-        margin-right: 300px;
+      display: flex;
+      flex-direction: column;
+      margin-left: 30%;
+      margin-right: auto;
+      margin-top: 10%;
+      width: 50%;
 
-        .ok_btn {
-            width: 300px;
-            height: 100px;
+      .ok_btn {
+        width: 120%;
+        height: 60px;
 
-
-            >button {
-                width: 300px;
-                height: 100px;
-                background-color: #B3DEE5;
-            }
+        > button {
+          width: 70%;
+          height: 60px;
+          background-color: #b3dee5;
+          font-weight: bold;
         }
+      }
 
-        .no_btn {
-            margin-left: 50px;
-            width: 300px;
-            height: 100px;
+      .no_btn {
+        margin-left: 0px;
+        width: 120%;
+        height: 60px;
 
-
-            >button {
-                width: 300px;
-                height: 100px;
-                background-color: #31525B;
-            }
+        > button {
+          width: 70%;
+          height: 60px;
+          background-color: #31525b;
+          color: white;
+          font-weight: bold;
         }
+      }
     }
+  }
 }
