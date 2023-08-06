@@ -75,7 +75,7 @@
         width: 100px;
         height: 40px;
         margin-left: 30px;
-        background-color: #ff7474;
+        background-color: #ffa101;
         color: white;
         border-radius: 5px;
         border: none;
@@ -102,7 +102,7 @@
         width: 100px;
         height: 40px;
         margin-left: 30px;
-        background-color: #ff7474;
+        background-color: #ffa101;
         color: white;
         border-radius: 5px;
         border: none;
@@ -114,7 +114,7 @@
       margin-top: 30px;
       width: 150px;
       height: 40px;
-      background-color: #ff7474;
+      background-color: #ffa101;
       color: white;
       border-radius: 5px;
       border: none;
@@ -224,7 +224,7 @@ input::placeholder {
           width: 24%;
           height: 40px;
           margin-left: 30px;
-          background-color: #ff7474;
+          background-color: #ffa101;
           color: white;
           border-radius: 5px;
           border: none;
@@ -251,7 +251,7 @@ input::placeholder {
           width: 24%;
           height: 40px;
           margin-left: 30px;
-          background-color: #ff7474;
+          background-color: #ffa101;
           color: white;
           border-radius: 5px;
           border: none;
