@@ -32,6 +32,7 @@ import Editor_list from "./pages/board/editor_list";
 import Editor_Manage from "./pages/admin/editor_manage";
 import Notice_info from "./pages/board/notice_info";
 import Notice_write from "./pages/admin/notice_write";
+import Notice_update from "./pages/admin/notice_update";
 import Notice_Manage from "./pages/admin/notice_manage";
 import Reg_manage from "./pages/admin/reg_manage";
 
@@ -68,6 +69,7 @@ const App: React.FC = () => {
       <Route path="/editor_info" element={<Editor_info />} />
       <Route path="/notice_info" element={<Notice_info />} />
       <Route path="/notice_write" element={<Notice_write />} />
+      <Route path="/notice_update" element={<Notice_update />} />
       <Route path="/editor_list" element={<Editor_list />} />
     </Routes>
   );

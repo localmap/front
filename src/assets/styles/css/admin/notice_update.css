@@ -1,4 +1,4 @@
-.notice_write {
+.notice_update {
   min-width: auto;
   > header {
     width: 100%;
@@ -9,12 +9,12 @@
       border-bottom: 10px solid;
     }
 
-    .notice_write_title {
+    .notice_update_title {
       margin-top: 100px;
       width: 100%;
       height: 200px;
 
-      .write_tit {
+      .update_title {
         width: 80%;
         border-bottom: 10px solid;
         margin-left: 110px;
@@ -24,7 +24,7 @@
         }
       }
 
-      .tit {
+      .update_tit {
         margin-left: 170px;
         margin-top: 30px;
         width: 100%;
@@ -45,7 +45,7 @@
     }
   }
 
-  .body_text_area {
+  .update_body_text_area {
     > textarea {
       width: 1500px;
       height: 500px;
@@ -54,7 +54,7 @@
     }
   }
 
-  .write_btn {
+  .update_btn_wraps {
     width: 800px;
     display: flex;
     flex-direction: row;
@@ -62,7 +62,7 @@
     margin-left: 25%;
     justify-content: center;
 
-    .ok_btn {
+    .update_btn {
       width: 300px;
       height: 100px;
 
@@ -74,7 +74,7 @@
       }
     }
 
-    .no_btn {
+    .update_cancle_btn {
       margin-left: 50px;
       width: 300px;
       height: 100px;
@@ -96,7 +96,7 @@
   .App {
     padding: 0px;
   }
-  .notice_write {
+  .notice_update {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -114,7 +114,7 @@
         border-bottom: 10px solid;
       }
 
-      .notice_write_title {
+      .notice_update_title {
         margin-top: 5%;
         margin-left: 18%;
         width: 100%;
@@ -122,7 +122,7 @@
         display: flex;
         flex-direction: column;
 
-        .write_tit {
+        .update_title {
           margin-left: 0%;
           margin-right: 0%;
           width: 30%;
@@ -134,7 +134,7 @@
           }
         }
 
-        .tit {
+        .update_tit {
           display: flex;
           flex-direction: row;
           margin-left: 7%;
@@ -159,7 +159,7 @@
       }
     }
 
-    .body_text_area {
+    .update_body_text_area {
       height: 80%;
       > textarea {
         width: 100%;
@@ -171,7 +171,7 @@
       }
     }
 
-    .write_btn {
+    .update_btn_wraps {
       display: flex;
       flex-direction: column;
       margin-left: 30%;
@@ -179,7 +179,7 @@
       margin-top: 5%;
       width: 50%;
 
-      .ok_btn {
+      .update_btn {
         width: 120%;
         height: 60px;
 
@@ -191,7 +191,7 @@
         }
       }
 
-      .no_btn {
+      .update_cancle_btn {
         margin-left: 0px;
         width: 120%;
         height: 60px;
