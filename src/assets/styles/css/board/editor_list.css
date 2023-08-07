@@ -1,0 +1,38 @@
+.editor_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  > p {
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  .res_column {
+    display: flex;
+    flex-direction: row;
+    border-top: 1px dashed rgb(211, 211, 211);
+    border-bottom: 1px dashed rgb(211, 211, 211);
+    .res_column {
+      > img {
+        width: 400px;
+        height: 170px;
+      }
+    }
+    .column_info {
+      margin-left: 30px;
+      .columnist_info {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+    .column_tit {
+      text-align: left;
+    }
+    .column_detail {
+      margin-top: 40px;
+      width: 600px;
+      text-align: left;
+    }
+  }
+}
