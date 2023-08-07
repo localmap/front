@@ -20,14 +20,15 @@ import Event_detail from "./pages/board/event_detail";
 import axios from "axios";
 import Pw_reset from "./pages/user/pw_reset";
 import Restaurant_write from "./pages/admin/restaurant_write";
-import Editor_write from "./pages/admin/editor_write";
 import Search_result from "./pages/board/search_result";
 import Restaurant_update from "./pages/user/restaurant_update";
 import Rec_store from "./pages/user/rec_store";
 import Review_write from "./pages/user/review_write";
 import Store_info from "./pages/board/store_info";
 import Store_list from "./pages/board/store_list";
+import Editor_write from "./pages/admin/editor_write";
 import Editor_info from "./pages/board/editor_info";
+import Editor_update from "./pages/admin/editor_update";
 import Editor_list from "./pages/board/editor_list";
 import Editor_Manage from "./pages/admin/editor_manage";
 import Notice_info from "./pages/board/notice_info";
@@ -59,13 +60,14 @@ const App: React.FC = () => {
       <Route path="/location_search" element={<Location_search />} />
       <Route path="/event_detail" element={<Event_detail />} />
       <Route path="/restaurant_write" element={<Restaurant_write />} />
-      <Route path="/editor_write" element={<Editor_write />} />
       <Route path="/search_result" element={<Search_result />} />
       <Route path="/restaurant_update" element={<Restaurant_update />} />
       <Route path="/rec_store" element={<Rec_store />} />
       <Route path="/review_write" element={<Review_write />} />
       <Route path="/store_info" element={<Store_info />} />
       <Route path="/store_list" element={<Store_list />} />
+      <Route path="/editor_write" element={<Editor_write />} />
+      <Route path="/editor_update" element={<Editor_update />} />
       <Route path="/editor_info" element={<Editor_info />} />
       <Route path="/notice_info" element={<Notice_info />} />
       <Route path="/notice_write" element={<Notice_write />} />

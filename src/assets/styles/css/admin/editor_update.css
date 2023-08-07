@@ -1,0 +1,194 @@
+.editor_update {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  .editor_update_title {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 80px;
+    text-align: center;
+    > span {
+      margin-right: 645px;
+    }
+    > input {
+      width: 800px;
+      height: 40px;
+      margin-top: 30px;
+      border-top: 1px;
+      border-left: 1px;
+      border-right: 1px;
+      font-size: 2rem;
+    }
+  }
+
+  .add {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 32px;
+    width: 800px;
+  }
+  .update_restaurant_name {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    margin-top: 120px;
+    font-size: 2rem;
+    text-align: center;
+    .res_name1 {
+      width: 1000px;
+      > button {
+        background-color: #31525b;
+        color: white;
+        border-radius: 10px;
+        margin-left: 600px;
+      }
+    }
+    .res_name2 {
+      width: 1000px;
+      > button {
+        background-color: #31525b;
+        color: white;
+        border-radius: 10px;
+        margin-left: 600px;
+        margin-top: 20px;
+      }
+    }
+    > span {
+      margin-left: 50px;
+    }
+  }
+  .update_button_wrap {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    .e_update_cancel_btn {
+      background-color: #31525b;
+      color: white;
+      height: 200px;
+      width: 400px;
+    }
+    .e_update_check_btn {
+      background-color: #b3dee5;
+      height: 200px;
+      width: 400px;
+    }
+  }
+}
+
+input::placeholder {
+  font-size: 2rem;
+}
+
+button {
+  border: none;
+  background-color: white;
+  font-size: 2rem;
+}
+
+/*브라우저 크기에 따른 컨텐츠 크기조정*/
+
+/*모바일*/
+@media all and (min-width: 320px) and (max-width: 768px) {
+  .editor_update {
+    min-width: auto !important;
+    padding: 0 5% !important;
+    .editor_update_title {
+      font-weight: bold;
+      margin-top: 80px;
+      margin-right: 115%;
+      width: 100%;
+
+      > span {
+        font-size: 1.2rem;
+        margin-left: 68%;
+        margin-right: 0px;
+      }
+      > input {
+        width: 60%;
+        height: 40px;
+        margin-top: 15px;
+        margin-left: 76%;
+        border-top: 1px;
+        border-left: 1px;
+        border-right: 1px;
+        font-size: 0.8rem;
+      }
+    }
+    .add {
+      margin-top: 120px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      font-size: 20px;
+      width: 65%;
+    }
+    .update_restaurant_name {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: left;
+      width: 70%;
+      margin-top: 120px;
+      font-size: 20px;
+      margin-right: 10%;
+      text-align: left;
+      .res_name1 {
+        justify-content: space-between;
+        width: 100%;
+        margin-left: 20%;
+        > button {
+          background-color: #31525b;
+          color: white;
+          border-radius: 10px;
+          font-size: 1.5rem;
+          margin-left: 45%;
+        }
+      }
+      .res_name2 {
+        width: 100%;
+        margin-left: 20%;
+        > button {
+          background-color: #31525b;
+          color: white;
+          border-radius: 10px;
+          margin-left: 45%;
+          margin-top: 20px;
+          font-size: 1.5rem;
+        }
+      }
+    }
+    .update_button_wrap {
+      margin-top: 120px;
+      display: flex;
+      flex-direction: column;
+      height: 200px;
+      align-items: center;
+      justify-content: center;
+      .e_update_cancel_btn {
+        background-color: #31525b;
+        color: white;
+        height: 200px;
+        width: 500%;
+      }
+      .e_update_check_btn {
+        background-color: #b3dee5;
+        height: 200px;
+        width: 500%;
+      }
+    }
+  }
+  input::placeholder {
+    font-size: 1rem;
+  }
+}
