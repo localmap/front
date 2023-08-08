@@ -8,31 +8,86 @@
     font-weight: bold;
     font-size: 2rem;
   }
-  .res_column {
-    display: flex;
-    flex-direction: row;
-    border-top: 1px dashed rgb(211, 211, 211);
-    border-bottom: 1px dashed rgb(211, 211, 211);
+  .res_column_list {
     .res_column {
-      > img {
-        width: 400px;
-        height: 170px;
+      display: flex;
+      flex-direction: row;
+      border-top: 1px dashed rgb(211, 211, 211);
+      border-bottom: 1px dashed rgb(211, 211, 211);
+      .column_img {
+        > ul {
+          width: 400px;
+          height: 200px;
+          list-style-type: none;
+          > li > img {
+            width: 100%;
+            height: 200px;
+          }
+        }
+      }
+      .column_info {
+        margin-left: 30px;
+        margin-top: 20px;
+        .columnist_info {
+          display: flex;
+          flex-direction: row;
+        }
+      }
+      .column_tit {
+        text-align: left;
+        margin-top: 10px;
+      }
+      .column_detail {
+        margin-top: 40px;
+        width: 600px;
+        text-align: left;
       }
     }
-    .column_info {
-      margin-left: 30px;
-      .columnist_info {
-        display: flex;
-        flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .editor_list {
+    > p {
+      font-weight: bold;
+      font-size: 2rem;
+    }
+    .res_column_list {
+      .res_column {
+        padding: 0 15px;
+        width: 100%;
+        .column_img {
+          max-height: 300px;
+          > ul {
+            > li {
+              margin-bottom: 10px;
+              > img {
+                max-width: 100%;
+                height: 200px;
+                object-fit: cover;
+                width: 100%;
+              }
+            }
+          }
+        }
+        .column_info {
+          margin-left: 30px;
+          margin-top: 20px;
+          .columnist_info {
+            display: flex;
+            flex-direction: row;
+          }
+        }
+        .column_tit {
+          text-align: left;
+          margin-top: 10px;
+        }
+        .column_detail {
+          margin-top: 40px;
+          width: 80%;
+          text-align: left;
+        }
       }
-    }
-    .column_tit {
-      text-align: left;
-    }
-    .column_detail {
-      margin-top: 40px;
-      width: 600px;
-      text-align: left;
     }
   }
 }
