@@ -55,11 +55,6 @@
   .food_type {
     height: 400px;
   }
-
-  > hr {
-    width: 800px;
-    margin: 50px 1000px auto 920px;
-  }
   /* 메뉴*/
   .menu {
     text-align: left;
@@ -157,29 +152,30 @@ input::placeholder {
       font-weight: bold;
       margin-top: 2%;
       width: 100%;
+      margin-left: 10%;
       > p {
         font-size: 1.5rem;
-        margin-left: 10%;
+        margin-right: 23%;
       }
       > input {
-        margin-left: 20%;
+        margin-left: 25%;
         height: 40px;
-        width: 20%;
+        width: 80%;
         font-size: 20px;
         border-top: 1px;
         border-right: 1px;
         border-left: 1px;
-        margin-top: 20px;
+        margin-top: 10px;
       }
     }
     .location_select {
-      margin-top: 3%;
+      margin-top: 7%;
       margin-left: 7%;
       display: flex;
       justify-content: space-between;
       font-weight: bold;
-      width: 20%;
-      margin-right: 200px;
+      width: 90%;
+      margin-right: 8%;
       border: 0px 0px 1px 0px solid black;
       > span {
         font-size: 1.2rem;
@@ -202,23 +198,18 @@ input::placeholder {
       }
     }
     .food_type {
-      margin-left: 4%;
-      width: 50%;
+      margin-left: 10%;
+      width: 123%;
       height: 50%;
     }
     .price_type {
-      margin-right: 1%;
-      width: 45%;
+      margin-right: 5%;
+      width: 112%;
       height: 50%;
-    }
-
-    > hr {
-      width: 800px;
-      margin: 50px 1000px auto 920px;
     }
     /* 메뉴*/
     .menu {
-      width: 100%;
+      width: 135%;
       text-align: left;
       align-items: center;
       margin-top: 60px;
@@ -228,8 +219,8 @@ input::placeholder {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 20%;
-        margin-left: 40%;
+        width: 60%;
+        margin-left: 25%;
         margin-right: 0px;
         > span {
           font-size: 1.3rem;
@@ -245,12 +236,12 @@ input::placeholder {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 40%;
-        margin-left: 28%;
+        width: 116%;
+        margin-left: -16%;
         .menu_img {
           background-image: url("https://cdn-icons-png.flaticon.com/128/3137/3137032.png");
-          width: 35%;
-          height: 85px;
+          width: 64%;
+          height: 91px;
           background-size: cover;
           background-repeat: no-repeat;
           background-position: center;
@@ -269,28 +260,33 @@ input::placeholder {
     .hours_title {
       font-weight: bold;
       text-align: center;
-      margin-left: 10%;
+      margin-left: 4%;
+      margin-right: auto;
       margin-top: 50px;
       font-size: 20px;
+      width: 88%;
       > input {
-        margin-left: 43%;
+        margin-left: 17%;
+        margin-right: auto;
         height: 50px;
-        width: 50%;
+        width: 74%;
         font-size: 20px;
         border-top: 1px;
         border-right: 1px;
         border-left: 1px;
-        margin-top: 20px;
+        margin-top: 10px;
       }
       > p {
         font-size: 1.3rem;
+        margin-right: 30%;
       }
     }
     .button_wrap {
       display: flex;
       flex-direction: column;
-      width: 15%;
+      width: 74%;
       margin-top: 5%;
+      margin-left: 6%;
       .cancel_btn {
         background-color: #fae6b1;
         height: 100px;

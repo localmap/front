@@ -24,7 +24,7 @@
   background-image: url("https://cdn-icons-png.flaticon.com/128/1077/1077976.png");
   background-size: cover;
   background-repeat: no-repeat;
-  margin-left: 70px;
+  margin-right: 20px;
 }
 
 .price2_button {
@@ -33,6 +33,7 @@
   background-image: url("https://cdn-icons-png.flaticon.com/128/3141/3141818.png");
   background-size: cover;
   background-repeat: no-repeat;
+  margin-right: 70px;
 }
 
 .price3_button {
@@ -41,6 +42,7 @@
   background-image: url("https://cdn-icons-png.flaticon.com/128/10716/10716530.png");
   background-size: cover;
   background-repeat: no-repeat;
+  margin-right: 120px;
 }
 
 .price4_button {
@@ -73,7 +75,7 @@
       font-size: 1.3rem;
       font-weight: bold;
       margin-top: 60px;
-      margin-right: 45%;
+      margin-right: 55%;
     }
   }
 
@@ -82,40 +84,40 @@
     flex-direction: row;
     justify-content: space-between;
     margin-top: 60px;
-    margin-left: 20%;
+    margin-left: 10%;
     width: 100%;
   }
 
   .price1_button {
-    width: 6.5%;
+    width: 60%;
     height: 80px;
     background-image: url("https://cdn-icons-png.flaticon.com/128/1077/1077976.png");
     background-size: cover;
     background-repeat: no-repeat;
-    margin-left: 1%;
+    margin-right: 70%;
   }
 
   .price2_button {
-    width: 6.5%;
+    width: 60%;
     height: 80px;
     background-image: url("https://cdn-icons-png.flaticon.com/128/3141/3141818.png");
     background-size: cover;
     background-repeat: no-repeat;
-    margin-right: 1%;
+    margin-left: 7%;
   }
 
   .price3_button {
-    width: 6.5%;
+    width: 60%;
     height: 80px;
     background-image: url("https://cdn-icons-png.flaticon.com/128/10716/10716530.png");
     background-size: cover;
     background-repeat: no-repeat;
-    margin-right: 1%;
+    margin-right: 16%;
   }
 
   .price4_button {
-    width: 6.5%;
-    height: 80px;
+    width: 60%;
+    height: 85px;
     background-image: url("https://cdn-icons-png.flaticon.com/128/10013/10013277.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -127,9 +129,21 @@
     flex-direction: row;
     justify-content: space-between;
     margin-top: 20px;
-    margin-left: 15%;
+    margin-left: 2%;
     font-size: 1rem;
     font-weight: bold;
-    width: 70%;
+    width: 100%;
+    .price_list1 {
+      margin-left: 5%;
+    }
+    .price_list2 {
+      margin-left: 10%;
+    }
+    .price_list3 {
+      margin-left: 7%;
+    }
+    .price_list4 {
+      margin-left: 5%;
+    }
   }
 }
