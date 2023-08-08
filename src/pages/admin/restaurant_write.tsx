@@ -28,11 +28,11 @@ const Restaurant_write: React.FC = () => {
       <section className="food_type">
         <Choose_food />
       </section>
-      <hr />
+
       <section className="price_type">
         <Choose_price />
       </section>
-      <hr />
+
       <section className="menu">
         <section className="menu_title">
           <span>메뉴</span>
@@ -46,7 +46,7 @@ const Restaurant_write: React.FC = () => {
           </div>
         </section>
       </section>
-      <hr />
+
       <section className="hours_title">
         <p>영업시간</p>
         <input placeholder="영업 시간을 입력해 주세요"></input>
