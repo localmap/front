@@ -7,11 +7,15 @@ const Rec_store: React.FC = () => {
   const [visible, setVisible] = useState(false);
   return (
     <div className="rec_store">
-      <div className="rec_store_title">식당이름</div>
-      <input className="res_name" placeholder="상호를 입력해 주세요"></input>
+      <div className="rec_store_title">
+        <p>식당이름</p>
+        <div className="rec_store_input">
+          <input placeholder="상호를 입력해 주세요"></input>
+        </div>
+      </div>
       <div className="location_selects">
         <div className="inner_content">
-          <div>지역 및 위치 선택</div>
+          <span>지역 및 위치 선택</span>
           <button
             className="location_button"
             onClick={() => setVisible(!visible)}
@@ -23,9 +27,7 @@ const Rec_store: React.FC = () => {
             </div>
           )}
         </div>
-        <hr />
       </div>
-      <div className="store_food_type">음식종류</div>
       <Choose_food />
       <div className="registration">
         <button className="registration_btn">등록</button>
