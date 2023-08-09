@@ -3,6 +3,7 @@ import { Button } from '../elements';
 import styled from "styled-components";
 import { useNavigate } from 'react-router-dom';
 import { Grid, Image , Text} from "../elements";
+import '../assets/styles/css/home.scss'
 
 const Home: React.FC = () => {
 
@@ -12,7 +13,7 @@ const Home: React.FC = () => {
    margin: 0 auto;
    display: grid;
    grid-template-columns: repeat(4, 1fr);
-    max-width: 1050px;
+    max-width: 1450px;
   `;
   const SubTitle = styled.div`
    margin-top: 10px;
@@ -28,13 +29,12 @@ const navigate = useNavigate();
 const goStoreInfo = () => {
     navigate('/info')
   };
-  
   return (
     <div className="home">
       <div className='Home_maps'>
         <p>지도</p>
       </div>
-      <Grid bgcolor=" rgb(247, 247, 247)">
+      <Grid>
         <SubTitle>주변 인기 맛집</SubTitle>
         <Grid 
           _onClick={() => goStoreInfo()}
@@ -43,9 +43,9 @@ const goStoreInfo = () => {
           <Text margin="12px 0px 0px 0px"size="16px">음식점 이름</Text>
           <Text padding="9px 0px 0px 0px" size="16px" weight="800">위치 - 음식종류</Text>
                 </Grid>
-            <Button> 더보기 </Button>
+            <button className='m_button'> 더보기 </button>
         </Grid>
-        <Grid bgcolor=" rgb(247, 247, 247)">
+        <Grid>
         <SubTitle>이벤트 중인 맛집</SubTitle>
         <Grid 
           _onClick={() => goStoreInfo()}
@@ -54,9 +54,9 @@ const goStoreInfo = () => {
           <Text margin="12px 0px 0px 0px"size="16px">음식점 이름</Text>
           <Text padding="9px 0px 0px 0px" size="16px" weight="800">위치 - 음식종류</Text>
                 </Grid>
-            <Button> 더보기 </Button>
+            <button className='m_button'> 더보기 </button>
         </Grid>
-        <Grid bgcolor=" rgb(247, 247, 247)">
+        <Grid>
         <SubTitle>에디터 특집</SubTitle>
         <Grid 
           _onClick={() => goStoreInfo()}
@@ -65,7 +65,7 @@ const goStoreInfo = () => {
           <Text margin="12px 0px 0px 0px"size="16px">음식점 이름</Text>
           <Text padding="9px 0px 0px 0px" size="16px" weight="800">위치 - 음식종류</Text>
         </Grid>
-            <Button> 더보기 </Button>
+            <button className='m_button'> 더보기 </button>
         </Grid>
       </div>
   )
