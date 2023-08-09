@@ -54,6 +54,7 @@
     }
     .res_column_list {
       .res_column {
+        flex-direction: column;
         padding: 0 15px;
         width: 100%;
         .column_img {
@@ -71,7 +72,7 @@
           }
         }
         .column_info {
-          margin-left: 30px;
+          margin-left: 50px;
           margin-top: 20px;
           .columnist_info {
             display: flex;
