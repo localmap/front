@@ -8,8 +8,8 @@ const Editor_info: React.FC = () => {
         <div className="group_wraps">
           <div className="group_name">
             <strong>Local_Map</strong>
-            <div>로컬맵그룹</div>
-            <div>2023/07/14</div>
+            <div className="gr_name">로컬맵그룹</div>
+            <div className="gr_date">2023/07/14</div>
           </div>
           <div className="btn_wraps">
             <button>
@@ -37,7 +37,6 @@ const Editor_info: React.FC = () => {
             </p>
             시원함을 경험하고 싶은 분들에게는 안성맞춤 맛집! 모두 체험해보세요.
           </strong>
-          <div className="column_writer">칼럼리스트 : 김세훈</div>
         </div>
         <p>
           <p>
@@ -86,7 +85,7 @@ const Editor_info: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="column_footer">
+        <footer className="column_footer">
           <div className="footer_title">
             <h1>
               <span className="strong_text">추천 </span> 콘텐츠
@@ -123,7 +122,7 @@ const Editor_info: React.FC = () => {
               <em>학원을 다니며 강남 주변에는 생각보다 숨겨진 맛집이 많다!</em>
             </div>
           </div>
-        </div>
+        </footer>
       </div>
     </div>
   );

@@ -7,12 +7,12 @@ const Rec_store: React.FC = () => {
   const [visible, setVisible] = useState(false);
   return (
     <div className="rec_store">
-      <div className="rec_store_title">
+      <header className="rec_store_title">
         <p>식당이름</p>
-        <div className="rec_store_input">
+        <section className="rec_store_input">
           <input placeholder="상호를 입력해 주세요"></input>
-        </div>
-      </div>
+        </section>
+      </header>
       <div className="location_selects">
         <span>지역 및 위치 선택</span>
         <button
