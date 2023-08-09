@@ -1,0 +1,117 @@
+@charset "UTF-8";
+/* header start */
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.App-header {
+    @include flex-center;
+    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    position:relative;
+    overflow: hidden;
+    min-width: 1340px;
+    
+    .App-header-logo {
+      display: flex;
+      max-width: 100px;
+      margin-left: 30px;
+      color: #07363d;
+      font-weight: bold;
+      font-size: 30px;
+      font-family: 'Giants-Bold';
+      src: url('../../../pages/fonts/Giants-Bold.ttf');
+    }
+    .search_wrap{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 30px;
+      margin-bottom: 25px;
+      margin-left: 350px;
+      border-bottom: 1px solid #07363d;
+  
+      .HiMagnifyingGlass{
+        margin-top: 10px;
+        width: 30px;
+        height: 30px;
+      }
+
+      .search_input {
+        width: 400px;
+        height: 35px;
+        border: none;
+      
+        background-repeat: no-repeat;
+        padding-left: 50px;
+        padding-top: 5px;
+        font-size: 15px;
+      }
+
+      .search_input::placeholder{
+          padding-left: 10px;
+          font-size: 15px;
+          align-items: center;
+      }
+
+      .search_button{
+        background-color: #56b1c0;
+        margin-left: 30px;
+     
+        margin-top: 15px;
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        width: 120px;
+        height: 30px;
+        border: none;
+        border-radius: 10px;
+        background-repeat: no-repeat;
+        background-size: 25px 25px;
+        background-position: 15px;
+      }
+    }
+    .App-header-profile-icons{
+      display: flex;
+      flex-direction: row;
+      max-width: 30%;
+      height: 50px;
+      margin-top: 20px;
+      margin-left: 350px;
+      margin-right: 10px;
+      
+      .mypage_btn{
+          width: 35px;
+          height: 35px;
+          background-color: transparent;
+          padding: none;
+          margin-top: 10px;
+          margin-left: 50px;
+          
+          border: none;
+          display: inline-block;
+      }
+      .alarm{
+        margin-top: 30px;    
+        width: 20px;
+        height: 25px;
+      }
+      .login_btn, .logout_btn{
+        margin-top: 13px;
+        margin-left: 30px;
+        width: 30px;
+        height: 30px;
+        background-color: transparent;
+        padding: none;
+        margin: none;
+        border: none;
+        display: inline-block;
+      }
+      
+    }
+}
+

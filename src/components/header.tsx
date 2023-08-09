@@ -1,15 +1,12 @@
-import React, { useEffect } from 'react'
-import '../App.css'
+import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import { RootState } from '../reducers/index'
 import { set } from '../reducers/user/userReducer'
-import logo from '../pages/img/logo.png'
-import mypage from '../pages/img/mypage.png'
-import logout from '../pages/img/logout.png'
-import login from '../pages/img/log-in.png'
 import { setSearchResults } from '../reducers/header/headerReducer'
 import { useState } from 'react'
+import { HiMiniExclamationCircle, HiMapPin,HiMagnifyingGlass, HiOutlineUserCircle,HiOutlineUserPlus,HiOutlineUserMinus} from "react-icons/hi2";
+import '../assets/styles/css/header.scss'
 
 const Header: React.FC = () => {
   //navigate
@@ -47,25 +44,23 @@ const Header: React.FC = () => {
   const LoginButton = () => {
     if (currentUser == '') {
       return (
-        <button
+        <HiOutlineUserPlus
           className="login_btn"
           onClick={() => {
             goLogin()
           }}
         >
-          <img className="login_logo" src={login}></img>
-        </button>
+        </HiOutlineUserPlus>
       )
     } else {
       return (
-        <button
+        <HiOutlineUserMinus
           className="logout_btn"
           onClick={() => {
             doLogOut()
           }}
         >
-          <img className="logout_logo" src={logout}></img>
-        </button>
+        </HiOutlineUserMinus>
       )
     }
   }
@@ -93,34 +88,29 @@ const Header: React.FC = () => {
             goHome()
           }}
         >
-        Local_Map
+          Local_Map
         </div>
         <div className="search_wrap">
+          <HiMapPin/>
           <input
             className="search_input"
             type="text"
             placeholder="검색어를 입력하세요"
-         onChange={getValue}
+            onChange={getValue}
           ></input>
-          <button
-            className="search_button"
+          <HiMagnifyingGlass 
           onClick={() => {
             goSearch(inputdata)
-          }}
-          >
-            검색
-          </button>
+          }}/>
         </div>
-
         <div className="App-header-profile-icons">
-          <button
+          <HiOutlineUserCircle
             className="mypage_btn"
             onClick={() => {
               goMypage()
             }}
-          >
-            <img className="mypage_logo" src={mypage}></img>
-          </button>
+          />
+          <HiMiniExclamationCircle className='alarm'/>
           <LoginButton />
         </div>
       </header>
