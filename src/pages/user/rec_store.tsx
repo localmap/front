@@ -14,23 +14,28 @@ const Rec_store: React.FC = () => {
         </div>
       </div>
       <div className="location_selects">
-        <div className="inner_content">
-          <span>지역 및 위치 선택</span>
-          <button
-            className="location_button"
-            onClick={() => setVisible(!visible)}
-            type="button"
-          ></button>
-          {visible && (
-            <div className="drop_down">
-              <Location_search />
-            </div>
-          )}
-        </div>
+        <span>지역 및 위치 선택</span>
+        <button
+          className="location_button"
+          onClick={() => setVisible(!visible)}
+          type="button"
+        ></button>
+        {visible && (
+          <div className="drop_down">
+            <Location_search />
+          </div>
+        )}
       </div>
-      <Choose_food />
+      <section className="food_type">
+        <Choose_food />
+      </section>
       <div className="registration">
-        <button className="registration_btn">등록</button>
+        <div className="reg_ok_btn">
+          <button>등록</button>
+        </div>
+        <div className="reg_cancle_btn">
+          <button>취소</button>
+        </div>
       </div>
     </div>
   );
