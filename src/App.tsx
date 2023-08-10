@@ -19,9 +19,10 @@ import Location_search from "./pages/user/location_search";
 import Event_detail from "./pages/board/event_detail";
 import axios from "axios";
 import Pw_reset from "./pages/user/pw_reset";
-import Restaurant_write from "./pages/admin/restaurant_write";
 import Search_result from "./pages/board/search_result";
+import Restaurant_write from "./pages/admin/restaurant_write";
 import Restaurant_update from "./pages/user/restaurant_update";
+import Restaurant_check from "./pages/user/restaurant_check";
 import Rec_store from "./pages/user/rec_store";
 import Review_write from "./pages/user/review_write";
 import Store_info from "./pages/board/store_info";
@@ -73,6 +74,7 @@ const App: React.FC = () => {
       <Route path="/notice_write" element={<Notice_write />} />
       <Route path="/notice_update" element={<Notice_update />} />
       <Route path="/editor_list" element={<Editor_list />} />
+      <Route path="/restaurant_check" element={<Restaurant_check />} />
     </Routes>
   );
 };
