@@ -26,7 +26,7 @@ const Rec_store: React.FC = () => {
           </div>
         )}
       </div>
-      <section className="food_type">
+      <section className="rec_food_type">
         <Choose_food />
       </section>
       <div className="registration">

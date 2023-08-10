@@ -49,7 +49,7 @@
     margin-left: 900px;
   }
 }
-.food_type {
+.rec_food_type {
   height: 400px;
 }
 .registration {
@@ -75,9 +75,11 @@
 /*모바정정 설정*/
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .rec_store {
+    width: 100%;
     min-width: auto;
 
     .rec_store_title {
+      width: 100%;
       font-weight: bold;
       font-size: 2rem;
       margin-top: 2%;
@@ -96,6 +98,7 @@
   }
 
   .location_selects {
+    width: 100%;
     margin-right: 8%;
     margin-top: 80px;
     > span {
@@ -119,8 +122,9 @@
       margin-top: 25px;
     }
   }
-  .food_type {
+  .rec_food_type {
     margin-left: 0%;
+    margin-top: 5%;
     width: 80%;
     height: 50%;
   }
@@ -132,16 +136,22 @@
     flex-direction: column;
     width: 100%;
     margin-right: 100px;
-    .reg_ok_btn > button {
-      margin-top: 150px;
-      width: 60%;
-      background-color: #e0a800;
-      color: white;
+    .reg_ok_btn {
+      width: 100%;
+      > button {
+        margin-top: 150px;
+        width: 60%;
+        background-color: #e0a800;
+        color: white;
+      }
     }
-    .reg_cancle_btn > button {
-      width: 60%;
-      background-color: #31525b;
-      color: white;
+    .reg_cancle_btn {
+      width: 100%;
+      > button {
+        width: 60%;
+        background-color: #31525b;
+        color: white;
+      }
     }
   }
 }
