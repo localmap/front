@@ -181,21 +181,22 @@
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .notice_info {
     min-width: auto;
+    width: 100%;
     .header_info {
       .notice_title {
         text-align: center;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin-left: 100px;
-        width: 1000px;
+        margin-left: 15%;
+        width: 80%;
         .return_list {
           padding: 0px;
           display: flex;
-          border: 1px solid;
+          border: none;
           flex-direction: row;
           margin-left: 200px;
-          width: 315.5px;
+          width: 33%;
 
           > a {
             background-color: #b3dee5;
@@ -214,14 +215,14 @@
           }
 
           .return_text {
-            font-size: 30px;
-            margin-left: 30px;
+            font-size: 1rem;
+            margin-left: 15px;
             color: white;
           }
         }
 
         > strong {
-          font-size: 40px;
+          font-size: 1.8rem;
         }
       }
       .notice_sub_title {

@@ -41,19 +41,19 @@ const Restaurant_update: React.FC = () => {
           placeholder="식당을 대표할 사진을 골라주세요"
         ></input>
       </div>
-      <div className="food_type">
+      <div className="update_food_type">
         <Choose_food />
       </div>
       <div className="menu">
         <div className="menu_title">
-          <div>메뉴</div>
+          <span>메뉴</span>
           <button>+</button>
         </div>
-        <div className="menu_list">
+        <div className="update_menu_list">
           <div className="menu_img"></div>
           <div className="menu_sub">
-            <div>오렌지</div>
-            <div>5000원</div>
+            <span>오렌지</span>
+            <span>5000원</span>
           </div>
         </div>
       </div>

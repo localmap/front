@@ -9,9 +9,8 @@ const Choose_price: React.FC = () => {
     <div className="price">
       <p>가격 1인당</p>
       <section className="price_check">
-        <div>
+        <div className="price1_button">
           <button
-            className="price1_button"
             onClick={() => setPrice1(!price1)}
             style={{
               backgroundImage: price1
@@ -20,9 +19,8 @@ const Choose_price: React.FC = () => {
             }}
           ></button>
         </div>
-        <div>
+        <div className="price2_button">
           <button
-            className="price2_button"
             onClick={() => setPrice2(!price2)}
             style={{
               backgroundImage: price2
@@ -31,9 +29,8 @@ const Choose_price: React.FC = () => {
             }}
           ></button>
         </div>
-        <div>
+        <div className="price3_button">
           <button
-            className="price3_button"
             onClick={() => setPrice3(!price3)}
             style={{
               backgroundImage: price3
@@ -42,9 +39,8 @@ const Choose_price: React.FC = () => {
             }}
           ></button>
         </div>
-        <div>
+        <div className="price4_button">
           <button
-            className="price4_button"
             onClick={() => setPrice4(!price4)}
             style={{
               backgroundImage: price4
