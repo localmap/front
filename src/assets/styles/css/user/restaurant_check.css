@@ -1,0 +1,235 @@
+.restaurant_check {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 1340px;
+  width: 100%;
+  .res_check_tit {
+    width: 900px;
+    margin-right: 300px;
+    border-bottom: 4px solid black;
+    > span {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+  }
+  .res_caution {
+    background-color: #f3f3f3;
+    width: 900px;
+    margin-right: 300px;
+    padding: 30px 0px;
+    .caution_tit {
+      margin-left: 30px;
+      > p {
+        font-weight: bold;
+      }
+    }
+    .caution_list {
+      margin-left: 30px;
+      .import_caution {
+        color: red;
+        font-weight: bold;
+      }
+    }
+  }
+  .res_search {
+    width: 900px;
+    margin-right: 300px;
+    margin-top: 30px;
+    .res_search_tit {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      border-bottom: 1px solid black;
+      > span {
+        margin-top: 25px;
+        margin-left: 100px;
+        > strong {
+          color: red;
+        }
+      }
+    }
+    .res_search_name {
+      display: flex;
+      flex-direction: row;
+      width: 900px;
+      margin-right: 300px;
+      border-bottom: 1px solid rgb(188, 187, 187);
+
+      > span {
+        font-size: 1.2rem;
+        padding: 30px 30px;
+      }
+      .search_name_input {
+        margin-left: 50px;
+        margin-top: 30px;
+        > input {
+          width: 500px;
+          height: 30px;
+          font-size: 1.2rem;
+        }
+      }
+    }
+    .res_search_location {
+      display: flex;
+      flex-direction: row;
+      width: 900px;
+      margin-right: 300px;
+      border-bottom: 1px solid rgb(188, 187, 187);
+      > span {
+        font-size: 1.2rem;
+        padding: 30px 30px;
+      }
+      .search_location_input {
+        margin-left: 90px;
+        margin-top: 30px;
+        > input {
+          width: 500px;
+          height: 30px;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+  .res_check_btn_wraps {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-left: 200px;
+    width: 900px;
+    .res_check_btn {
+      > button {
+        width: 200px;
+        height: 50px;
+        background-color: bisque;
+      }
+    }
+    .res_ok_btn {
+      > button {
+        width: 200px;
+        height: 50px;
+        background-color: rgb(255, 147, 14);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .restaurant_check {
+    width: 100%;
+    min-width: auto;
+    margin-left: 40%;
+    margin-top: 30px;
+    .res_check_tit {
+      width: 100%;
+      margin-right: 56%;
+      border-bottom: 4px solid black;
+      > span {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+    }
+    .res_caution {
+      background-color: #f3f3f3;
+      width: 100%;
+      padding: 30px 0px;
+      margin-right: 56%;
+      .caution_tit {
+        margin-left: 30px;
+        > p {
+          font-weight: bold;
+        }
+      }
+      .caution_list {
+        margin-left: 30px;
+        .import_caution {
+          color: red;
+          font-weight: bold;
+        }
+      }
+    }
+    .res_search {
+      width: 100%;
+      margin-right: 55%;
+      margin-top: 30px;
+      .res_search_tit {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        border-bottom: 1px solid black;
+        > h1 {
+          width: 25%;
+        }
+        > span {
+          width: 53%;
+          margin-top: 25px;
+          margin-left: 10%;
+          > strong {
+            color: red;
+          }
+        }
+      }
+      .res_search_name {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-right: 300px;
+        border-bottom: 1px solid rgb(188, 187, 187);
+
+        > span {
+          font-size: 1.2rem;
+          padding: 30px 30px;
+        }
+        .search_name_input {
+          margin-left: 50px;
+          margin-top: 30px;
+          > input {
+            width: 100%;
+            height: 30px;
+            font-size: 1.2rem;
+          }
+        }
+      }
+      .res_search_location {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-right: 25%;
+        border-bottom: 1px solid rgb(188, 187, 187);
+        > span {
+          font-size: 1.2rem;
+          padding: 30px 30px;
+        }
+        .search_location_input {
+          margin-left: 90px;
+          margin-top: 30px;
+          > input {
+            width: 100%;
+            height: 30px;
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+    .res_check_btn_wraps {
+      width: 100%;
+      margin-right: 40%;
+      margin-left: 0px;
+      .res_check_btn {
+        > button {
+          width: 200px;
+          height: 50px;
+          background-color: bisque;
+        }
+      }
+      .res_ok_btn {
+        > button {
+          width: 200px;
+          height: 50px;
+          background-color: rgb(255, 147, 14);
+        }
+      }
+    }
+  }
+}

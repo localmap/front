@@ -6,9 +6,6 @@ const Notice_update: React.FC = () => {
       <header>
         <strong>공지사항</strong>
         <section className="notice_update_title">
-          <div className="update_title">
-            <span>글수정</span>
-          </div>
           <div className="update_tit">
             <strong>제목</strong>
             <input type="text" placeholder="제목을 입력해주세요" />

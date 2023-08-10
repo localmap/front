@@ -31,7 +31,7 @@
         height: 100%;
 
         > strong {
-          font-size: 30px;
+          font-size: 40px;
         }
 
         > input {
@@ -102,13 +102,15 @@
     justify-content: center;
     align-items: center;
     min-width: auto;
+    width: 100%;
     height: 100%;
+    margin-top: 30px;
     > header {
       height: 20%;
       text-align: center;
       width: 100%;
       > strong {
-        width: 10%;
+        width: 100%;
         font-size: 2rem;
         margin-left: auto;
         border-bottom: 10px solid;
@@ -122,23 +124,11 @@
         display: flex;
         flex-direction: column;
 
-        .update_title {
-          margin-left: 0%;
-          margin-right: 0%;
-          width: 30%;
-          border: none;
-          margin-top: 1%;
-
-          > span {
-            font-size: 1.7rem;
-          }
-        }
-
         .update_tit {
           display: flex;
           flex-direction: row;
           margin-left: 7%;
-          margin-top: 0px;
+          margin-top: 20px;
           width: 70%;
           height: 50px;
 
@@ -160,7 +150,8 @@
     }
 
     .update_body_text_area {
-      height: 80%;
+      width: 90%;
+      height: 100%;
       > textarea {
         width: 100%;
         height: 200px;
@@ -176,7 +167,7 @@
       flex-direction: column;
       margin-left: 30%;
       margin-right: auto;
-      margin-top: 5%;
+      margin-top: 15%;
       width: 50%;
 
       .update_btn {
