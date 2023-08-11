@@ -95,7 +95,7 @@ const Store_info: React.FC = () => {
         </div>
         <div className="review_content">
           <div className="user_review">
-            <div className="review_title">
+            <div className="review_tit">
               <div>리뷰작성시간</div>
               <div>위치인증 O 리뷰</div>
             </div>
@@ -110,8 +110,9 @@ const Store_info: React.FC = () => {
             </div>
             <div className="user_nick_review">
               <div className="user_nick">유저닉네임</div>
-              <div className="user_nick_date">
-                2023/07/05 정말맛있습니다 꼭 가보세요 후회안함!
+              <div className="user_nick_date">2023/07/05</div>
+              <div className="user_nick_re">
+                정말맛있습니다 꼭 가보세요 후회안함!
               </div>
             </div>
             <div className="person_review">
@@ -125,8 +126,9 @@ const Store_info: React.FC = () => {
             </div>
             <div className="user_nick_review">
               <div className="user_nick">유저닉네임</div>
-              <div className="user_nick_date">
-                2023/07/05 정말맛있습니다 꼭 가보세요 후회안함!
+              <div className="user_nick_date">2023/07/05</div>
+              <div className="user_nick_re">
+                정말맛있습니다 꼭 가보세요 후회안함!
               </div>
             </div>
             <div className="person_review">
@@ -140,8 +142,9 @@ const Store_info: React.FC = () => {
             </div>
             <div className="user_nick_review">
               <div className="user_nick">유저닉네임</div>
-              <div className="user_nick_date">
-                2023/07/05 정말맛있습니다 꼭 가보세요 후회안함!
+              <div className="user_nick_date">2023/07/05</div>
+              <div className="user_nick_re">
+                정말맛있습니다 꼭 가보세요 후회안함!
               </div>
             </div>
           </div>
