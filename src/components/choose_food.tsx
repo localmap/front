@@ -1,4 +1,4 @@
-import "../assets/styles/css/component/choose_food.css";
+import "../assets/styles/css/component/choose_food.scss";
 import { useState } from "react";
 
 const Choose_food: React.FC = () => {

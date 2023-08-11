@@ -1,4 +1,4 @@
-import "../../assets/styles/css/user/restaurant_check.css";
+import "../../assets/styles/css/user/restaurant_check.scss";
 const Restaurant_check: React.FC = () => {
   return (
     <div className="restaurant_check">

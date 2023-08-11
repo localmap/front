@@ -1,4 +1,4 @@
-import "../assets/styles/css/component/choose_price.css";
+import "../assets/styles/css/component/choose_price.scss";
 import { useState } from "react";
 const Choose_price: React.FC = () => {
   const [price1, setPrice1] = useState(false);

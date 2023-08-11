@@ -1,4 +1,4 @@
-import "../../assets/styles/css/board/store_info.css";
+import "../../assets/styles/css/board/store_info.scss";
 import Review_picture from "../../components/review_picture";
 const Store_info: React.FC = () => {
   return (

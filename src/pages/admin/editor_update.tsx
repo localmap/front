@@ -1,4 +1,4 @@
-import "../../assets/styles/css/admin/editor_update.css";
+import "../../assets/styles/css/admin/editor_update.scss";
 
 const Editor_update: React.FC = () => {
   return (

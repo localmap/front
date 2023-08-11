@@ -1,65 +1,142 @@
-.review_write{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-}
-
-.review_title strong{
-    font-size: 30px;
-    color: #ffa101;
-}
-
-.review_write textarea{
-    width: 800px;
-    height: 300px;
-}
-
-.review_write p {
-    margin-left: 770px;
-}
-.file_upload{
+.review_write {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  .review_title {
+    > strong {
+      font-size: 30px;
+      color: #ffa101;
+    }
+  }
+  .review_write_textarea {
+    > textarea {
+      width: 800px;
+      height: 300px;
+    }
+  }
+  .text_limit {
+    > p {
+      margin-left: 770px;
+    }
+  }
+  .file_upload {
     margin-right: 550px;
-}
-
-.location_section{
-    margin-top: 100px;
+  }
+  .location_section {
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     font-size: 30px;
-}
-
-.location_section_btn{
-    background-image: url('https://cdn-icons-png.flaticon.com/128/2838/2838912.png');
-    background-size: 30px 30px;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 30px;
-    margin-left: 680px;
-}
-
-.button_wrap{
+    .location_section_btn {
+      background-image: url("https://cdn-icons-png.flaticon.com/128/2838/2838912.png");
+      background-size: 30px 30px;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 30px;
+      margin-left: 680px;
+    }
+  }
+  .button_wrap {
     display: flex;
     flex-direction: row;
-}
-.button_wrap button {
-    border: 1px solid gray;
-    border-radius: 10px;
+    .button_wrap button {
+      border: 1px solid gray;
+      border-radius: 10px;
+    }
+
+    .close_btn {
+      background-color: #31525b;
+      color: white;
+      width: 300px;
+      margin-right: 100px;
+    }
+    .upload_btn {
+      background-color: #ffa101;
+      color: white;
+      width: 300px;
+    }
+  }
 }
 
-.close_btn{
-    background-color: #31525B;
-    color: white;
-    width: 300px;
-    margin-right: 100px;
+hr {
+  color: black;
 }
-hr{
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .review_write {
+    margin-left: 30%;
+    .review_title {
+      margin-right: 60%;
+      > strong {
+        font-size: 30px;
+        color: #ffa101;
+      }
+    }
+    .review_write_textarea {
+      width: 100%;
+      margin-right: 5%;
+      > textarea {
+        width: 70%;
+        height: 300px;
+      }
+    }
+    .text_limit {
+      margin-left: 25%;
+      > p {
+        margin-left: 0px;
+      }
+    }
+    .file_upload {
+      margin-right: 550px;
+    }
+    .location_section {
+      width: 80%;
+      margin-top: 50px;
+      margin-right: 15%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      font-size: 1.5rem;
+      > p {
+        width: 16%;
+      }
+      .location_section_btn {
+        background-image: url("https://cdn-icons-png.flaticon.com/128/2838/2838912.png");
+        background-size: 30px 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 50%;
+        margin-left: 0%;
+      }
+    }
+    .button_wrap {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-left: 26%;
+      .button_wrap button {
+        border: 1px solid gray;
+        border-radius: 10px;
+      }
+
+      .close_btn {
+        background-color: #31525b;
+        color: white;
+        width: 300px;
+        margin-right: 0px;
+      }
+      .upload_btn {
+        background-color: #ffa101;
+        color: white;
+        width: 300px;
+      }
+    }
+  }
+
+  hr {
     color: black;
-}
-.upload_btn{
-    background-color: #ffa101;
-    color: white;
-    width: 300px;
+  }
 }
