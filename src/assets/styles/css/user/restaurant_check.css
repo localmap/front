@@ -67,7 +67,7 @@
         > input {
           width: 500px;
           height: 30px;
-          font-size: 1.2rem;
+          font-size: 2.2rem;
         }
       }
     }
@@ -87,7 +87,7 @@
         > input {
           width: 500px;
           height: 30px;
-          font-size: 1.2rem;
+          font-size: 2.2rem;
         }
       }
     }
@@ -113,6 +113,10 @@
       }
     }
   }
+}
+
+input::placeholder {
+  font-size: 20px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
