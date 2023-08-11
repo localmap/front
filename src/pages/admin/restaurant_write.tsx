@@ -1,6 +1,6 @@
-import "../../assets/styles/css/admin/restaurant_write.css";
+import "../../assets/styles/css/admin/restaurant_write.scss";
 import { useState } from "react";
-import Location_search from "../user/location_search";
+import Location_search from "../../components/location_search";
 import Choose_food from "../../components/choose_food";
 import Choose_price from "../../components/choose_price";
 

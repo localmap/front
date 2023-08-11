@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useNavigate } from "react-router-dom";
-import "../../assets/styles/css/board/event_detail.css";
+import "../../assets/styles/css/board/event_detail.scss";
 
 const Event_detail: React.FC = () => {
   const navigate = useNavigate();

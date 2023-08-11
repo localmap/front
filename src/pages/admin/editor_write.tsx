@@ -1,4 +1,4 @@
-import "../../assets/styles/css/admin/editor_write.css";
+import "../../assets/styles/css/admin/editor_write.scss";
 
 const Editor_write: React.FC = () => {
   return (

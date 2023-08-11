@@ -15,7 +15,7 @@ import Notice from "./pages/board/notice_list";
 import EmailCheck from "./pages/user/email_check";
 import NickNameCheck from "./pages/user/nickname_check";
 import Location from "./pages/user/location";
-import Location_search from "./pages/user/location_search";
+import Location_search from "./components/location_search";
 import Event_detail from "./pages/board/event_detail";
 import axios from "axios";
 import Pw_reset from "./pages/user/pw_reset";

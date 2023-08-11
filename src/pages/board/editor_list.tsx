@@ -1,4 +1,4 @@
-import "../../assets/styles/css/board/editor_list.css";
+import "../../assets/styles/css/board/editor_list.scss";
 
 const Editor_list: React.FC = () => {
   return (

@@ -1,7 +1,7 @@
-import "../../assets/styles/css/user/location.css";
+import "../../assets/styles/css/user/location.scss";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import Location_search from "./location_search";
+import Location_search from "../../components/location_search";
 
 const Location: React.FC = () => {
   const navigate = useNavigate();
