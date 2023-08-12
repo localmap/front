@@ -29,7 +29,6 @@ import Store_info from "./pages/board/store_info";
 import Store_list from "./pages/board/store_list";
 import Editor_write from "./pages/admin/editor_write";
 import Editor_info from "./pages/board/editor_info";
-import Editor_update from "./pages/admin/editor_update";
 import Editor_list from "./pages/board/editor_list";
 import Editor_Manage from "./pages/admin/editor_manage";
 import Notice_info from "./pages/board/notice_info";
@@ -37,6 +36,7 @@ import Notice_write from "./pages/admin/notice_write";
 import Notice_update from "./pages/admin/notice_update";
 import Notice_Manage from "./pages/admin/notice_manage";
 import Reg_manage from "./pages/admin/reg_manage";
+import Event_write from "./pages/admin/event_write";
 
 axios.defaults.withCredentials = true;
 
@@ -48,33 +48,33 @@ const App: React.FC = () => {
       <Route path="/join" element={<Join />} />
       <Route path="/pwsearch" element={<Pwsearch />} />
       <Route path="/pwreset" element={<Pw_reset />} />
-      <Route path="/mypage_bookmark" element={<Mypage />} />
       <Route path="/userupdate" element={<User_update />} />
+      <Route path="/mypage_bookmark" element={<Mypage />} />
       <Route path="/mypage_review" element={<User_review />} />
       <Route path="/mypage_reg_manage" element={<Reg_manage />} />
       <Route path="/mypage_editor_manage" element={<Editor_Manage />} />
       <Route path="/mypage_notice_manage" element={<Notice_Manage />} />
-      <Route path="/notice" element={<Notice />} />
       <Route path="/emailcheck" element={<EmailCheck />} />
       <Route path="/nicknamecheck" element={<NickNameCheck />} />
       <Route path="/location" element={<Location />} />
       <Route path="/location_search" element={<Location_search />} />
       <Route path="/event_detail" element={<Event_detail />} />
+      <Route path="/event_write" element={<Event_write />} />
       <Route path="/restaurant_write" element={<Restaurant_write />} />
-      <Route path="/search_result" element={<Search_result />} />
       <Route path="/restaurant_update" element={<Restaurant_update />} />
+      <Route path="/restaurant_check" element={<Restaurant_check />} />
+      <Route path="/search_result" element={<Search_result />} />
       <Route path="/rec_store" element={<Rec_store />} />
       <Route path="/review_write" element={<Review_write />} />
       <Route path="/store_info" element={<Store_info />} />
       <Route path="/store_list" element={<Store_list />} />
       <Route path="/editor_write" element={<Editor_write />} />
-      <Route path="/editor_update" element={<Editor_update />} />
       <Route path="/editor_info" element={<Editor_info />} />
+      <Route path="/editor_list" element={<Editor_list />} />
+      <Route path="/notice" element={<Notice />} />
       <Route path="/notice_info" element={<Notice_info />} />
       <Route path="/notice_write" element={<Notice_write />} />
       <Route path="/notice_update" element={<Notice_update />} />
-      <Route path="/editor_list" element={<Editor_list />} />
-      <Route path="/restaurant_check" element={<Restaurant_check />} />
     </Routes>
   );
 };
