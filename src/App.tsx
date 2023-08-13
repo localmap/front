@@ -37,6 +37,9 @@ import Notice_update from "./pages/admin/notice_update";
 import Notice_Manage from "./pages/admin/notice_manage";
 import Reg_manage from "./pages/admin/reg_manage";
 import Event_write from "./pages/admin/event_write";
+import User_resign from "./pages/modal/user_resign";
+import Event_delete from "./pages/modal/event_delete";
+import Review_delete from "./pages/modal/review_delete";
 
 axios.defaults.withCredentials = true;
 
@@ -75,6 +78,9 @@ const App: React.FC = () => {
       <Route path="/notice_info" element={<Notice_info />} />
       <Route path="/notice_write" element={<Notice_write />} />
       <Route path="/notice_update" element={<Notice_update />} />
+      <Route path="/user_resign" element={<User_resign />} />
+      <Route path="/event_delete" element={<Event_delete />} />
+      <Route path="/review_delete" element={<Review_delete />} />
     </Routes>
   );
 };
