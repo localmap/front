@@ -1,6 +1,9 @@
 import "../../assets/styles/css/board/editor_list.scss";
-
+import Column_delete from "../modal/column_delete";
+import { useState } from "react";
 const Editor_list: React.FC = () => {
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <div className="editor_list">
       <p>맛집칼럼</p>
@@ -17,6 +20,14 @@ const Editor_list: React.FC = () => {
             <div className="columnist_info">
               <strong>김세훈칼럼</strong>
               <span>2023/07/28</span>
+              <button onClick={() => setShowModal(true)}>삭제</button>
+              {showModal && (
+                <Column_delete
+                  content="컬럼삭제"
+                  _cashe=""
+                  onClose={() => setShowModal(false)}
+                />
+              )}
             </div>
             <div className="column_tit">
               <strong>[맛잘알] '십고초려'는 기본, 꼭 가봐야한다.</strong>

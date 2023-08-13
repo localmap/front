@@ -40,7 +40,8 @@ import Event_write from "./pages/admin/event_write";
 import User_resign from "./pages/modal/user_resign";
 import Event_delete from "./pages/modal/event_delete";
 import Review_delete from "./pages/modal/review_delete";
-
+import Restaurant_delete from "./pages/modal/restaurant_delete";
+import Notice_delete from "./pages/modal/notice_delete";
 axios.defaults.withCredentials = true;
 
 const App: React.FC = () => {
@@ -81,6 +82,8 @@ const App: React.FC = () => {
       <Route path="/user_resign" element={<User_resign />} />
       <Route path="/event_delete" element={<Event_delete />} />
       <Route path="/review_delete" element={<Review_delete />} />
+      <Route path="/restaurant_delete" element={<Restaurant_delete />} />
+      <Route path="/notice_delete" element={<Notice_delete />} />
     </Routes>
   );
 };
