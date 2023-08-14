@@ -33,6 +33,9 @@
     justify-content: space-between;
     font-size: 32px;
     width: 800px;
+    > button {
+      cursor: pointer;
+    }
   }
   .restaurant_name {
     display: flex;
@@ -60,11 +63,13 @@
       background-color: rgb(182, 173, 173);
       height: 200px;
       width: 400px;
+      cursor: pointer;
     }
     .check_btn {
       background-color: rgb(31, 162, 255);
       height: 200px;
       width: 400px;
+      cursor: pointer;
     }
   }
 }
