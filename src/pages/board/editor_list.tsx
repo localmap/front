@@ -1,8 +1,13 @@
 import "../../assets/styles/css/board/editor_list.scss";
 import Column_delete from "../modal/column_delete";
-import { useState } from "react";
+import { set } from "../../reducers/modal/modalReducer";
+import { useDispatch } from "react-redux";
 const Editor_list: React.FC = () => {
-  const [showModal, setShowModal] = useState(false);
+  const dispatch = useDispatch();
+
+  const openModal = () => {
+    dispatch(set({ state: "컬럼삭제", cashe1: "캐시1", cashe2: "캐시2" }));
+  };
 
   return (
     <div className="editor_list">
@@ -20,14 +25,8 @@ const Editor_list: React.FC = () => {
             <div className="columnist_info">
               <strong>김세훈칼럼</strong>
               <span>2023/07/28</span>
-              <button onClick={() => setShowModal(true)}>삭제</button>
-              {showModal && (
-                <Column_delete
-                  content="컬럼삭제"
-                  _cashe=""
-                  onClose={() => setShowModal(false)}
-                />
-              )}
+              <button onClick={openModal}>삭제</button>
+              <Column_delete />
             </div>
             <div className="column_tit">
               <strong>[맛잘알] '십고초려'는 기본, 꼭 가봐야한다.</strong>
