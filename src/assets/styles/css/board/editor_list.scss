@@ -32,6 +32,15 @@
         .columnist_info {
           display: flex;
           flex-direction: row;
+          > button {
+            margin-left: 100px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+            border: 1px solid black;
+            border-radius: 10px;
+            background-color: #ffa101;
+          }
         }
       }
       .column_tit {
