@@ -13,7 +13,7 @@ const Restaurant_add: React.FC = () => {
 
   if (modalState.state === "") return null;
   return (
-    <div className="modal_container">
+    <div className="res_modal_container">
       <div className="restaurant_add">
         <span>{modalState.state}</span>
         <div className="res_search">

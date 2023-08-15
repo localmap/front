@@ -15,7 +15,7 @@ const Column_delete: React.FC = () => {
   if (modalState.state === "") return null;
 
   return (
-    <div className="modal_container">
+    <div className="c_d_modal_container">
       <div className="column_delete">
         <header className="column_delete_tit">
           <span>{modalState.state}</span>
