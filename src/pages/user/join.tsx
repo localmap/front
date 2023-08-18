@@ -3,14 +3,12 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import "../../assets/styles/css/user/join.scss";
 import * as axiosApi from "../../util/axiosApi";
+import { set } from "../../reducers/modal/modalReducer";
+import { useDispatch } from "react-redux";
 
 const Join: React.FC = () => {
   //navigate
   const navigate = useNavigate();
-
-  const goNicknameCheck = () => {
-    navigate("/nicknamecheck");
-  };
 
   const goLogin = () => {
     navigate("/login");
@@ -86,6 +84,12 @@ const Join: React.FC = () => {
     setPasswordconfirm(inputPasswordConfirm);
   };
 
+  /*모달창*/
+  const dispatch = useDispatch();
+  const open_nick_chk = () => {
+    dispatch(set({ state: "닉네임중복확인", cashe1: "", cashe2: "" }));
+  };
+
   return (
     <div className="join">
       <form id="joinform" onSubmit={handleSubmit}>
@@ -118,7 +122,7 @@ const Join: React.FC = () => {
         </section>
         <section className="input_nickname">
           <input type="text" placeholder="닉네임"></input>
-          <button className="nick_btn" onClick={goNicknameCheck}>
+          <button className="nick_btn" onClick={open_nick_chk}>
             중복확인
           </button>
         </section>

@@ -13,7 +13,6 @@ import User_update from "./pages/user/user_update";
 import User_review from "./pages/user/user_review";
 import Notice from "./pages/board/notice_list";
 import EmailCheck from "./pages/user/email_check";
-import NickNameCheck from "./pages/user/nickname_check";
 import Location from "./pages/user/location";
 import Location_search from "./components/location_search";
 import Event_detail from "./pages/board/event_detail";
@@ -59,7 +58,7 @@ const App: React.FC = () => {
       <Route path="/mypage_editor_manage" element={<Editor_Manage />} />
       <Route path="/mypage_notice_manage" element={<Notice_Manage />} />
       <Route path="/emailcheck" element={<EmailCheck />} />
-      <Route path="/nicknamecheck" element={<NickNameCheck />} />
+
       <Route path="/location" element={<Location />} />
       <Route path="/location_search" element={<Location_search />} />
       <Route path="/event_detail" element={<Event_detail />} />
