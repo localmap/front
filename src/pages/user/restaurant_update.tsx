@@ -2,13 +2,23 @@ import "../../assets/styles/css/admin/restaurant_update.scss";
 import { useState } from "react";
 import Location_search from "../../components/location_search";
 import Choose_food from "../../components/choose_food";
-import Choose_price from "../../components/choose_price";
+import { set } from "../../reducers/modal/modalReducer";
+import { useDispatch } from "react-redux";
+import Restaurant_delete from "../modal/restaurant_delete";
 
 const Restaurant_update: React.FC = () => {
   const [visible, setVisible] = useState(false);
 
+  const dispatch = useDispatch();
+  const openmodal = () => {
+    dispatch(set({ state: "식당삭제", cashe1: "캐시1", cashe2: "캐시2" }));
+  };
   return (
     <div className="restaurant_update">
+      <button className="m_res_delete" onClick={openmodal}>
+        삭제
+      </button>
+      <Restaurant_delete />
       <div className="restaurant_title_name">
         <p>식당이름</p>
         <input

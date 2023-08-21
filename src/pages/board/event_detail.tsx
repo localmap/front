@@ -1,6 +1,9 @@
 import * as React from "react";
 import { useNavigate } from "react-router-dom";
 import "../../assets/styles/css/board/event_detail.scss";
+import Event_delete from "../modal/event_delete";
+import { set } from "../../reducers/modal/modalReducer";
+import { useDispatch } from "react-redux";
 
 const Event_detail: React.FC = () => {
   const navigate = useNavigate();
@@ -8,8 +11,17 @@ const Event_detail: React.FC = () => {
   const goStore_Info = () => {
     navigate("/store_info");
   };
+
+  const dispatch = useDispatch();
+  const openmodal = () => {
+    dispatch(set({ state: "이벤트삭제", cashe1: "캐시1", cashe2: "캐시2" }));
+  };
   return (
     <div className="event_detail">
+      <button className="e_del_btn" onClick={openmodal}>
+        삭제
+      </button>
+      <Event_delete />
       <figure className="restaurant_img">
         <img src="https://mimg.segye.com/content/image/2021/01/07/20210107516500.jpg"></img>
       </figure>
