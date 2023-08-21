@@ -6,7 +6,9 @@
   text-align: center;
   min-width: 1340px;
   height: 100%;
-
+  .m_res_delete {
+    cursor: pointer;
+  }
   .restaurant_title_name {
     font-weight: bold;
     margin-right: 150px;
