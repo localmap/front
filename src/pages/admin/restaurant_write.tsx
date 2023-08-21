@@ -1,12 +1,14 @@
 import "../../assets/styles/css/admin/restaurant_write.scss";
-import { useState } from "react";
-import Location_search from "../../components/location_search";
 import Choose_food from "../../components/choose_food";
 import Choose_price from "../../components/choose_price";
-
+import { set } from "../../reducers/modal/modalReducer";
+import { useDispatch } from "react-redux";
+import Map from "../modal/map";
 const Restaurant_write: React.FC = () => {
-  const [visible, setVisible] = useState(false);
-
+  const dispatch = useDispatch();
+  const open_map_modal = () => {
+    dispatch(set({ state: "맵모달", cashe1: "캐시1", cashe2: "캐시2" }));
+  };
   return (
     <main className="restaurant_write">
       <section className="restaurant_title">
@@ -18,12 +20,8 @@ const Restaurant_write: React.FC = () => {
       </section>
       <section className="location_select">
         <span>지역 및 위치 선택</span>
-        <button onClick={() => setVisible(!visible)} type="button"></button>
-        {visible && (
-          <div className="drop_down">
-            <Location_search />
-          </div>
-        )}
+        <button onClick={open_map_modal} type="button"></button>
+        <Map />
       </section>
       <section className="food_type">
         <Choose_food />
