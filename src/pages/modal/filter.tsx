@@ -1,4 +1,3 @@
-import "../../assets/styles/css/modal/filter.scss";
 import M_Choose_food from "../../components/m_choose_food";
 import { useState } from "react";
 import { set } from "../../reducers/modal/modalReducer";

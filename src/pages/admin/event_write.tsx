@@ -1,4 +1,3 @@
-import "../../assets/styles/css/admin/event_write.scss";
 import React from "react";
 
 const Event_write: React.FC = () => {

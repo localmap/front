@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useNavigate } from "react-router-dom";
-import "../../assets/styles/css/board/event_detail.scss";
+
 import Event_delete from "../modal/event_delete";
 import { set } from "../../reducers/modal/modalReducer";
 import { useDispatch } from "react-redux";

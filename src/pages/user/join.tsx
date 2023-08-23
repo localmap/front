@@ -1,7 +1,6 @@
 import * as React from "react";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import "../../assets/styles/css/user/join.scss";
 import * as axiosApi from "../../util/axiosApi";
 import { set } from "../../reducers/modal/modalReducer";
 import { useDispatch } from "react-redux";

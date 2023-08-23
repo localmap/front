@@ -1,0 +1,46 @@
+//component
+@import "./component/choose_food.scss";
+@import "./component/choose_price.scss";
+@import "./component/choose_star.scss";
+@import "./component/location_search.scss";
+@import "./component/m_choose_food.scss";
+@import "./component/review_picture.scss";
+
+//pages
+
+//user
+@import "./user/join.scss";
+@import "./user/location.scss";
+@import "./user/rec_store.scss";
+@import "./user/restaurant_check.scss";
+@import "./user/user_update.scss";
+
+//admin
+
+@import "./admin/editor_write.scss";
+@import "./admin/event_write.scss";
+@import "./admin/notice_update.scss";
+@import "./admin/notice_write.scss";
+@import "./admin/restaurant_update.scss";
+@import "./admin/restaurant_write.scss";
+
+//board
+@import "./board/editor_info.scss";
+@import "./board/editor_list.scss";
+@import "./board/event_detail.scss";
+@import "./board/notice_info.scss";
+@import "./board/search_result.scss";
+@import "./board/store_info.scss";
+@import "./board/store_list.scss";
+
+//modal
+@import "./modal/column_delete.scss";
+@import "./modal/event_delete.scss";
+@import "./modal/filter.scss";
+@import "./modal/map.scss";
+@import "./modal/notice_delete.scss";
+@import "./modal/restaurant_add.scss";
+@import "./modal/restaurant_delete.scss";
+@import "./modal/review_delete.scss";
+@import "./modal/user_nick_check.scss";
+@import "./modal/user_resign.scss";

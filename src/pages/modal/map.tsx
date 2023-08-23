@@ -1,4 +1,3 @@
-import "../../assets/styles/css/modal/map.scss";
 import { useState } from "react";
 import { RootState } from "../../reducers";
 import { set } from "../../reducers/modal/modalReducer";

@@ -1,4 +1,3 @@
-import "../../assets/styles/css/admin/restaurant_write.scss";
 import Choose_food from "../../components/choose_food";
 import Choose_price from "../../components/choose_price";
 import { set } from "../../reducers/modal/modalReducer";

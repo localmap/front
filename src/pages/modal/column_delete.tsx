@@ -1,4 +1,3 @@
-import "../../assets/styles/css/modal/column_delete.scss";
 import React from "react";
 import { useSelector } from "react-redux/es/hooks/useSelector";
 import { useDispatch } from "react-redux";

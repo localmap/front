@@ -1,4 +1,3 @@
-import "../../assets/styles/css/modal/restaurant_add.scss";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux/es/hooks/useSelector";
 import { set } from "../../reducers/modal/modalReducer";

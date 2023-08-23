@@ -5,7 +5,7 @@ import Search_type from "../../types/types";
 import { set } from "../../reducers/modal/modalReducer";
 import { useDispatch } from "react-redux";
 import Filter from "../modal/filter";
-import "../../assets/styles/css/board/search_result.scss";
+
 const Search_result: React.FC = () => {
   const search_data = useSelector<RootState, Search_type[]>(
     (state) => state.headerReducer

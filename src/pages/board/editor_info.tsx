@@ -1,5 +1,3 @@
-import "../../assets/styles/css/board/editor_info.scss";
-
 const Editor_info: React.FC = () => {
   return (
     <div className="editor_info">

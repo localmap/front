@@ -1,4 +1,3 @@
-import "../../assets/styles/css/modal/user_resign.scss";
 import { useDispatch } from "react-redux";
 import { set } from "../../reducers/modal/modalReducer";
 import { RootState } from "../../reducers";

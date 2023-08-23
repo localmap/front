@@ -1,4 +1,3 @@
-import "../../assets/styles/css/board/store_list.scss";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 const Store_list: React.FC = () => {
