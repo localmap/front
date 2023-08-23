@@ -1,4 +1,3 @@
-import "../../assets/styles/css/modal/review_delete.scss";
 import { set } from "../../reducers/modal/modalReducer";
 import { useDispatch } from "react-redux";
 import { RootState } from "../../reducers";

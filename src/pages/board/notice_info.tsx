@@ -1,5 +1,3 @@
-import "../../assets/styles/css/board/notice_info.scss";
-
 const Notice_info: React.FC = () => {
   return (
     <div className="notice_info">

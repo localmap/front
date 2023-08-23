@@ -1,4 +1,3 @@
-import "../../assets/styles/css/user_nick_check.scss";
 import { set } from "../../reducers/modal/modalReducer";
 import { RootState } from "../../reducers";
 import { useDispatch } from "react-redux";

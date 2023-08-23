@@ -1,5 +1,3 @@
-import "../../assets/styles/css/admin/notice_write.scss";
-
 const Notice_write: React.FC = () => {
   return (
     <div className="notice_write">

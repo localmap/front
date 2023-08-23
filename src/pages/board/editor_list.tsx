@@ -1,4 +1,3 @@
-import "../../assets/styles/css/board/editor_list.scss";
 import Column_delete from "../modal/column_delete";
 import { set } from "../../reducers/modal/modalReducer";
 import { useDispatch } from "react-redux";

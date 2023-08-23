@@ -1,4 +1,3 @@
-import "../../assets/styles/css/admin/editor_write.scss";
 import Restaurant_add from "../modal/restaurant_add";
 import { set } from "../../reducers/modal/modalReducer";
 import { useDispatch } from "react-redux";
